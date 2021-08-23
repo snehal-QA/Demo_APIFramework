@@ -28,12 +28,8 @@ mvn clean verify
 ```
 
 ## Reports: 
-
 	- Enhance HTML Report:
 		target/Reports/cucumber-html-reports/overview-features.html
-		
-	- Basic HTML Report:
-		target/Reports/cucumber-report.html
 		
 ## Logs:
 	- Log4j: Logs location: target/logs/DemoCreateBeneficiaries.log
