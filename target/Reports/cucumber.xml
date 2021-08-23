@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="32" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="75" time="90.301">
+    <testcase classname="Validates Account_Name in Bank_details" name="Validates beneficiary is not added when account_name key is missing from bankdetails jsonobject" time="5.43">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys without "account_name".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "This field is required"...................passed
+And Response "source" has value "beneficiary.bank_details.account_name".....passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Account_Name in Bank_details" name="Validates beneficiary is not added when account_name value is Empty" time="1.827">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "account_name" is "Empty".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "This field is required"...................passed
+And Response "source" has value "beneficiary.bank_details.account_name".....passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Account_Name in Bank_details" name="Validate error response is returned for &quot;bank_country_code&quot; US when &quot;account_name&quot; U has invalid no. of characters 1" time="1.86">
+        <failure message="The following asserts failed:&#10;&#9;expected [Length of account_number should be between 2 and 10 when bank_country_code is US] but found [Should contain 2 to 200 characters],&#10;&#9;expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]" type="java.lang.AssertionError"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "US" "account_name" is "U".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "Length of account_number should be between 2 and 10 when bank_country_code is US".passed
+And Response "message" has value "Should contain 2 to 10 characters"........passed
+And Response "source" has value "beneficiary.bank_details.account_name".....passed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 2 and 10 when bank_country_code is US] but found [Should contain 2 to 200 characters],
+	expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates Account_Name in Bank_details" name="Validate error response is returned for &quot;bank_country_code&quot; AU when &quot;account_name&quot; a has invalid no. of characters 1" time="2.455">
+        <failure message="The following asserts failed:&#10;&#9;expected [Length of account_number should be between 2 and 10 when bank_country_code is AU] but found [Should contain 2 to 200 characters],&#10;&#9;expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]" type="java.lang.AssertionError"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "AU" "account_name" is "a".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "Length of account_number should be between 2 and 10 when bank_country_code is AU".passed
+And Response "message" has value "Should contain 2 to 10 characters"........passed
+And Response "source" has value "beneficiary.bank_details.account_name".....passed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 2 and 10 when bank_country_code is AU] but found [Should contain 2 to 200 characters],
+	expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates Account_Name in Bank_details" name="Validate error response is returned for &quot;bank_country_code&quot; CN when &quot;account_name&quot; G has invalid no. of characters 1" time="2.524">
+        <failure message="The following asserts failed:&#10;&#9;expected [Length of account_number should be between 2 and 10 when bank_country_code is CN] but found [Should contain 2 to 200 characters],&#10;&#9;expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]" type="java.lang.AssertionError"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "CN" "account_name" is "G".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "Length of account_number should be between 2 and 10 when bank_country_code is CN".passed
+And Response "message" has value "Should contain 2 to 10 characters"........passed
+And Response "source" has value "beneficiary.bank_details.account_name".....passed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 2 and 10 when bank_country_code is CN] but found [Should contain 2 to 200 characters],
+	expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates Account_Name in Bank_details" name="Validate error response is returned for &quot;bank_country_code&quot; CN when &quot;account_name&quot; asfsf4567w3 has invalid no. of characters 11" time="1.734">
+        <failure message="Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "CN" "account_name" is "asfsf4567w3".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............failed
+And Response "message" has value "Length of account_number should be between 2 and 10 when bank_country_code is CN".skipped
+And Response "message" has value "Should contain 2 to 10 characters"........skipped
+And Response "source" has value "beneficiary.bank_details.account_name".....skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ✽.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Name.feature:32)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates Account_Name in Bank_details" name="Validate correct response is returned for &quot;bank_country_code&quot; US when &quot;account_name&quot; UA has valid no. of characters 2" time="1.697">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "US" "account_name" is "UA".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 201............................................passed
+And Response status line is "Created".......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Account_Name in Bank_details" name="Validate correct response is returned for &quot;bank_country_code&quot; AU when &quot;account_name&quot; @@ has valid no. of characters 1" time="1.626">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "AU" "account_name" is "@@".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 201............................................passed
+And Response status line is "Created".......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Account_Name in Bank_details" name="Validate correct response is returned for &quot;bank_country_code&quot; AU when &quot;account_name&quot; ()[aE1&lt;:! has valid no. of characters 1" time="1.631">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "AU" "account_name" is "()[aE1<:!".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 201............................................passed
+And Response status line is "Created".......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Account_Name in Bank_details" name="Validate correct response is returned for &quot;bank_country_code&quot; US when &quot;account_name&quot; asfsf4567w has valid no. of characters 10" time="1.79">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "US" "account_name" is "asfsf4567w".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 201............................................passed
+And Response status line is "Created".......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Account_Number in Bank_details" name="Validates beneficiary is not added when account_number key is missing from bankdetails jsonobject" time="0.904">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys without "account_number".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "This field is required"...................passed
+And Response "source" has value "beneficiary.bank_details.account_number"...passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Account_Number in Bank_details" name="Validates beneficiary is not added when account_number value is Empty" time="1.01">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "account_number" is "Empty".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "This field is required"...................passed
+And Response "source" has value "beneficiary.bank_details.account_number"...passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Account_Number in Bank_details" name="Validate beneficiary is sucessfully added for &quot;bank_country_code&quot; &lt;bank_country_code&gt; when &quot;account_number&quot; AGT-789IJY-T2345 contains special characters" time="1.57">
+        <failure message="The following asserts failed:&#10;&#9;expected [201] but found [400],&#10;&#9;expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "US" "account_number" is "AGT-789IJY-T2345".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 201............................................passed
+And Response status line is "Created".......................................passed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [201] but found [400],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates Account_Number in Bank_details" name="Validate beneficiary is sucessfully added for &quot;bank_country_code&quot; &lt;bank_country_code&gt; when &quot;account_number&quot; AGT:789 contains special characters" time="0.911">
+        <failure message="The following asserts failed:&#10;&#9;expected [201] but found [400],&#10;&#9;expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "AU" "account_number" is "AGT:789".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 201............................................passed
+And Response status line is "Created".......................................passed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [201] but found [400],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates Account_Number in Bank_details" name="Validate beneficiary is sucessfully added for &quot;bank_country_code&quot; &lt;bank_country_code&gt; when &quot;account_number&quot; AGT 789IJY T2345 contains special characters" time="1.1">
+        <failure message="The following asserts failed:&#10;&#9;expected [201] but found [400],&#10;&#9;expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "CN" "account_number" is "AGT 789IJY T2345".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 201............................................passed
+And Response status line is "Created".......................................passed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [201] but found [400],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates Account_Number in Bank_details" name="Validate error response is returned for &quot;bank_country_code&quot; US when &quot;account_number&quot; asedr5432GHUYJIO2345 has invalid no. of characters 20" time="1.731">
+        <failure message="Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "US" "account_number" is "asedr5432GHUYJIO2345".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............failed
+And Response "message" has value "Length of account_number should be between 1 and 17 when bank_country_code is US".skipped
+And Response "source" has value "beneficiary.bank_details.account_number"...skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ✽.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates Account_Number in Bank_details" name="Validate error response is returned for &quot;bank_country_code&quot; US when &quot;account_number&quot; asedr5432GHUYJIO23451321432 has invalid no. of characters 26" time="1.737">
+        <failure message="The following asserts failed:&#10;&#9;expected [Length of account_number should be between 1 and 17 when bank_country_code is US] but found [Should contain 1 to 26 characters]" type="java.lang.AssertionError"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "US" "account_number" is "asedr5432GHUYJIO23451321432".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "Length of account_number should be between 1 and 17 when bank_country_code is US".passed
+And Response "source" has value "beneficiary.bank_details.account_number"...passed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 1 and 17 when bank_country_code is US] but found [Should contain 1 to 26 characters]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates Account_Number in Bank_details" name="Validate error response is returned for &quot;bank_country_code&quot; AU when &quot;account_number&quot; MJIKH has invalid no. of characters 5" time="0.977">
+        <failure message="The following asserts failed:&#10;&#9;expected [Length of account_number should be between 6 and 9 when bank_country_code is AU] but found [Should contain 6 to 20 characters]" type="java.lang.AssertionError"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "AU" "account_number" is "MJIKH".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "Length of account_number should be between 6 and 9 when bank_country_code is AU".passed
+And Response "source" has value "beneficiary.bank_details.account_number"...passed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 6 and 9 when bank_country_code is AU] but found [Should contain 6 to 20 characters]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates Account_Number in Bank_details" name="Validate error response is returned for &quot;bank_country_code&quot; AU when &quot;account_number&quot; er456tbg has invalid no. of characters 8" time="1.579">
+        <failure message="Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "AU" "account_number" is "er456tbg".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............failed
+And Response "message" has value "Length of account_number should be between 6 and 9 when bank_country_code is AU".skipped
+And Response "source" has value "beneficiary.bank_details.account_number"...skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ✽.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates Account_Number in Bank_details" name="Validate error response is returned for &quot;bank_country_code&quot; AU when &quot;account_number&quot; de444556677833224 has invalid no. of characters 17" time="1.628">
+        <failure message="Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "AU" "account_number" is "de444556677833224".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............failed
+And Response "message" has value "Length of account_number should be between 6 and 9 when bank_country_code is AU".skipped
+And Response "source" has value "beneficiary.bank_details.account_number"...skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ✽.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates Account_Number in Bank_details" name="Validate error response is returned for &quot;bank_country_code&quot; AU when &quot;account_number&quot; de44455667783322412345 has invalid no. of characters 22" time="1.047">
+        <failure message="The following asserts failed:&#10;&#9;expected [Length of account_number should be between 6 and 9 when bank_country_code is AU] but found [Should contain 6 to 20 characters]" type="java.lang.AssertionError"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "AU" "account_number" is "de44455667783322412345".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "Length of account_number should be between 6 and 9 when bank_country_code is AU".passed
+And Response "source" has value "beneficiary.bank_details.account_number"...passed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 6 and 9 when bank_country_code is AU] but found [Should contain 6 to 20 characters]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates Account_Number in Bank_details" name="Validate error response is returned for &quot;bank_country_code&quot; CN when &quot;account_number&quot; G has invalid no. of characters 1" time="1.204">
+        <failure message="The following asserts failed:&#10;&#9;expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]" type="java.lang.AssertionError"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "CN" "account_number" is "G".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "Length of account_number should be between 8 and 20 when bank_country_code is CN".passed
+And Response "source" has value "beneficiary.bank_details.account_number"...passed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates Account_Number in Bank_details" name="Validate error response is returned for &quot;bank_country_code&quot; CN when &quot;account_number&quot; 123456 has invalid no. of characters 6" time="1.008">
+        <failure message="The following asserts failed:&#10;&#9;expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]" type="java.lang.AssertionError"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "CN" "account_number" is "123456".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "Length of account_number should be between 8 and 20 when bank_country_code is CN".passed
+And Response "source" has value "beneficiary.bank_details.account_number"...passed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates Account_Number in Bank_details" name="Validate error response is returned for &quot;bank_country_code&quot; CN when &quot;account_number&quot; 123456789qwertyui has invalid no. of characters 17" time="1.072">
+        <failure message="Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "CN" "account_number" is "123456789qwertyui".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............failed
+And Response "message" has value "Length of account_number should be between 8 and 20 when bank_country_code is CN".skipped
+And Response "source" has value "beneficiary.bank_details.account_number"...skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ✽.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates Account_Number in Bank_details" name="Validate error response is returned for &quot;bank_country_code&quot; CN when &quot;account_number&quot; ASEDRFTGYHUJIKOL1234123456789012345 has invalid no. of characters 35" time="1.037">
+        <failure message="The following asserts failed:&#10;&#9;expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]" type="java.lang.AssertionError"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "CN" "account_number" is "ASEDRFTGYHUJIKOL1234123456789012345".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "Length of account_number should be between 8 and 20 when bank_country_code is CN".passed
+And Response "source" has value "beneficiary.bank_details.account_number"...passed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates Account_Number in Bank_details" name="Validate beneficiary is sucessfully added when for &quot;bank_country_code&quot; &lt;Bank_country_code&gt; when &quot;account_number&quot; A has valid 1 characters" time="1.044">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "US" "account_number" is "A".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 201............................................passed
+And Response status line is "Created".......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Account_Number in Bank_details" name="Validate beneficiary is sucessfully added when for &quot;bank_country_code&quot; &lt;Bank_country_code&gt; when &quot;account_number&quot; 0 has valid 1 characters" time="0.932">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "US" "account_number" is "0".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 201............................................passed
+And Response status line is "Created".......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Account_Number in Bank_details" name="Validate beneficiary is sucessfully added when for &quot;bank_country_code&quot; &lt;Bank_country_code&gt; when &quot;account_number&quot; 123456789 has valid 9 characters" time="1.524">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "US" "account_number" is "123456789".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 201............................................passed
+And Response status line is "Created".......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Account_Number in Bank_details" name="Validate beneficiary is sucessfully added when for &quot;bank_country_code&quot; &lt;Bank_country_code&gt; when &quot;account_number&quot; MJIKHI has valid 6 characters" time="0.788">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "AU" "account_number" is "MJIKHI".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 201............................................passed
+And Response status line is "Created".......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Account_Number in Bank_details" name="Validate beneficiary is sucessfully added when for &quot;bank_country_code&quot; &lt;Bank_country_code&gt; when &quot;account_number&quot; 987654321 has valid 9 characters" time="0.83">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "AU" "account_number" is "987654321".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 201............................................passed
+And Response status line is "Created".......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Account_Number in Bank_details" name="Validate beneficiary is sucessfully added when for &quot;bank_country_code&quot; &lt;Bank_country_code&gt; when &quot;account_number&quot; GFhyi345 has valid 8 characters" time="0.921">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "AU" "account_number" is "GFhyi345".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 201............................................passed
+And Response status line is "Created".......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Account_Number in Bank_details" name="Validate beneficiary is sucessfully added when for &quot;bank_country_code&quot; &lt;Bank_country_code&gt; when &quot;account_number&quot; GFh44445 has valid 8 characters" time="0.767">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "CN" "account_number" is "GFh44445".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 201............................................passed
+And Response status line is "Created".......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Account_Number in Bank_details" name="Validate beneficiary is sucessfully added when for &quot;bank_country_code&quot; &lt;Bank_country_code&gt; when &quot;account_number&quot; 123456789DERftguhijo has valid 20 characters" time="0.829">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "CN" "account_number" is "123456789DERftguhijo".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 201............................................passed
+And Response status line is "Created".......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates bank_country_code in BankDetails" name="Validates beneficiary is not added when Bank_Country_Code key is missing" time="1.04">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys without "bank_country_code".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "field_required"..............................passed
+And Response "message" has value "must not be null".........................passed
+And Response "source" has value "beneficiary.bank_details.bank_country_code".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates bank_country_code in BankDetails" name="Validates beneficiary is not added when Bank_Country_Code value is Empty" time="1.05">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "Empty".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "invalid_argument"............................passed
+And Response "message" has value " is not a valid type".....................passed
+And Response "source" has value "beneficiary.bank_details.bank_country_code".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates bank_country_code in BankDetails" name="Validates beneficiary is added when Bank_Country_Code is valid but in small case us" time="0.881">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "us".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "invalid_argument"............................passed
+And Response "message" has value "us is not a valid type"...................passed
+And Response "source" has value "beneficiary.bank_details.bank_country_code".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates bank_country_code in BankDetails" name="Validates beneficiary is added when Bank_Country_Code is valid but in small case cn" time="0.981">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "cn".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "invalid_argument"............................passed
+And Response "message" has value "cn is not a valid type"...................passed
+And Response "source" has value "beneficiary.bank_details.bank_country_code".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates bank_country_code in BankDetails" name="Validates beneficiary is not added when Bank_Country_Code does not follow 'ISO 3166-2' standard" time="0.864">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "UP".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "invalid_argument"............................passed
+And Response "message" has value "UP is not a valid type"...................passed
+And Response "source" has value "beneficiary.bank_details.bank_country_code".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates bank_country_code in BankDetails" name="Validates beneficiary is not added when Bank_Country_Code does not follow 'ISO 3166-2' standard 2" time="0.894">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "XT".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "invalid_argument"............................passed
+And Response "message" has value "XT is not a valid type"...................passed
+And Response "source" has value "beneficiary.bank_details.bank_country_code".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates bank_country_code in BankDetails" name="Validates beneficiary is not added when Bank_Country_Code as per 'ISO 3166-2' standard but invalid for Airwallex" time="1.003">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "AX".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "Should be one of the following: [AD, AE, AG, AI, AL, AM, AN, AO, AR, AT, AU, AW, AZ, BA, BD, BE, BG, BH, BO, BR, BZ, CA, CH, CL, CN, CO, CR, CW, CY, CZ, DE, DK, DM, DO, DZ, EC, EE, EG, ES, FI, FJ, FR, GB, GD, GE, GG, GI, GQ, GR, GT, GY, HK, HN, HR, HU, ID, IE, IL, IM, IN, IS, IT, JE, JM, JO, JP, KE, KG, KH, KR, KZ, KW, LI, LK, LT, LU, LV, MA, MC, MD, ME, MK, MO, MQ, MT, MU, MV, MX, MY, NA, NG, NL, NO, NP, NZ, OM, PA, PE, PF, PH, PK, PL, PM, PR, PT, PY, QA, RO, RS, RU, SA, SC, SE, SG, SI, SK, SM, SV, TH, TJ, TN, TR, TZ, TW, UA, UG, US, UY, UZ, VN, VU, YT, ZA, ZM]".passed
+And Response "source" has value "beneficiary.bank_details.bank_country_code".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates bank_country_code in BankDetails" name="Validates beneficiary is not added when Bank_Country_Code as per 'ISO 3166-2' standard but invalid for Airwallex 2" time="0.984">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "CC".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "Should be one of the following: [AD, AE, AG, AI, AL, AM, AN, AO, AR, AT, AU, AW, AZ, BA, BD, BE, BG, BH, BO, BR, BZ, CA, CH, CL, CN, CO, CR, CW, CY, CZ, DE, DK, DM, DO, DZ, EC, EE, EG, ES, FI, FJ, FR, GB, GD, GE, GG, GI, GQ, GR, GT, GY, HK, HN, HR, HU, ID, IE, IL, IM, IN, IS, IT, JE, JM, JO, JP, KE, KG, KH, KR, KZ, KW, LI, LK, LT, LU, LV, MA, MC, MD, ME, MK, MO, MQ, MT, MU, MV, MX, MY, NA, NG, NL, NO, NP, NZ, OM, PA, PE, PF, PH, PK, PL, PM, PR, PT, PY, QA, RO, RS, RU, SA, SC, SE, SG, SI, SK, SM, SV, TH, TJ, TN, TR, TZ, TW, UA, UG, US, UY, UZ, VN, VU, YT, ZA, ZM]".passed
+And Response "source" has value "beneficiary.bank_details.bank_country_code".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates bank_country_code in BankDetails" name="Validates beneficiary is added when Bank_Country_Code is valid but in small case US" time="0.859">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "country code" is "US" "bank_country_code" is "US".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 201............................................passed
+And Response status line is "Created".......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates bank_country_code in BankDetails" name="Validates beneficiary is added when Bank_Country_Code is valid but in small case AU" time="0.92">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "country code" is "AU" "bank_country_code" is "AU".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 201............................................passed
+And Response status line is "Created".......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Payment_Method in BankDetails" name="Validates error response is received when Payload field payment_method is missing" time="0.905">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys without "payment_methods".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Payment_Method in BankDetails" name="Validates error response is received when Payload field payment_method value is Empty" time="1.011">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "payment_methods" is "Empty".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "invalid_argument"............................passed
+And Response "message" has value "No enum constant com.airwallex.domain.transaction.payment.PaymentMethod.".passed
+And Response "source" has value "payment_methods"...........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Payment_Method in BankDetails" name="Validates error response is received when Payload field payment_method value is not valid TARGET" time="1.041">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "payment_methods" is "TARGET".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "invalid_argument"............................passed
+And Response "message" has value "No enum constant com.airwallex.domain.transaction.payment.PaymentMethod.TARGET".passed
+And Response "source" has value "payment_methods"...........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Payment_Method in BankDetails" name="Validates error response is received when Payload field payment_method value is not valid SEPA" time="0.974">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "payment_methods" is "SEPA".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "invalid_argument"............................passed
+And Response "message" has value "No enum constant com.airwallex.domain.transaction.payment.PaymentMethod.SEPA".passed
+And Response "source" has value "payment_methods"...........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Payment_Method in BankDetails" name="Validates correct response is received when Payload field payment_method value is valid SWIFT" time="0.932">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "payment_methods" is "SWIFT".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 201............................................passed
+And Response status line is "Created".......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Routing_type and Routing_value in BankDetails" name="Validates error response is received when Payload field account_routing_type1 is missing" time="1.012">
+        <failure message="The following asserts failed:&#10;&#9;expected [400] but found [201],&#10;&#9;expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys without "account_routing_type1".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [400] but found [201],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates Routing_type and Routing_value in BankDetails" name="Validates error response is received when Payload feild payment_method value is Empty" time="0.972">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "account_routing_type1" is "Empty".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "invalid_argument"............................passed
+And Response "message" has value " is not a valid type".....................passed
+And Response "source" has value "beneficiary.bank_details.account_routing_type1".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Routing_type and Routing_value in BankDetails" name="Validate error response is returned for &quot;bank_country_code&quot; US when &quot;account_routing_type1&quot; aab has invalid characters &lt;number_of_characters&gt;" time="1.001">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "US" "account_routing_type1" is "aab".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "invalid_argument"............................passed
+And Response "message" has value "aab is not a valid type"..................passed
+And Response "source" has value "beneficiary.bank_details.account_routing_type1".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Routing_type and Routing_value in BankDetails" name="Validate error response is returned for &quot;bank_country_code&quot; AU when &quot;account_routing_type1&quot; baa has invalid characters &lt;number_of_characters&gt;" time="0.932">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "AU" "account_routing_type1" is "baa".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "invalid_argument"............................passed
+And Response "message" has value "baa is not a valid type"..................passed
+And Response "source" has value "beneficiary.bank_details.account_routing_type1".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Routing_type and Routing_value in BankDetails" name="Validate error response is returned for &quot;bank_country_code&quot; CN when &quot;account_routing_type1&quot; caa has invalid characters &lt;number_of_characters&gt;" time="1.012">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "CN" "account_routing_type1" is "caa".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "invalid_argument"............................passed
+And Response "message" has value "caa is not a valid type"..................passed
+And Response "source" has value "beneficiary.bank_details.account_routing_type1".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Routing_type and Routing_value in BankDetails" name="Validate error response is returned for &quot;bank_country_code&quot; US, &quot;account_routing_type1&quot; aba when &quot;account_routing_value1&quot; 12345678 contains invalid no. of charaters" time="1.001">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "Bank_Country_Code" is "US" "account_routing_type1" is "aba" "account_routing_value1" is "12345678".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "Should be 9 characters long"..............passed
+And Response "source" has value "beneficiary.bank_details.account_routing_value1".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Routing_type and Routing_value in BankDetails" name="Validate error response is returned for &quot;bank_country_code&quot; US, &quot;account_routing_type1&quot; aba when &quot;account_routing_value1&quot; 1234567890 contains invalid no. of charaters" time="1.013">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "Bank_Country_Code" is "US" "account_routing_type1" is "aba" "account_routing_value1" is "1234567890".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "Should be 9 characters long"..............passed
+And Response "source" has value "beneficiary.bank_details.account_routing_value1".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Routing_type and Routing_value in BankDetails" name="Validate error response is returned for &quot;bank_country_code&quot; AU, &quot;account_routing_type1&quot; bsb when &quot;account_routing_value1&quot; 12345 contains invalid no. of charaters" time="0.947">
+        <failure message="Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "Bank_Country_Code" is "AU" "account_routing_type1" is "bsb" "account_routing_value1" is "12345".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............failed
+And Response "message" has value "Should be 6 characters long"..............skipped
+And Response "source" has value "beneficiary.bank_details.account_routing_value1".skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ✽.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Routing_Type.feature:44)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates Routing_type and Routing_value in BankDetails" name="Validate error response is returned for &quot;bank_country_code&quot; AU, &quot;account_routing_type1&quot; bsb when &quot;account_routing_value1&quot; 1234567890 contains invalid no. of charaters" time="0.928">
+        <failure message="Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "Bank_Country_Code" is "AU" "account_routing_type1" is "bsb" "account_routing_value1" is "1234567890".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............failed
+And Response "message" has value "Should be 6 characters long"..............skipped
+And Response "source" has value "beneficiary.bank_details.account_routing_value1".skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ✽.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Routing_Type.feature:44)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates Routing_type and Routing_value in BankDetails" name="Validate error response is returned for &quot;bank_country_code&quot; US, &quot;account_routing_type1&quot; aba when &quot;account_routing_value1&quot;  contains invalid no. of charaters" time="0.874">
+        <failure message="Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "Bank_Country_Code" is "US" "account_routing_type1" is "aba" "account_routing_value1" is "".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............failed
+And Response "message" has value "Should be 9 characters long"..............skipped
+And Response "source" has value "beneficiary.bank_details.account_routing_value1".skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ✽.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Routing_Type.feature:44)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates Routing_type and Routing_value in BankDetails" name="Validate error response is returned for &quot;bank_country_code&quot; AU, &quot;account_routing_type1&quot; bsb when &quot;account_routing_value1&quot;  contains invalid no. of charaters" time="0.929">
+        <failure message="Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "Bank_Country_Code" is "AU" "account_routing_type1" is "bsb" "account_routing_value1" is "".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............failed
+And Response "message" has value "Should be 6 characters long"..............skipped
+And Response "source" has value "beneficiary.bank_details.account_routing_value1".skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ✽.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Routing_Type.feature:44)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates Routing_type and Routing_value in BankDetails" name="Validate error response is returned for &quot;bank_country_code&quot; US, &quot;account_routing_type1&quot; aba when &quot;account_routing_value1&quot; 123456789 contains invalid no. of charaters" time="0.918">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "Bank_Country_Code" is "US" "account_routing_type1" is "aba" "account_routing_value1" is "123456789".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 201............................................passed
+And Response status line is "Created".......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates Routing_type and Routing_value in BankDetails" name="Validate error response is returned for &quot;bank_country_code&quot; AU, &quot;account_routing_type1&quot; bsb when &quot;account_routing_value1&quot; 123456 contains invalid no. of charaters" time="0.91">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "Bank_Country_Code" is "AU" "account_routing_type1" is "bsb" "account_routing_value1" is "123456".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 201............................................passed
+And Response status line is "Created".......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates swift_code in BankDetails" name="Validates error response is received when payment_methods=SWIFT and Payload field swift_code is missing" time="1.003">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys without "swift_code".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "This field is required"...................passed
+And Response "source" has value "beneficiary.bank_details.swift_code".......passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates swift_code in BankDetails" name="Validates error response is received when payment_methods=SWIFT and Payload feild swift_code is Empty" time="0.898">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "swift_code" is "Empty".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "This field is required"...................passed
+And Response "source" has value "beneficiary.bank_details.swift_code".......passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates swift_code in BankDetails" name="Validate error message is returned for &quot;bank_country_code&quot; &lt;Bank_country_code&gt; when &quot;swift_code&quot; ICBKUS lessthan 8 or greaterthan 11 charcters" time="0.885">
+        <failure message="The following asserts failed:&#10;&#9;expected [Length of 'swift_code' should be either 8 or 11] but found [Should be a valid and supported SWIFT code / BIC]" type="java.lang.AssertionError"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "US" "swift_code" is "ICBKUS".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "Length of 'swift_code' should be either 8 or 11".passed
+And Response "source" has value "beneficiary.bank_details.swift_code".......passed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [Length of 'swift_code' should be either 8 or 11] but found [Should be a valid and supported SWIFT code / BIC]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates swift_code in BankDetails" name="Validate error message is returned for &quot;bank_country_code&quot; &lt;Bank_country_code&gt; when &quot;swift_code&quot; ICBKAUBJ123w lessthan 8 or greaterthan 11 charcters" time="1.57">
+        <failure message="The following asserts failed:&#10;&#9;expected [Length of 'swift_code' should be either 8 or 11] but found [Should be a valid and supported SWIFT code / BIC]" type="java.lang.AssertionError"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "AU" "swift_code" is "ICBKAUBJ123w".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "Length of 'swift_code' should be either 8 or 11".passed
+And Response "source" has value "beneficiary.bank_details.swift_code".......passed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [Length of 'swift_code' should be either 8 or 11] but found [Should be a valid and supported SWIFT code / BIC]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates swift_code in BankDetails" name="Validate error message is returned when &quot;swift_code&quot; CHAS33US do not contain passed &lt;Bank_country_code&gt; at 5th and 6th character" time="0.953">
+        <failure message="The following asserts failed:&#10;&#9;expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [Should be a valid and supported SWIFT code / BIC]" type="java.lang.AssertionError"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "US" "swift_code" is "CHAS33US".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "The swift code is not valid for the given bank country code: <Bank_country_code>".passed
+And Response "source" has value "beneficiary.bank_details.swift_code".......passed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [Should be a valid and supported SWIFT code / BIC]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates swift_code in BankDetails" name="Validate error message is returned when &quot;swift_code&quot; USAS33US do not contain passed &lt;Bank_country_code&gt; at 5th and 6th character" time="0.898">
+        <failure message="The following asserts failed:&#10;&#9;expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [Should be a valid and supported SWIFT code / BIC]" type="java.lang.AssertionError"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "US" "swift_code" is "USAS33US".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "The swift code is not valid for the given bank country code: <Bank_country_code>".passed
+And Response "source" has value "beneficiary.bank_details.swift_code".......passed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [Should be a valid and supported SWIFT code / BIC]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates swift_code in BankDetails" name="Validate error message is returned when &quot;swift_code&quot; CNAS33US do not contain passed &lt;Bank_country_code&gt; at 5th and 6th character" time="0.952">
+        <failure message="The following asserts failed:&#10;&#9;expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [Should be a valid and supported SWIFT code / BIC]" type="java.lang.AssertionError"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "CN" "swift_code" is "CNAS33US".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "The swift code is not valid for the given bank country code: <Bank_country_code>".passed
+And Response "source" has value "beneficiary.bank_details.swift_code".......passed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [Should be a valid and supported SWIFT code / BIC]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates swift_code in BankDetails" name="Validate error message is returned when &quot;swift_code&quot; CHASAU33 do not match with &quot;Bank_Country_Code&quot; &lt;Bank_country_code&gt; at 5th and 6th character" time="0.91">
+        <failure message="The following asserts failed:&#10;&#9;expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [Should be a valid and supported SWIFT code / BIC]" type="java.lang.AssertionError"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "US" "swift_code" is "CHASAU33".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "The swift code is not valid for the given bank country code: <Bank_country_code>".passed
+And Response "source" has value "beneficiary.bank_details.swift_code".......passed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [Should be a valid and supported SWIFT code / BIC]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates swift_code in BankDetails" name="Validate error message is returned when &quot;swift_code&quot; CHASUS33 do not match with &quot;Bank_Country_Code&quot; &lt;Bank_country_code&gt; at 5th and 6th character" time="0.926">
+        <failure message="The following asserts failed:&#10;&#9;expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [The SWIFT code / BIC should match the bank location selected ]" type="java.lang.AssertionError"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "AU" "swift_code" is "CHASUS33".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "The swift code is not valid for the given bank country code: <Bank_country_code>".passed
+And Response "source" has value "beneficiary.bank_details.swift_code".......passed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [The SWIFT code / BIC should match the bank location selected ]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates swift_code in BankDetails" name="Validate error message is returned when &quot;swift_code&quot; CHASAU33 do not match with &quot;Bank_Country_Code&quot; &lt;Bank_country_code&gt; at 5th and 6th character" time="0.896">
+        <failure message="The following asserts failed:&#10;&#9;expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [Should be a valid and supported SWIFT code / BIC]" type="java.lang.AssertionError"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "bank_country_code" is "CN" "swift_code" is "CHASAU33".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "The swift code is not valid for the given bank country code: <Bank_country_code>".passed
+And Response "source" has value "beneficiary.bank_details.swift_code".......passed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [Should be a valid and supported SWIFT code / BIC]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates swift_code in BankDetails" name="Validate error message is returned when &quot;swift_code&quot; CHASUS33 matches with &quot;country_code&quot; US but not with &quot;bank_country_code&quot; &lt;Bank_country_code&gt;" time="0.909">
+        <failure message="The following asserts failed:&#10;&#9;expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [The SWIFT code / BIC should match the bank location selected ]" type="java.lang.AssertionError"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "country_code" is "US" "bank_country_code" is "AU" "swift_code" is "CHASUS33".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "The swift code is not valid for the given bank country code: <Bank_country_code>".passed
+And Response "source" has value "beneficiary.bank_details.swift_code".......passed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [The SWIFT code / BIC should match the bank location selected ]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates swift_code in BankDetails" name="Validate error message is returned when &quot;swift_code&quot; CTBAAU2S matches with &quot;country_code&quot; AU but not with &quot;bank_country_code&quot; &lt;Bank_country_code&gt;" time="0.905">
+        <failure message="The following asserts failed:&#10;&#9;expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [The SWIFT code / BIC should match the bank location selected ]" type="java.lang.AssertionError"><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "country_code" is "AU" "bank_country_code" is "US" "swift_code" is "CTBAAU2S".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 400............................................passed
+And Response status line is "Bad Request"...................................passed
+And Response "code" has value "payment_schema_validation_failed"............passed
+And Response "message" has value "The swift code is not valid for the given bank country code: <Bank_country_code>".passed
+And Response "source" has value "beneficiary.bank_details.swift_code".......passed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [The SWIFT code / BIC should match the bank location selected ]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]></failure>
+    </testcase>
+    <testcase classname="Validates swift_code in BankDetails" name="Validate correct message is returned when &quot;swift_code&quot; CHASUS33 matches with &quot;country_code&quot; US but not with &quot;bank_country_code&quot; &lt;Bank_country_code&gt;" time="0.862">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "country_code" is "US" "bank_country_code" is "US" "swift_code" is "CHASUS33".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 201............................................passed
+And Response status line is "Created".......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validates swift_code in BankDetails" name="Validate correct message is returned when &quot;swift_code&quot; CTBAAU2S matches with &quot;country_code&quot; AU but not with &quot;bank_country_code&quot; &lt;Bank_country_code&gt;" time="0.918">
+        <system-out><![CDATA[Given I am authorized user..................................................passed
+And I create request payload with valid data for all keys with "country_code" is "AU" "bank_country_code" is "AU" "swift_code" is "CTBAAU2S".passed
+When I perform post on CreateBeneficiary endpoint...........................passed
+Then Response status code is 201............................................passed
+And Response status line is "Created".......................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

@@ -1,0 +1,1668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="75" passed="43" failed="32" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-08-23T10:54:16 CEST" name="Surefire suite" finished-at="2021-08-23T10:55:47 CEST" duration-ms="91495">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2021-08-23T10:54:16 CEST" name="Surefire test" finished-at="2021-08-23T10:55:47 CEST" duration-ms="91495">
+      <class name="cucumber.Options.RunCucumberTests">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:16 CEST" name="setUpClass" finished-at="2021-08-23T10:54:16 CEST" duration-ms="830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:16 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:22 CEST" duration-ms="5708" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validates beneficiary is not added when account_name key is missing from bankdetails jsonobject"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Name in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:22 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:24 CEST" duration-ms="1860" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validates beneficiary is not added when account_name value is Empty"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Name in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:24 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:26 CEST" duration-ms="1895" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error response is returned for "bank_country_code" US when "account_name" U has invalid no. of characters 1"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Name in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Length of account_number should be between 2 and 10 when bank_country_code is US] but found [Should contain 2 to 200 characters],
+expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Length of account_number should be between 2 and 10 when bank_country_code is US] but found [Should contain 2 to 200 characters],
+expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:26 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:28 CEST" duration-ms="2462" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error response is returned for "bank_country_code" AU when "account_name" a has invalid no. of characters 1"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Name in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Length of account_number should be between 2 and 10 when bank_country_code is AU] but found [Should contain 2 to 200 characters],
+expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Length of account_number should be between 2 and 10 when bank_country_code is AU] but found [Should contain 2 to 200 characters],
+expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:28 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:31 CEST" duration-ms="2548" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error response is returned for "bank_country_code" CN when "account_name" G has invalid no. of characters 1"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Name in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Length of account_number should be between 2 and 10 when bank_country_code is CN] but found [Should contain 2 to 200 characters],
+expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Length of account_number should be between 2 and 10 when bank_country_code is CN] but found [Should contain 2 to 200 characters],
+expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:31 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:33 CEST" duration-ms="1758" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error response is returned for "bank_country_code" CN when "account_name" asfsf4567w3 has invalid no. of characters 11"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Name in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Name.feature:32)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:33 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:34 CEST" duration-ms="1713" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate correct response is returned for "bank_country_code" US when "account_name" UA has valid no. of characters 2"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Name in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:34 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:36 CEST" duration-ms="1643" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate correct response is returned for "bank_country_code" AU when "account_name" @@ has valid no. of characters 1"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Name in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:36 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:38 CEST" duration-ms="1643" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate correct response is returned for "bank_country_code" AU when "account_name" ()[aE1<:! has valid no. of characters 1"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Name in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:38 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:40 CEST" duration-ms="1804" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate correct response is returned for "bank_country_code" US when "account_name" asfsf4567w has valid no. of characters 10"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Name in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:40 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:40 CEST" duration-ms="924" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validates beneficiary is not added when account_number key is missing from bankdetails jsonobject"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Number in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:40 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:41 CEST" duration-ms="1019" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validates beneficiary is not added when account_number value is Empty"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Number in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:41 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:43 CEST" duration-ms="1577" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate beneficiary is sucessfully added for "bank_country_code" <bank_country_code> when "account_number" AGT-789IJY-T2345 contains special characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Number in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [201] but found [400],
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [201] but found [400],
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:43 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:44 CEST" duration-ms="920" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate beneficiary is sucessfully added for "bank_country_code" <bank_country_code> when "account_number" AGT:789 contains special characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Number in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [201] but found [400],
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [201] but found [400],
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:44 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:45 CEST" duration-ms="1112" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate beneficiary is sucessfully added for "bank_country_code" <bank_country_code> when "account_number" AGT 789IJY T2345 contains special characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Number in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [201] but found [400],
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [201] but found [400],
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:45 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:47 CEST" duration-ms="1745" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error response is returned for "bank_country_code" US when "account_number" asedr5432GHUYJIO2345 has invalid no. of characters 20"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Number in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:47 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:49 CEST" duration-ms="1747" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error response is returned for "bank_country_code" US when "account_number" asedr5432GHUYJIO23451321432 has invalid no. of characters 26"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Number in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Length of account_number should be between 1 and 17 when bank_country_code is US] but found [Should contain 1 to 26 characters]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Length of account_number should be between 1 and 17 when bank_country_code is US] but found [Should contain 1 to 26 characters]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:49 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:50 CEST" duration-ms="985" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error response is returned for "bank_country_code" AU when "account_number" MJIKH has invalid no. of characters 5"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Number in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Length of account_number should be between 6 and 9 when bank_country_code is AU] but found [Should contain 6 to 20 characters]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Length of account_number should be between 6 and 9 when bank_country_code is AU] but found [Should contain 6 to 20 characters]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:50 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:51 CEST" duration-ms="1603" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error response is returned for "bank_country_code" AU when "account_number" er456tbg has invalid no. of characters 8"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Number in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:51 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:53 CEST" duration-ms="1635" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error response is returned for "bank_country_code" AU when "account_number" de444556677833224 has invalid no. of characters 17"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Number in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:53 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:54 CEST" duration-ms="1052" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error response is returned for "bank_country_code" AU when "account_number" de44455667783322412345 has invalid no. of characters 22"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Number in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Length of account_number should be between 6 and 9 when bank_country_code is AU] but found [Should contain 6 to 20 characters]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Length of account_number should be between 6 and 9 when bank_country_code is AU] but found [Should contain 6 to 20 characters]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:54 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:55 CEST" duration-ms="1226" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error response is returned for "bank_country_code" CN when "account_number" G has invalid no. of characters 1"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Number in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:55 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:56 CEST" duration-ms="1012" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error response is returned for "bank_country_code" CN when "account_number" 123456 has invalid no. of characters 6"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Number in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:56 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:57 CEST" duration-ms="1083" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error response is returned for "bank_country_code" CN when "account_number" 123456789qwertyui has invalid no. of characters 17"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Number in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:57 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:58 CEST" duration-ms="1056" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error response is returned for "bank_country_code" CN when "account_number" ASEDRFTGYHUJIKOL1234123456789012345 has invalid no. of characters 35"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Number in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:58 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:59 CEST" duration-ms="1049" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate beneficiary is sucessfully added when for "bank_country_code" <Bank_country_code> when "account_number" A has valid 1 characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Number in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:59 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:00 CEST" duration-ms="940" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate beneficiary is sucessfully added when for "bank_country_code" <Bank_country_code> when "account_number" 0 has valid 1 characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Number in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:00 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:02 CEST" duration-ms="1532" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate beneficiary is sucessfully added when for "bank_country_code" <Bank_country_code> when "account_number" 123456789 has valid 9 characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Number in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:02 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:03 CEST" duration-ms="791" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate beneficiary is sucessfully added when for "bank_country_code" <Bank_country_code> when "account_number" MJIKHI has valid 6 characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Number in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:03 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:03 CEST" duration-ms="837" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate beneficiary is sucessfully added when for "bank_country_code" <Bank_country_code> when "account_number" 987654321 has valid 9 characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Number in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:03 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:04 CEST" duration-ms="926" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate beneficiary is sucessfully added when for "bank_country_code" <Bank_country_code> when "account_number" GFhyi345 has valid 8 characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Number in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:04 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:05 CEST" duration-ms="771" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate beneficiary is sucessfully added when for "bank_country_code" <Bank_country_code> when "account_number" GFh44445 has valid 8 characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Number in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:05 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:06 CEST" duration-ms="836" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate beneficiary is sucessfully added when for "bank_country_code" <Bank_country_code> when "account_number" 123456789DERftguhijo has valid 20 characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Account_Number in Bank_details]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:06 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:07 CEST" duration-ms="1045" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validates beneficiary is not added when Bank_Country_Code key is missing"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates bank_country_code in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:07 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:08 CEST" duration-ms="1056" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validates beneficiary is not added when Bank_Country_Code value is Empty"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates bank_country_code in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:08 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:09 CEST" duration-ms="886" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validates beneficiary is added when Bank_Country_Code is valid but in small case us"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates bank_country_code in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:09 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:10 CEST" duration-ms="986" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validates beneficiary is added when Bank_Country_Code is valid but in small case cn"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates bank_country_code in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:10 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:11 CEST" duration-ms="869" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validates beneficiary is not added when Bank_Country_Code does not follow 'ISO 3166-2' standard"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates bank_country_code in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:11 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:12 CEST" duration-ms="899" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validates beneficiary is not added when Bank_Country_Code does not follow 'ISO 3166-2' standard"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates bank_country_code in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:12 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:13 CEST" duration-ms="1017" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validates beneficiary is not added when Bank_Country_Code as per 'ISO 3166-2' standard but invalid for Airwallex"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates bank_country_code in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:13 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:14 CEST" duration-ms="994" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validates beneficiary is not added when Bank_Country_Code as per 'ISO 3166-2' standard but invalid for Airwallex"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates bank_country_code in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:14 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:15 CEST" duration-ms="864" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validates beneficiary is added when Bank_Country_Code is valid but in small case US"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates bank_country_code in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:15 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:15 CEST" duration-ms="927" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validates beneficiary is added when Bank_Country_Code is valid but in small case AU"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates bank_country_code in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:15 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:16 CEST" duration-ms="911" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validates error response is received when Payload field payment_method is missing"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Payment_Method in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:16 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:17 CEST" duration-ms="1015" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validates error response is received when Payload field payment_method value is Empty"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Payment_Method in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:17 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:18 CEST" duration-ms="1045" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validates error response is received when Payload field payment_method value is not valid TARGET"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Payment_Method in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:18 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:19 CEST" duration-ms="986" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validates error response is received when Payload field payment_method value is not valid SEPA"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Payment_Method in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:19 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:20 CEST" duration-ms="954" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validates correct response is received when Payload field payment_method value is valid SWIFT"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Payment_Method in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:20 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:21 CEST" duration-ms="1031" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validates error response is received when Payload field account_routing_type1 is missing"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Routing_type and Routing_value in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [400] but found [201],
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [400] but found [201],
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:21 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:22 CEST" duration-ms="978" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validates error response is received when Payload feild payment_method value is Empty"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Routing_type and Routing_value in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:22 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:23 CEST" duration-ms="1010" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error response is returned for "bank_country_code" US when "account_routing_type1" aab has invalid characters <number_of_characters>"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Routing_type and Routing_value in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:23 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:24 CEST" duration-ms="941" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error response is returned for "bank_country_code" AU when "account_routing_type1" baa has invalid characters <number_of_characters>"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Routing_type and Routing_value in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:24 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:25 CEST" duration-ms="1018" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error response is returned for "bank_country_code" CN when "account_routing_type1" caa has invalid characters <number_of_characters>"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Routing_type and Routing_value in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:25 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:26 CEST" duration-ms="1011" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error response is returned for "bank_country_code" US, "account_routing_type1" aba when "account_routing_value1" 12345678 contains invalid no. of charaters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Routing_type and Routing_value in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:26 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:27 CEST" duration-ms="1034" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error response is returned for "bank_country_code" US, "account_routing_type1" aba when "account_routing_value1" 1234567890 contains invalid no. of charaters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Routing_type and Routing_value in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:27 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:28 CEST" duration-ms="960" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error response is returned for "bank_country_code" AU, "account_routing_type1" bsb when "account_routing_value1" 12345 contains invalid no. of charaters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Routing_type and Routing_value in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Routing_Type.feature:44)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:28 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:29 CEST" duration-ms="933" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error response is returned for "bank_country_code" AU, "account_routing_type1" bsb when "account_routing_value1" 1234567890 contains invalid no. of charaters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Routing_type and Routing_value in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Routing_Type.feature:44)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:29 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:30 CEST" duration-ms="884" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error response is returned for "bank_country_code" US, "account_routing_type1" aba when "account_routing_value1"  contains invalid no. of charaters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Routing_type and Routing_value in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Routing_Type.feature:44)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:30 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:31 CEST" duration-ms="935" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error response is returned for "bank_country_code" AU, "account_routing_type1" bsb when "account_routing_value1"  contains invalid no. of charaters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Routing_type and Routing_value in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Routing_Type.feature:44)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:31 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:32 CEST" duration-ms="923" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error response is returned for "bank_country_code" US, "account_routing_type1" aba when "account_routing_value1" 123456789 contains invalid no. of charaters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Routing_type and Routing_value in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:32 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:33 CEST" duration-ms="918" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error response is returned for "bank_country_code" AU, "account_routing_type1" bsb when "account_routing_value1" 123456 contains invalid no. of charaters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates Routing_type and Routing_value in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:33 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:34 CEST" duration-ms="1007" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validates error response is received when payment_methods=SWIFT and Payload field swift_code is missing"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates swift_code in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:34 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:35 CEST" duration-ms="902" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validates error response is received when payment_methods=SWIFT and Payload feild swift_code is Empty"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates swift_code in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:35 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:36 CEST" duration-ms="906" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error message is returned for "bank_country_code" <Bank_country_code> when "swift_code" ICBKUS lessthan 8 or greaterthan 11 charcters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates swift_code in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Length of 'swift_code' should be either 8 or 11] but found [Should be a valid and supported SWIFT code / BIC]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Length of 'swift_code' should be either 8 or 11] but found [Should be a valid and supported SWIFT code / BIC]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:36 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:37 CEST" duration-ms="1577" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error message is returned for "bank_country_code" <Bank_country_code> when "swift_code" ICBKAUBJ123w lessthan 8 or greaterthan 11 charcters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates swift_code in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Length of 'swift_code' should be either 8 or 11] but found [Should be a valid and supported SWIFT code / BIC]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Length of 'swift_code' should be either 8 or 11] but found [Should be a valid and supported SWIFT code / BIC]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:37 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:38 CEST" duration-ms="959" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error message is returned when "swift_code" CHAS33US do not contain passed <Bank_country_code> at 5th and 6th character"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates swift_code in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [Should be a valid and supported SWIFT code / BIC]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [Should be a valid and supported SWIFT code / BIC]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:38 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:39 CEST" duration-ms="907" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error message is returned when "swift_code" USAS33US do not contain passed <Bank_country_code> at 5th and 6th character"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates swift_code in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [Should be a valid and supported SWIFT code / BIC]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [Should be a valid and supported SWIFT code / BIC]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:39 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:40 CEST" duration-ms="956" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error message is returned when "swift_code" CNAS33US do not contain passed <Bank_country_code> at 5th and 6th character"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates swift_code in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [Should be a valid and supported SWIFT code / BIC]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [Should be a valid and supported SWIFT code / BIC]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:40 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:41 CEST" duration-ms="913" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error message is returned when "swift_code" CHASAU33 do not match with "Bank_Country_Code" <Bank_country_code> at 5th and 6th character"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates swift_code in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [Should be a valid and supported SWIFT code / BIC]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [Should be a valid and supported SWIFT code / BIC]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:41 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:42 CEST" duration-ms="935" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error message is returned when "swift_code" CHASUS33 do not match with "Bank_Country_Code" <Bank_country_code> at 5th and 6th character"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates swift_code in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [The SWIFT code / BIC should match the bank location selected ]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [The SWIFT code / BIC should match the bank location selected ]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:42 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:43 CEST" duration-ms="899" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error message is returned when "swift_code" CHASAU33 do not match with "Bank_Country_Code" <Bank_country_code> at 5th and 6th character"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates swift_code in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [Should be a valid and supported SWIFT code / BIC]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [Should be a valid and supported SWIFT code / BIC]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:43 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:44 CEST" duration-ms="927" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error message is returned when "swift_code" CHASUS33 matches with "country_code" US but not with "bank_country_code" <Bank_country_code>"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates swift_code in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [The SWIFT code / BIC should match the bank location selected ]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [The SWIFT code / BIC should match the bank location selected ]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:44 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:45 CEST" duration-ms="909" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error message is returned when "swift_code" CTBAAU2S matches with "country_code" AU but not with "bank_country_code" <Bank_country_code>"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates swift_code in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [The SWIFT code / BIC should match the bank location selected ]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [The SWIFT code / BIC should match the bank location selected ]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:45 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:46 CEST" duration-ms="866" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate correct message is returned when "swift_code" CHASUS33 matches with "country_code" US but not with "bank_country_code" <Bank_country_code>"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates swift_code in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:46 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:47 CEST" duration-ms="922" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate correct message is returned when "swift_code" CTBAAU2S matches with "country_code" AU but not with "bank_country_code" <Bank_country_code>"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validates swift_code in BankDetails]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:47 CEST" name="tearDownClass" finished-at="2021-08-23T10:55:47 CEST" duration-ms="467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumber.Options.RunCucumberTests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

@@ -1,0 +1,153 @@
+-------------------------------------------------------------------------------
+Test set: cucumber.Options.RunCucumberTests
+-------------------------------------------------------------------------------
+Tests run: 75, Failures: 32, Errors: 0, Skipped: 0, Time elapsed: 92.079 s <<< FAILURE! - in cucumber.Options.RunCucumberTests
+cucumber.Options.RunCucumberTests.runScenario["Validate error response is returned for "bank_country_code" US when "account_name" U has invalid no. of characters 1", "Optional[Validates Account_Name in Bank_details]"](3)  Time elapsed: 1.899 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [Length of account_number should be between 2 and 10 when bank_country_code is US] but found [Should contain 2 to 200 characters],
+	expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error response is returned for "bank_country_code" AU when "account_name" a has invalid no. of characters 1", "Optional[Validates Account_Name in Bank_details]"](4)  Time elapsed: 2.452 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [Length of account_number should be between 2 and 10 when bank_country_code is AU] but found [Should contain 2 to 200 characters],
+	expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error response is returned for "bank_country_code" CN when "account_name" G has invalid no. of characters 1", "Optional[Validates Account_Name in Bank_details]"](5)  Time elapsed: 2.551 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [Length of account_number should be between 2 and 10 when bank_country_code is CN] but found [Should contain 2 to 200 characters],
+	expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error response is returned for "bank_country_code" CN when "account_name" asfsf4567w3 has invalid no. of characters 11", "Optional[Validates Account_Name in Bank_details]"](6)  Time elapsed: 1.793 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+
+cucumber.Options.RunCucumberTests.runScenario["Validate beneficiary is sucessfully added for "bank_country_code" <bank_country_code> when "account_number" AGT-789IJY-T2345 contains special characters", "Optional[Validates Account_Number in Bank_details]"](13)  Time elapsed: 1.607 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [201] but found [400],
+	expected [true] but found [false]
+
+cucumber.Options.RunCucumberTests.runScenario["Validate beneficiary is sucessfully added for "bank_country_code" <bank_country_code> when "account_number" AGT:789 contains special characters", "Optional[Validates Account_Number in Bank_details]"](14)  Time elapsed: 0.957 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [201] but found [400],
+	expected [true] but found [false]
+
+cucumber.Options.RunCucumberTests.runScenario["Validate beneficiary is sucessfully added for "bank_country_code" <bank_country_code> when "account_number" AGT 789IJY T2345 contains special characters", "Optional[Validates Account_Number in Bank_details]"](15)  Time elapsed: 1.088 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [201] but found [400],
+	expected [true] but found [false]
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error response is returned for "bank_country_code" US when "account_number" asedr5432GHUYJIO2345 has invalid no. of characters 20", "Optional[Validates Account_Number in Bank_details]"](16)  Time elapsed: 1.747 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error response is returned for "bank_country_code" US when "account_number" asedr5432GHUYJIO23451321432 has invalid no. of characters 26", "Optional[Validates Account_Number in Bank_details]"](17)  Time elapsed: 1.802 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [Length of account_number should be between 1 and 17 when bank_country_code is US] but found [Should contain 1 to 26 characters]
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error response is returned for "bank_country_code" AU when "account_number" MJIKH has invalid no. of characters 5", "Optional[Validates Account_Number in Bank_details]"](18)  Time elapsed: 0.907 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [Length of account_number should be between 6 and 9 when bank_country_code is AU] but found [Should contain 6 to 20 characters]
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error response is returned for "bank_country_code" AU when "account_number" er456tbg has invalid no. of characters 8", "Optional[Validates Account_Number in Bank_details]"](19)  Time elapsed: 1.655 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error response is returned for "bank_country_code" AU when "account_number" de444556677833224 has invalid no. of characters 17", "Optional[Validates Account_Number in Bank_details]"](20)  Time elapsed: 1.598 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error response is returned for "bank_country_code" AU when "account_number" de44455667783322412345 has invalid no. of characters 22", "Optional[Validates Account_Number in Bank_details]"](21)  Time elapsed: 1.036 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [Length of account_number should be between 6 and 9 when bank_country_code is AU] but found [Should contain 6 to 20 characters]
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error response is returned for "bank_country_code" CN when "account_number" G has invalid no. of characters 1", "Optional[Validates Account_Number in Bank_details]"](22)  Time elapsed: 1.225 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error response is returned for "bank_country_code" CN when "account_number" 123456 has invalid no. of characters 6", "Optional[Validates Account_Number in Bank_details]"](23)  Time elapsed: 1.032 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error response is returned for "bank_country_code" CN when "account_number" 123456789qwertyui has invalid no. of characters 17", "Optional[Validates Account_Number in Bank_details]"](24)  Time elapsed: 1.116 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error response is returned for "bank_country_code" CN when "account_number" ASEDRFTGYHUJIKOL1234123456789012345 has invalid no. of characters 35", "Optional[Validates Account_Number in Bank_details]"](25)  Time elapsed: 1.012 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]
+
+cucumber.Options.RunCucumberTests.runScenario["Validates error response is received when Payload field account_routing_type1 is missing", "Optional[Validates Routing_type and Routing_value in BankDetails]"](49)  Time elapsed: 1.024 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [400] but found [201],
+	expected [true] but found [false]
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error response is returned for "bank_country_code" AU, "account_routing_type1" bsb when "account_routing_value1" 12345 contains invalid no. of charaters", "Optional[Validates Routing_type and Routing_value in BankDetails]"](56)  Time elapsed: 0.979 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error response is returned for "bank_country_code" AU, "account_routing_type1" bsb when "account_routing_value1" 1234567890 contains invalid no. of charaters", "Optional[Validates Routing_type and Routing_value in BankDetails]"](57)  Time elapsed: 0.953 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error response is returned for "bank_country_code" US, "account_routing_type1" aba when "account_routing_value1"  contains invalid no. of charaters", "Optional[Validates Routing_type and Routing_value in BankDetails]"](58)  Time elapsed: 0.902 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error response is returned for "bank_country_code" AU, "account_routing_type1" bsb when "account_routing_value1"  contains invalid no. of charaters", "Optional[Validates Routing_type and Routing_value in BankDetails]"](59)  Time elapsed: 0.939 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error message is returned for "bank_country_code" <Bank_country_code> when "swift_code" ICBKUS lessthan 8 or greaterthan 11 charcters", "Optional[Validates swift_code in BankDetails]"](64)  Time elapsed: 0.924 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [Length of 'swift_code' should be either 8 or 11] but found [Should be a valid and supported SWIFT code / BIC]
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error message is returned for "bank_country_code" <Bank_country_code> when "swift_code" ICBKAUBJ123w lessthan 8 or greaterthan 11 charcters", "Optional[Validates swift_code in BankDetails]"](65)  Time elapsed: 1.58 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [Length of 'swift_code' should be either 8 or 11] but found [Should be a valid and supported SWIFT code / BIC]
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error message is returned when "swift_code" CHAS33US do not contain passed <Bank_country_code> at 5th and 6th character", "Optional[Validates swift_code in BankDetails]"](66)  Time elapsed: 0.968 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [Should be a valid and supported SWIFT code / BIC]
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error message is returned when "swift_code" USAS33US do not contain passed <Bank_country_code> at 5th and 6th character", "Optional[Validates swift_code in BankDetails]"](67)  Time elapsed: 0.895 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [Should be a valid and supported SWIFT code / BIC]
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error message is returned when "swift_code" CNAS33US do not contain passed <Bank_country_code> at 5th and 6th character", "Optional[Validates swift_code in BankDetails]"](68)  Time elapsed: 0.964 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [Should be a valid and supported SWIFT code / BIC]
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error message is returned when "swift_code" CHASAU33 do not match with "Bank_Country_Code" <Bank_country_code> at 5th and 6th character", "Optional[Validates swift_code in BankDetails]"](69)  Time elapsed: 0.907 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [Should be a valid and supported SWIFT code / BIC]
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error message is returned when "swift_code" CHASUS33 do not match with "Bank_Country_Code" <Bank_country_code> at 5th and 6th character", "Optional[Validates swift_code in BankDetails]"](70)  Time elapsed: 0.942 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [The SWIFT code / BIC should match the bank location selected ]
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error message is returned when "swift_code" CHASAU33 do not match with "Bank_Country_Code" <Bank_country_code> at 5th and 6th character", "Optional[Validates swift_code in BankDetails]"](71)  Time elapsed: 0.902 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [Should be a valid and supported SWIFT code / BIC]
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error message is returned when "swift_code" CHASUS33 matches with "country_code" US but not with "bank_country_code" <Bank_country_code>", "Optional[Validates swift_code in BankDetails]"](72)  Time elapsed: 0.937 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [The SWIFT code / BIC should match the bank location selected ]
+
+cucumber.Options.RunCucumberTests.runScenario["Validate error message is returned when "swift_code" CTBAAU2S matches with "country_code" AU but not with "bank_country_code" <Bank_country_code>", "Optional[Validates swift_code in BankDetails]"](73)  Time elapsed: 0.899 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [The SWIFT code / BIC should match the bank location selected ]
+

@@ -1,0 +1,729 @@
+2021-54-23 10:54:18.337 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:18.341 [main] INFO  utilities.Log - >> Validates beneficiary is not added when account_name key is missing from bankdetails jsonobject
+2021-54-23 10:54:18.342 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:21.210 [main] INFO  utilities.Log - >> Token Created
+2021-54-23 10:54:21.212 [main] INFO  utilities.Log - >> Request PayLoad Created with all keys, except without  account_name Code key
+2021-54-23 10:54:22.433 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-54-23 10:54:22.484 [main] INFO  utilities.Log - >> Response status code is 400
+2021-54-23 10:54:22.487 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-54-23 10:54:22.525 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-54-23 10:54:22.593 [main] INFO  utilities.Log - >> Response message contains value This field is required
+2021-54-23 10:54:22.626 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.account_name
+2021-54-23 10:54:22.689 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:22.689 [main] INFO  utilities.Log - >> Validates beneficiary is not added when account_name value is Empty
+2021-54-23 10:54:22.689 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:23.870 [main] INFO  utilities.Log - >> Token Created
+2021-54-23 10:54:23.873 [main] INFO  utilities.Log - >> Request PayLoad Created with all keys, with account_name value is Empty
+2021-54-23 10:54:24.353 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-54-23 10:54:24.365 [main] INFO  utilities.Log - >> Response status code is 400
+2021-54-23 10:54:24.366 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-54-23 10:54:24.391 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-54-23 10:54:24.441 [main] INFO  utilities.Log - >> Response message contains value This field is required
+2021-54-23 10:54:24.497 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.account_name
+2021-54-23 10:54:24.584 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:24.584 [main] INFO  utilities.Log - >> Validate error response is returned for "bank_country_code" US when "account_name" U has invalid no. of characters 1
+2021-54-23 10:54:24.585 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:25.110 [main] INFO  utilities.Log - >> Token Created
+2021-54-23 10:54:25.111 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-54-23 10:54:26.287 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-54-23 10:54:26.290 [main] INFO  utilities.Log - >> Response status code is 400
+2021-54-23 10:54:26.291 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-54-23 10:54:26.323 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-54-23 10:54:26.357 [main] INFO  utilities.Log - >> Response message contains value Should contain 2 to 200 characters
+2021-54-23 10:54:26.390 [main] INFO  utilities.Log - >> Response message contains value Should contain 2 to 200 characters
+2021-54-23 10:54:26.422 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.account_name
+2021-54-23 10:54:26.451 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:26.451 [main] INFO  utilities.Log - >> Validate error response is returned for "bank_country_code" AU when "account_name" a has invalid no. of characters 1
+2021-54-23 10:54:26.452 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:27.618 [main] INFO  utilities.Log - >> Token Created
+2021-54-23 10:54:27.620 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-54-23 10:54:28.764 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-54-23 10:54:28.769 [main] INFO  utilities.Log - >> Response status code is 400
+2021-54-23 10:54:28.771 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-54-23 10:54:28.794 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-54-23 10:54:28.823 [main] INFO  utilities.Log - >> Response message contains value Should contain 2 to 200 characters
+2021-54-23 10:54:28.860 [main] INFO  utilities.Log - >> Response message contains value Should contain 2 to 200 characters
+2021-54-23 10:54:28.889 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.account_name
+2021-54-23 10:54:28.935 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:28.935 [main] INFO  utilities.Log - >> Validate error response is returned for "bank_country_code" CN when "account_name" G has invalid no. of characters 1
+2021-54-23 10:54:28.935 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:30.122 [main] INFO  utilities.Log - >> Token Created
+2021-54-23 10:54:30.128 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-54-23 10:54:31.321 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-54-23 10:54:31.325 [main] INFO  utilities.Log - >> Response status code is 400
+2021-54-23 10:54:31.326 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-54-23 10:54:31.363 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-54-23 10:54:31.388 [main] INFO  utilities.Log - >> Response message contains value Should contain 2 to 200 characters
+2021-54-23 10:54:31.414 [main] INFO  utilities.Log - >> Response message contains value Should contain 2 to 200 characters
+2021-54-23 10:54:31.441 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.account_name
+2021-54-23 10:54:31.481 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:31.482 [main] INFO  utilities.Log - >> Validate error response is returned for "bank_country_code" CN when "account_name" asfsf4567w3 has invalid no. of characters 11
+2021-54-23 10:54:31.482 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:31.956 [main] INFO  utilities.Log - >> Token Created
+2021-54-23 10:54:31.958 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-54-23 10:54:33.163 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-54-23 10:54:33.176 [main] INFO  utilities.Log - >> Response status code is 201
+2021-54-23 10:54:33.179 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-54-23 10:54:33.233 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:33.234 [main] INFO  utilities.Log - >> Validate correct response is returned for "bank_country_code" US when "account_name" UA has valid no. of characters 2
+2021-54-23 10:54:33.234 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:33.702 [main] INFO  utilities.Log - >> Token Created
+2021-54-23 10:54:33.704 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-54-23 10:54:34.917 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-54-23 10:54:34.923 [main] INFO  utilities.Log - >> Response status code is 201
+2021-54-23 10:54:34.925 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-54-23 10:54:34.952 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:34.953 [main] INFO  utilities.Log - >> Validate correct response is returned for "bank_country_code" AU when "account_name" @@ has valid no. of characters 1
+2021-54-23 10:54:34.953 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:35.437 [main] INFO  utilities.Log - >> Token Created
+2021-54-23 10:54:35.443 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-54-23 10:54:36.563 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-54-23 10:54:36.569 [main] INFO  utilities.Log - >> Response status code is 201
+2021-54-23 10:54:36.570 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-54-23 10:54:36.591 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:36.591 [main] INFO  utilities.Log - >> Validate correct response is returned for "bank_country_code" AU when "account_name" ()[aE1<:! has valid no. of characters 1
+2021-54-23 10:54:36.591 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:37.729 [main] INFO  utilities.Log - >> Token Created
+2021-54-23 10:54:37.732 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-54-23 10:54:38.187 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-54-23 10:54:38.213 [main] INFO  utilities.Log - >> Response status code is 201
+2021-54-23 10:54:38.214 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-54-23 10:54:38.238 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:38.239 [main] INFO  utilities.Log - >> Validate correct response is returned for "bank_country_code" US when "account_name" asfsf4567w has valid no. of characters 10
+2021-54-23 10:54:38.239 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:38.925 [main] INFO  utilities.Log - >> Token Created
+2021-54-23 10:54:38.926 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-54-23 10:54:40.014 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-54-23 10:54:40.018 [main] INFO  utilities.Log - >> Response status code is 201
+2021-54-23 10:54:40.019 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-54-23 10:54:40.045 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:40.046 [main] INFO  utilities.Log - >> Validates beneficiary is not added when account_number key is missing from bankdetails jsonobject
+2021-54-23 10:54:40.046 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:40.495 [main] INFO  utilities.Log - >> Token Created
+2021-54-23 10:54:40.496 [main] INFO  utilities.Log - >> Request PayLoad Created with all keys, except without  account_number Code key
+2021-54-23 10:54:40.853 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-54-23 10:54:40.856 [main] INFO  utilities.Log - >> Response status code is 400
+2021-54-23 10:54:40.857 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-54-23 10:54:40.880 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-54-23 10:54:40.909 [main] INFO  utilities.Log - >> Response message contains value This field is required
+2021-54-23 10:54:40.932 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.account_number
+2021-54-23 10:54:40.959 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:40.968 [main] INFO  utilities.Log - >> Validates beneficiary is not added when account_number value is Empty
+2021-54-23 10:54:40.968 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:41.487 [main] INFO  utilities.Log - >> Token Created
+2021-54-23 10:54:41.490 [main] INFO  utilities.Log - >> Request PayLoad Created with all keys, with account_number value is Empty
+2021-54-23 10:54:41.868 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-54-23 10:54:41.870 [main] INFO  utilities.Log - >> Response status code is 400
+2021-54-23 10:54:41.871 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-54-23 10:54:41.887 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-54-23 10:54:41.917 [main] INFO  utilities.Log - >> Response message contains value This field is required
+2021-54-23 10:54:41.949 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.account_number
+2021-54-23 10:54:41.977 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:41.978 [main] INFO  utilities.Log - >> Validate beneficiary is sucessfully added for "bank_country_code" <bank_country_code> when "account_number" AGT-789IJY-T2345 contains special characters
+2021-54-23 10:54:41.978 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:42.413 [main] INFO  utilities.Log - >> Token Created
+2021-54-23 10:54:42.415 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-54-23 10:54:43.513 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-54-23 10:54:43.517 [main] INFO  utilities.Log - >> Response status code is 400
+2021-54-23 10:54:43.522 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-54-23 10:54:43.557 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:43.558 [main] INFO  utilities.Log - >> Validate beneficiary is sucessfully added for "bank_country_code" <bank_country_code> when "account_number" AGT:789 contains special characters
+2021-54-23 10:54:43.558 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:44.074 [main] INFO  utilities.Log - >> Token Created
+2021-54-23 10:54:44.076 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-54-23 10:54:44.458 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-54-23 10:54:44.461 [main] INFO  utilities.Log - >> Response status code is 400
+2021-54-23 10:54:44.463 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-54-23 10:54:44.484 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:44.485 [main] INFO  utilities.Log - >> Validate beneficiary is sucessfully added for "bank_country_code" <bank_country_code> when "account_number" AGT 789IJY T2345 contains special characters
+2021-54-23 10:54:44.485 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:45.173 [main] INFO  utilities.Log - >> Token Created
+2021-54-23 10:54:45.175 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-54-23 10:54:45.574 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-54-23 10:54:45.576 [main] INFO  utilities.Log - >> Response status code is 400
+2021-54-23 10:54:45.579 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-54-23 10:54:45.606 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:45.607 [main] INFO  utilities.Log - >> Validate error response is returned for "bank_country_code" US when "account_number" asedr5432GHUYJIO2345 has invalid no. of characters 20
+2021-54-23 10:54:45.607 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:46.077 [main] INFO  utilities.Log - >> Token Created
+2021-54-23 10:54:46.078 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-54-23 10:54:47.299 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-54-23 10:54:47.303 [main] INFO  utilities.Log - >> Response status code is 201
+2021-54-23 10:54:47.306 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-54-23 10:54:47.348 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:47.349 [main] INFO  utilities.Log - >> Validate error response is returned for "bank_country_code" US when "account_number" asedr5432GHUYJIO23451321432 has invalid no. of characters 26
+2021-54-23 10:54:47.349 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:47.850 [main] INFO  utilities.Log - >> Token Created
+2021-54-23 10:54:47.852 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-54-23 10:54:48.954 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-54-23 10:54:48.956 [main] INFO  utilities.Log - >> Response status code is 400
+2021-54-23 10:54:48.957 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-54-23 10:54:48.985 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-54-23 10:54:49.022 [main] INFO  utilities.Log - >> Response message contains value Should contain 1 to 26 characters
+2021-54-23 10:54:49.059 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.account_number
+2021-54-23 10:54:49.089 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:49.089 [main] INFO  utilities.Log - >> Validate error response is returned for "bank_country_code" AU when "account_number" MJIKH has invalid no. of characters 5
+2021-54-23 10:54:49.089 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:49.549 [main] INFO  utilities.Log - >> Token Created
+2021-54-23 10:54:49.551 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-54-23 10:54:49.956 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-54-23 10:54:49.960 [main] INFO  utilities.Log - >> Response status code is 400
+2021-54-23 10:54:49.961 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-54-23 10:54:49.977 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-54-23 10:54:50.010 [main] INFO  utilities.Log - >> Response message contains value Should contain 6 to 20 characters
+2021-54-23 10:54:50.044 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.account_number
+2021-54-23 10:54:50.095 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:50.096 [main] INFO  utilities.Log - >> Validate error response is returned for "bank_country_code" AU when "account_number" er456tbg has invalid no. of characters 8
+2021-54-23 10:54:50.096 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:50.591 [main] INFO  utilities.Log - >> Token Created
+2021-54-23 10:54:50.592 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-54-23 10:54:51.644 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-54-23 10:54:51.647 [main] INFO  utilities.Log - >> Response status code is 201
+2021-54-23 10:54:51.649 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-54-23 10:54:51.684 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:51.685 [main] INFO  utilities.Log - >> Validate error response is returned for "bank_country_code" AU when "account_number" de444556677833224 has invalid no. of characters 17
+2021-54-23 10:54:51.685 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:52.837 [main] INFO  utilities.Log - >> Token Created
+2021-54-23 10:54:52.838 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-54-23 10:54:53.276 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-54-23 10:54:53.279 [main] INFO  utilities.Log - >> Response status code is 201
+2021-54-23 10:54:53.279 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-54-23 10:54:53.317 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:53.317 [main] INFO  utilities.Log - >> Validate error response is returned for "bank_country_code" AU when "account_number" de44455667783322412345 has invalid no. of characters 22
+2021-54-23 10:54:53.317 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:53.769 [main] INFO  utilities.Log - >> Token Created
+2021-54-23 10:54:53.770 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-54-23 10:54:54.258 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-54-23 10:54:54.260 [main] INFO  utilities.Log - >> Response status code is 400
+2021-54-23 10:54:54.260 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-54-23 10:54:54.304 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-54-23 10:54:54.326 [main] INFO  utilities.Log - >> Response message contains value Should contain 6 to 20 characters
+2021-54-23 10:54:54.349 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.account_number
+2021-54-23 10:54:54.384 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:54.384 [main] INFO  utilities.Log - >> Validate error response is returned for "bank_country_code" CN when "account_number" G has invalid no. of characters 1
+2021-54-23 10:54:54.384 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:55.091 [main] INFO  utilities.Log - >> Token Created
+2021-54-23 10:54:55.093 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-54-23 10:54:55.488 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-54-23 10:54:55.490 [main] INFO  utilities.Log - >> Response status code is 400
+2021-54-23 10:54:55.491 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-54-23 10:54:55.509 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-54-23 10:54:55.542 [main] INFO  utilities.Log - >> Response message contains value Should contain 8 to 34 characters
+2021-54-23 10:54:55.573 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.account_number
+2021-54-23 10:54:55.595 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:55.595 [main] INFO  utilities.Log - >> Validate error response is returned for "bank_country_code" CN when "account_number" 123456 has invalid no. of characters 6
+2021-54-23 10:54:55.595 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:56.122 [main] INFO  utilities.Log - >> Token Created
+2021-54-23 10:54:56.124 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-54-23 10:54:56.509 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-54-23 10:54:56.511 [main] INFO  utilities.Log - >> Response status code is 400
+2021-54-23 10:54:56.512 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-54-23 10:54:56.527 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-54-23 10:54:56.555 [main] INFO  utilities.Log - >> Response message contains value Should contain 8 to 34 characters
+2021-54-23 10:54:56.583 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.account_number
+2021-54-23 10:54:56.631 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:56.631 [main] INFO  utilities.Log - >> Validate error response is returned for "bank_country_code" CN when "account_number" 123456789qwertyui has invalid no. of characters 17
+2021-54-23 10:54:56.631 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:57.141 [main] INFO  utilities.Log - >> Token Created
+2021-54-23 10:54:57.143 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-54-23 10:54:57.640 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-54-23 10:54:57.646 [main] INFO  utilities.Log - >> Response status code is 201
+2021-54-23 10:54:57.648 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-54-23 10:54:57.714 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:57.715 [main] INFO  utilities.Log - >> Validate error response is returned for "bank_country_code" CN when "account_number" ASEDRFTGYHUJIKOL1234123456789012345 has invalid no. of characters 35
+2021-54-23 10:54:57.715 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:58.268 [main] INFO  utilities.Log - >> Token Created
+2021-54-23 10:54:58.269 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-54-23 10:54:58.633 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-54-23 10:54:58.636 [main] INFO  utilities.Log - >> Response status code is 400
+2021-54-23 10:54:58.636 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-54-23 10:54:58.656 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-54-23 10:54:58.691 [main] INFO  utilities.Log - >> Response message contains value Should contain 8 to 34 characters
+2021-54-23 10:54:58.724 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.account_number
+2021-54-23 10:54:58.749 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:58.750 [main] INFO  utilities.Log - >> Validate beneficiary is sucessfully added when for "bank_country_code" <Bank_country_code> when "account_number" A has valid 1 characters
+2021-54-23 10:54:58.750 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:59.189 [main] INFO  utilities.Log - >> Token Created
+2021-54-23 10:54:59.190 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-54-23 10:54:59.562 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-54-23 10:54:59.787 [main] INFO  utilities.Log - >> Response status code is 201
+2021-54-23 10:54:59.787 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-54-23 10:54:59.802 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-54-23 10:54:59.803 [main] INFO  utilities.Log - >> Validate beneficiary is sucessfully added when for "bank_country_code" <Bank_country_code> when "account_number" 0 has valid 1 characters
+2021-54-23 10:54:59.803 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:00.315 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:00.317 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:00.714 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:00.724 [main] INFO  utilities.Log - >> Response status code is 201
+2021-55-23 10:55:00.727 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-55-23 10:55:00.744 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:00.745 [main] INFO  utilities.Log - >> Validate beneficiary is sucessfully added when for "bank_country_code" <Bank_country_code> when "account_number" 123456789 has valid 9 characters
+2021-55-23 10:55:00.745 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:01.900 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:01.901 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:02.260 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:02.262 [main] INFO  utilities.Log - >> Response status code is 201
+2021-55-23 10:55:02.262 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-55-23 10:55:02.268 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:02.268 [main] INFO  utilities.Log - >> Validate beneficiary is sucessfully added when for "bank_country_code" <Bank_country_code> when "account_number" MJIKHI has valid 6 characters
+2021-55-23 10:55:02.268 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:02.694 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:02.696 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:03.050 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:03.052 [main] INFO  utilities.Log - >> Response status code is 201
+2021-55-23 10:55:03.053 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-55-23 10:55:03.067 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:03.067 [main] INFO  utilities.Log - >> Validate beneficiary is sucessfully added when for "bank_country_code" <Bank_country_code> when "account_number" 987654321 has valid 9 characters
+2021-55-23 10:55:03.067 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:03.529 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:03.530 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:03.885 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:03.890 [main] INFO  utilities.Log - >> Response status code is 201
+2021-55-23 10:55:03.892 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-55-23 10:55:03.902 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:03.903 [main] INFO  utilities.Log - >> Validate beneficiary is sucessfully added when for "bank_country_code" <Bank_country_code> when "account_number" GFhyi345 has valid 8 characters
+2021-55-23 10:55:03.903 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:04.329 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:04.330 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:04.807 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:04.818 [main] INFO  utilities.Log - >> Response status code is 201
+2021-55-23 10:55:04.819 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-55-23 10:55:04.829 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:04.829 [main] INFO  utilities.Log - >> Validate beneficiary is sucessfully added when for "bank_country_code" <Bank_country_code> when "account_number" GFh44445 has valid 8 characters
+2021-55-23 10:55:04.829 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:05.235 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:05.236 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:05.590 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:05.592 [main] INFO  utilities.Log - >> Response status code is 201
+2021-55-23 10:55:05.593 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-55-23 10:55:05.602 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:05.603 [main] INFO  utilities.Log - >> Validate beneficiary is sucessfully added when for "bank_country_code" <Bank_country_code> when "account_number" 123456789DERftguhijo has valid 20 characters
+2021-55-23 10:55:05.603 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:06.052 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:06.054 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:06.425 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:06.428 [main] INFO  utilities.Log - >> Response status code is 201
+2021-55-23 10:55:06.429 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-55-23 10:55:06.439 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:06.440 [main] INFO  utilities.Log - >> Validates beneficiary is not added when Bank_Country_Code key is missing
+2021-55-23 10:55:06.440 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:06.871 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:06.873 [main] INFO  utilities.Log - >> Request PayLoad Created with all keys, except without  bank_country_code Code key
+2021-55-23 10:55:07.319 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:07.321 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:07.322 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:07.336 [main] INFO  utilities.Log - >> Response code contains value field_required
+2021-55-23 10:55:07.379 [main] INFO  utilities.Log - >> Response message contains value must not be null
+2021-55-23 10:55:07.463 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.bank_country_code
+2021-55-23 10:55:07.482 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:07.483 [main] INFO  utilities.Log - >> Validates beneficiary is not added when Bank_Country_Code value is Empty
+2021-55-23 10:55:07.483 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:08.101 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:08.104 [main] INFO  utilities.Log - >> Request PayLoad Created with all keys, with bank_country_code value is Empty
+2021-55-23 10:55:08.452 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:08.454 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:08.455 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:08.469 [main] INFO  utilities.Log - >> Response code contains value invalid_argument
+2021-55-23 10:55:08.496 [main] INFO  utilities.Log - >> Response message contains value  is not a valid type
+2021-55-23 10:55:08.519 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.bank_country_code
+2021-55-23 10:55:08.541 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:08.542 [main] INFO  utilities.Log - >> Validates beneficiary is added when Bank_Country_Code is valid but in small case us
+2021-55-23 10:55:08.542 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:08.958 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:08.960 [main] INFO  utilities.Log - >> Request PayLoad Created with all keys, with bank_country_code value is us
+2021-55-23 10:55:09.313 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:09.315 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:09.315 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:09.345 [main] INFO  utilities.Log - >> Response code contains value invalid_argument
+2021-55-23 10:55:09.375 [main] INFO  utilities.Log - >> Response message contains value us is not a valid type
+2021-55-23 10:55:09.397 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.bank_country_code
+2021-55-23 10:55:09.426 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:09.426 [main] INFO  utilities.Log - >> Validates beneficiary is added when Bank_Country_Code is valid but in small case cn
+2021-55-23 10:55:09.426 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:09.939 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:09.940 [main] INFO  utilities.Log - >> Request PayLoad Created with all keys, with bank_country_code value is cn
+2021-55-23 10:55:10.334 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:10.336 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:10.337 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:10.350 [main] INFO  utilities.Log - >> Response code contains value invalid_argument
+2021-55-23 10:55:10.372 [main] INFO  utilities.Log - >> Response message contains value cn is not a valid type
+2021-55-23 10:55:10.393 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.bank_country_code
+2021-55-23 10:55:10.415 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:10.415 [main] INFO  utilities.Log - >> Validates beneficiary is not added when Bank_Country_Code does not follow 'ISO 3166-2' standard
+2021-55-23 10:55:10.415 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:10.861 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:10.865 [main] INFO  utilities.Log - >> Request PayLoad Created with all keys, with bank_country_code value is UP
+2021-55-23 10:55:11.206 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:11.208 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:11.209 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:11.220 [main] INFO  utilities.Log - >> Response code contains value invalid_argument
+2021-55-23 10:55:11.242 [main] INFO  utilities.Log - >> Response message contains value UP is not a valid type
+2021-55-23 10:55:11.263 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.bank_country_code
+2021-55-23 10:55:11.282 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:11.282 [main] INFO  utilities.Log - >> Validates beneficiary is not added when Bank_Country_Code does not follow 'ISO 3166-2' standard
+2021-55-23 10:55:11.282 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:11.701 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:11.703 [main] INFO  utilities.Log - >> Request PayLoad Created with all keys, with bank_country_code value is XT
+2021-55-23 10:55:12.078 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:12.084 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:12.089 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:12.114 [main] INFO  utilities.Log - >> Response code contains value invalid_argument
+2021-55-23 10:55:12.138 [main] INFO  utilities.Log - >> Response message contains value XT is not a valid type
+2021-55-23 10:55:12.162 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.bank_country_code
+2021-55-23 10:55:12.191 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:12.192 [main] INFO  utilities.Log - >> Validates beneficiary is not added when Bank_Country_Code as per 'ISO 3166-2' standard but invalid for Airwallex
+2021-55-23 10:55:12.192 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:12.705 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:12.706 [main] INFO  utilities.Log - >> Request PayLoad Created with all keys, with bank_country_code value is AX
+2021-55-23 10:55:13.100 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:13.102 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:13.103 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:13.118 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-55-23 10:55:13.148 [main] INFO  utilities.Log - >> Response message contains value Should be one of the following: [AD, AE, AG, AI, AL, AM, AN, AO, AR, AT, AU, AW, AZ, BA, BD, BE, BG, BH, BO, BR, BZ, CA, CH, CL, CN, CO, CR, CW, CY, CZ, DE, DK, DM, DO, DZ, EC, EE, EG, ES, FI, FJ, FR, GB, GD, GE, GG, GI, GQ, GR, GT, GY, HK, HN, HR, HU, ID, IE, IL, IM, IN, IS, IT, JE, JM, JO, JP, KE, KG, KH, KR, KZ, KW, LI, LK, LT, LU, LV, MA, MC, MD, ME, MK, MO, MQ, MT, MU, MV, MX, MY, NA, NG, NL, NO, NP, NZ, OM, PA, PE, PF, PH, PK, PL, PM, PR, PT, PY, QA, RO, RS, RU, SA, SC, SE, SG, SI, SK, SM, SV, TH, TJ, TN, TR, TZ, TW, UA, UG, US, UY, UZ, VN, VU, YT, ZA, ZM]
+2021-55-23 10:55:13.176 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.bank_country_code
+2021-55-23 10:55:13.206 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:13.206 [main] INFO  utilities.Log - >> Validates beneficiary is not added when Bank_Country_Code as per 'ISO 3166-2' standard but invalid for Airwallex
+2021-55-23 10:55:13.206 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:13.732 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:13.733 [main] INFO  utilities.Log - >> Request PayLoad Created with all keys, with bank_country_code value is CC
+2021-55-23 10:55:14.103 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:14.105 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:14.106 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:14.122 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-55-23 10:55:14.149 [main] INFO  utilities.Log - >> Response message contains value Should be one of the following: [AD, AE, AG, AI, AL, AM, AN, AO, AR, AT, AU, AW, AZ, BA, BD, BE, BG, BH, BO, BR, BZ, CA, CH, CL, CN, CO, CR, CW, CY, CZ, DE, DK, DM, DO, DZ, EC, EE, EG, ES, FI, FJ, FR, GB, GD, GE, GG, GI, GQ, GR, GT, GY, HK, HN, HR, HU, ID, IE, IL, IM, IN, IS, IT, JE, JM, JO, JP, KE, KG, KH, KR, KZ, KW, LI, LK, LT, LU, LV, MA, MC, MD, ME, MK, MO, MQ, MT, MU, MV, MX, MY, NA, NG, NL, NO, NP, NZ, OM, PA, PE, PF, PH, PK, PL, PM, PR, PT, PY, QA, RO, RS, RU, SA, SC, SE, SG, SI, SK, SM, SV, TH, TJ, TN, TR, TZ, TW, UA, UG, US, UY, UZ, VN, VU, YT, ZA, ZM]
+2021-55-23 10:55:14.174 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.bank_country_code
+2021-55-23 10:55:14.197 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:14.197 [main] INFO  utilities.Log - >> Validates beneficiary is added when Bank_Country_Code is valid but in small case US
+2021-55-23 10:55:14.197 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:14.625 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:14.626 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:15.048 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:15.050 [main] INFO  utilities.Log - >> Response status code is 201
+2021-55-23 10:55:15.051 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-55-23 10:55:15.061 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:15.061 [main] INFO  utilities.Log - >> Validates beneficiary is added when Bank_Country_Code is valid but in small case AU
+2021-55-23 10:55:15.061 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:15.570 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:15.572 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:15.975 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:15.978 [main] INFO  utilities.Log - >> Response status code is 201
+2021-55-23 10:55:15.978 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-55-23 10:55:15.990 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:15.990 [main] INFO  utilities.Log - >> Validates error response is received when Payload field payment_method is missing
+2021-55-23 10:55:15.991 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:16.493 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:16.494 [main] INFO  utilities.Log - >> Request PayLoad Created with all keys, except without payment_methods Code key
+2021-55-23 10:55:16.889 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:16.891 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:16.891 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:16.907 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:16.907 [main] INFO  utilities.Log - >> Validates error response is received when Payload field payment_method value is Empty
+2021-55-23 10:55:16.908 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:17.418 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:17.419 [main] INFO  utilities.Log - >> Request PayLoad Created with all keys, with payment_methods value is Empty
+2021-55-23 10:55:17.814 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:17.816 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:17.816 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:17.829 [main] INFO  utilities.Log - >> Response code contains value invalid_argument
+2021-55-23 10:55:17.860 [main] INFO  utilities.Log - >> Response message contains value No enum constant com.airwallex.domain.transaction.payment.PaymentMethod.
+2021-55-23 10:55:17.897 [main] INFO  utilities.Log - >> Response source contains value payment_methods
+2021-55-23 10:55:17.915 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:17.915 [main] INFO  utilities.Log - >> Validates error response is received when Payload field payment_method value is not valid TARGET
+2021-55-23 10:55:17.915 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:18.439 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:18.440 [main] INFO  utilities.Log - >> Request PayLoad Created with all keys, with payment_methods value is Empty
+2021-55-23 10:55:18.834 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:18.836 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:18.837 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:18.851 [main] INFO  utilities.Log - >> Response code contains value invalid_argument
+2021-55-23 10:55:18.911 [main] INFO  utilities.Log - >> Response message contains value No enum constant com.airwallex.domain.transaction.payment.PaymentMethod.TARGET
+2021-55-23 10:55:18.933 [main] INFO  utilities.Log - >> Response source contains value payment_methods
+2021-55-23 10:55:18.969 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:18.977 [main] INFO  utilities.Log - >> Validates error response is received when Payload field payment_method value is not valid SEPA
+2021-55-23 10:55:18.977 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:19.412 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:19.413 [main] INFO  utilities.Log - >> Request PayLoad Created with all keys, with payment_methods value is Empty
+2021-55-23 10:55:19.858 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:19.860 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:19.861 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:19.874 [main] INFO  utilities.Log - >> Response code contains value invalid_argument
+2021-55-23 10:55:19.900 [main] INFO  utilities.Log - >> Response message contains value No enum constant com.airwallex.domain.transaction.payment.PaymentMethod.SEPA
+2021-55-23 10:55:19.927 [main] INFO  utilities.Log - >> Response source contains value payment_methods
+2021-55-23 10:55:19.966 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:19.966 [main] INFO  utilities.Log - >> Validates correct response is received when Payload field payment_method value is valid SWIFT
+2021-55-23 10:55:19.966 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:20.493 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:20.494 [main] INFO  utilities.Log - >> Request PayLoad Created with all keys, with payment_methods value is Empty
+2021-55-23 10:55:20.887 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:20.894 [main] INFO  utilities.Log - >> Response status code is 201
+2021-55-23 10:55:20.895 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-55-23 10:55:20.918 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:20.918 [main] INFO  utilities.Log - >> Validates error response is received when Payload field account_routing_type1 is missing
+2021-55-23 10:55:20.918 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:21.408 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:21.409 [main] INFO  utilities.Log - >> Request PayLoad Created with all keys, except without  account_routing_type1 Code key
+2021-55-23 10:55:21.907 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:21.913 [main] INFO  utilities.Log - >> Response status code is 201
+2021-55-23 10:55:21.927 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-55-23 10:55:21.939 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:21.940 [main] INFO  utilities.Log - >> Validates error response is received when Payload feild payment_method value is Empty
+2021-55-23 10:55:21.940 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:22.447 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:22.448 [main] INFO  utilities.Log - >> Request PayLoad Created with all keys, with account_routing_type1 value is Empty
+2021-55-23 10:55:22.829 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:22.830 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:22.831 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:22.844 [main] INFO  utilities.Log - >> Response code contains value invalid_argument
+2021-55-23 10:55:22.871 [main] INFO  utilities.Log - >> Response message contains value  is not a valid type
+2021-55-23 10:55:22.896 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.account_routing_type1
+2021-55-23 10:55:22.920 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:22.920 [main] INFO  utilities.Log - >> Validate error response is returned for "bank_country_code" US when "account_routing_type1" aab has invalid characters <number_of_characters>
+2021-55-23 10:55:22.920 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:23.468 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:23.469 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:23.853 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:23.856 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:23.856 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:23.867 [main] INFO  utilities.Log - >> Response code contains value invalid_argument
+2021-55-23 10:55:23.889 [main] INFO  utilities.Log - >> Response message contains value aab is not a valid type
+2021-55-23 10:55:23.908 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.account_routing_type1
+2021-55-23 10:55:23.931 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:23.932 [main] INFO  utilities.Log - >> Validate error response is returned for "bank_country_code" AU when "account_routing_type1" baa has invalid characters <number_of_characters>
+2021-55-23 10:55:23.932 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:24.371 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:24.372 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:24.774 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:24.776 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:24.777 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:24.792 [main] INFO  utilities.Log - >> Response code contains value invalid_argument
+2021-55-23 10:55:24.818 [main] INFO  utilities.Log - >> Response message contains value baa is not a valid type
+2021-55-23 10:55:24.845 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.account_routing_type1
+2021-55-23 10:55:24.871 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:24.871 [main] INFO  utilities.Log - >> Validate error response is returned for "bank_country_code" CN when "account_routing_type1" caa has invalid characters <number_of_characters>
+2021-55-23 10:55:24.872 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:25.401 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:25.402 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:25.799 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:25.800 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:25.801 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:25.816 [main] INFO  utilities.Log - >> Response code contains value invalid_argument
+2021-55-23 10:55:25.846 [main] INFO  utilities.Log - >> Response message contains value caa is not a valid type
+2021-55-23 10:55:25.869 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.account_routing_type1
+2021-55-23 10:55:25.893 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:25.893 [main] INFO  utilities.Log - >> Validate error response is returned for "bank_country_code" US, "account_routing_type1" aba when "account_routing_value1" 12345678 contains invalid no. of charaters
+2021-55-23 10:55:25.893 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:26.429 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:26.430 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:26.805 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:26.807 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:26.807 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:26.821 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-55-23 10:55:26.849 [main] INFO  utilities.Log - >> Response message contains value Should be 9 characters long
+2021-55-23 10:55:26.876 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.account_routing_value1
+2021-55-23 10:55:26.918 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:26.918 [main] INFO  utilities.Log - >> Validate error response is returned for "bank_country_code" US, "account_routing_type1" aba when "account_routing_value1" 1234567890 contains invalid no. of charaters
+2021-55-23 10:55:26.918 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:27.459 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:27.460 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:27.846 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:27.847 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:27.847 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:27.862 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-55-23 10:55:27.886 [main] INFO  utilities.Log - >> Response message contains value Should be 9 characters long
+2021-55-23 10:55:27.912 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.account_routing_value1
+2021-55-23 10:55:27.941 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:27.942 [main] INFO  utilities.Log - >> Validate error response is returned for "bank_country_code" AU, "account_routing_type1" bsb when "account_routing_value1" 12345 contains invalid no. of charaters
+2021-55-23 10:55:27.942 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:28.471 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:28.472 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:28.873 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:28.875 [main] INFO  utilities.Log - >> Response status code is 201
+2021-55-23 10:55:28.875 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-55-23 10:55:28.901 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:28.901 [main] INFO  utilities.Log - >> Validate error response is returned for "bank_country_code" AU, "account_routing_type1" bsb when "account_routing_value1" 1234567890 contains invalid no. of charaters
+2021-55-23 10:55:28.901 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:29.407 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:29.408 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:29.809 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:29.811 [main] INFO  utilities.Log - >> Response status code is 201
+2021-55-23 10:55:29.811 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-55-23 10:55:29.841 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:29.841 [main] INFO  utilities.Log - >> Validate error response is returned for "bank_country_code" US, "account_routing_type1" aba when "account_routing_value1"  contains invalid no. of charaters
+2021-55-23 10:55:29.841 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:30.317 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:30.318 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:30.694 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:30.696 [main] INFO  utilities.Log - >> Response status code is 201
+2021-55-23 10:55:30.696 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-55-23 10:55:30.724 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:30.724 [main] INFO  utilities.Log - >> Validate error response is returned for "bank_country_code" AU, "account_routing_type1" bsb when "account_routing_value1"  contains invalid no. of charaters
+2021-55-23 10:55:30.724 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:31.169 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:31.170 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:31.626 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:31.629 [main] INFO  utilities.Log - >> Response status code is 201
+2021-55-23 10:55:31.629 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-55-23 10:55:31.657 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:31.658 [main] INFO  utilities.Log - >> Validate error response is returned for "bank_country_code" US, "account_routing_type1" aba when "account_routing_value1" 123456789 contains invalid no. of charaters
+2021-55-23 10:55:31.658 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:32.164 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:32.165 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:32.563 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:32.571 [main] INFO  utilities.Log - >> Response status code is 201
+2021-55-23 10:55:32.571 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-55-23 10:55:32.593 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:32.594 [main] INFO  utilities.Log - >> Validate error response is returned for "bank_country_code" AU, "account_routing_type1" bsb when "account_routing_value1" 123456 contains invalid no. of charaters
+2021-55-23 10:55:32.594 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:33.039 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:33.040 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:33.489 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:33.491 [main] INFO  utilities.Log - >> Response status code is 201
+2021-55-23 10:55:33.491 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-55-23 10:55:33.500 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:33.500 [main] INFO  utilities.Log - >> Validates error response is received when payment_methods=SWIFT and Payload field swift_code is missing
+2021-55-23 10:55:33.500 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:33.971 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:33.972 [main] INFO  utilities.Log - >> Request PayLoad Created with all keys, except without  swift_code Code key
+2021-55-23 10:55:34.401 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:34.404 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:34.404 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:34.417 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-55-23 10:55:34.456 [main] INFO  utilities.Log - >> Response message contains value This field is required
+2021-55-23 10:55:34.485 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.swift_code
+2021-55-23 10:55:34.508 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:34.508 [main] INFO  utilities.Log - >> Validates error response is received when payment_methods=SWIFT and Payload feild swift_code is Empty
+2021-55-23 10:55:34.508 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:34.935 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:34.936 [main] INFO  utilities.Log - >> Request PayLoad Created with all keys, with swift_code value is Empty
+2021-55-23 10:55:35.322 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:35.324 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:35.324 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:35.343 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-55-23 10:55:35.366 [main] INFO  utilities.Log - >> Response message contains value This field is required
+2021-55-23 10:55:35.387 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.swift_code
+2021-55-23 10:55:35.438 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:35.439 [main] INFO  utilities.Log - >> Validate error message is returned for "bank_country_code" <Bank_country_code> when "swift_code" ICBKUS lessthan 8 or greaterthan 11 charcters
+2021-55-23 10:55:35.439 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:35.861 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:35.862 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:36.244 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:36.256 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:36.256 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:36.275 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-55-23 10:55:36.292 [main] INFO  utilities.Log - >> Response message contains value Should be a valid and supported SWIFT code / BIC
+2021-55-23 10:55:36.310 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.swift_code
+2021-55-23 10:55:36.330 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:36.330 [main] INFO  utilities.Log - >> Validate error message is returned for "bank_country_code" <Bank_country_code> when "swift_code" ICBKAUBJ123w lessthan 8 or greaterthan 11 charcters
+2021-55-23 10:55:36.330 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:36.753 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:36.754 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:37.826 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:37.828 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:37.829 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:37.839 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-55-23 10:55:37.863 [main] INFO  utilities.Log - >> Response message contains value Should be a valid and supported SWIFT code / BIC
+2021-55-23 10:55:37.886 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.swift_code
+2021-55-23 10:55:37.906 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:37.907 [main] INFO  utilities.Log - >> Validate error message is returned when "swift_code" CHAS33US do not contain passed <Bank_country_code> at 5th and 6th character
+2021-55-23 10:55:37.907 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:38.333 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:38.334 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:38.724 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:38.725 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:38.726 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:38.770 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-55-23 10:55:38.795 [main] INFO  utilities.Log - >> Response message contains value Should be a valid and supported SWIFT code / BIC
+2021-55-23 10:55:38.822 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.swift_code
+2021-55-23 10:55:38.874 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:38.874 [main] INFO  utilities.Log - >> Validate error message is returned when "swift_code" USAS33US do not contain passed <Bank_country_code> at 5th and 6th character
+2021-55-23 10:55:38.874 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:39.301 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:39.312 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:39.693 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:39.695 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:39.695 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:39.710 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-55-23 10:55:39.735 [main] INFO  utilities.Log - >> Response message contains value Should be a valid and supported SWIFT code / BIC
+2021-55-23 10:55:39.754 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.swift_code
+2021-55-23 10:55:39.774 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:39.774 [main] INFO  utilities.Log - >> Validate error message is returned when "swift_code" CNAS33US do not contain passed <Bank_country_code> at 5th and 6th character
+2021-55-23 10:55:39.774 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:40.192 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:40.194 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:40.648 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:40.649 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:40.650 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:40.664 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-55-23 10:55:40.688 [main] INFO  utilities.Log - >> Response message contains value Should be a valid and supported SWIFT code / BIC
+2021-55-23 10:55:40.712 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.swift_code
+2021-55-23 10:55:40.730 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:40.730 [main] INFO  utilities.Log - >> Validate error message is returned when "swift_code" CHASAU33 do not match with "Bank_Country_Code" <Bank_country_code> at 5th and 6th character
+2021-55-23 10:55:40.730 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:41.171 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:41.172 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:41.569 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:41.571 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:41.571 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:41.583 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-55-23 10:55:41.605 [main] INFO  utilities.Log - >> Response message contains value Should be a valid and supported SWIFT code / BIC
+2021-55-23 10:55:41.623 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.swift_code
+2021-55-23 10:55:41.648 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:41.648 [main] INFO  utilities.Log - >> Validate error message is returned when "swift_code" CHASUS33 do not match with "Bank_Country_Code" <Bank_country_code> at 5th and 6th character
+2021-55-23 10:55:41.648 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:42.121 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:42.122 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:42.491 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:42.492 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:42.495 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:42.509 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-55-23 10:55:42.537 [main] INFO  utilities.Log - >> Response message contains value The SWIFT code / BIC should match the bank location selected 
+2021-55-23 10:55:42.561 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.swift_code
+2021-55-23 10:55:42.580 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:42.580 [main] INFO  utilities.Log - >> Validate error message is returned when "swift_code" CHASAU33 do not match with "Bank_Country_Code" <Bank_country_code> at 5th and 6th character
+2021-55-23 10:55:42.580 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:43.048 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:43.049 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:43.406 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:43.407 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:43.408 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:43.421 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-55-23 10:55:43.443 [main] INFO  utilities.Log - >> Response message contains value Should be a valid and supported SWIFT code / BIC
+2021-55-23 10:55:43.465 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.swift_code
+2021-55-23 10:55:43.496 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:43.496 [main] INFO  utilities.Log - >> Validate error message is returned when "swift_code" CHASUS33 matches with "country_code" US but not with "bank_country_code" <Bank_country_code>
+2021-55-23 10:55:43.496 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:43.932 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:43.933 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:44.324 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:44.326 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:44.326 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:44.338 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-55-23 10:55:44.361 [main] INFO  utilities.Log - >> Response message contains value The SWIFT code / BIC should match the bank location selected 
+2021-55-23 10:55:44.394 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.swift_code
+2021-55-23 10:55:44.409 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:44.409 [main] INFO  utilities.Log - >> Validate error message is returned when "swift_code" CTBAAU2S matches with "country_code" AU but not with "bank_country_code" <Bank_country_code>
+2021-55-23 10:55:44.409 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:44.861 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:44.862 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:45.225 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:45.238 [main] INFO  utilities.Log - >> Response status code is 400
+2021-55-23 10:55:45.239 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 400 Bad Request
+2021-55-23 10:55:45.252 [main] INFO  utilities.Log - >> Response code contains value payment_schema_validation_failed
+2021-55-23 10:55:45.278 [main] INFO  utilities.Log - >> Response message contains value The SWIFT code / BIC should match the bank location selected 
+2021-55-23 10:55:45.301 [main] INFO  utilities.Log - >> Response source contains value beneficiary.bank_details.swift_code
+2021-55-23 10:55:45.320 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:45.320 [main] INFO  utilities.Log - >> Validate correct message is returned when "swift_code" CHASUS33 matches with "country_code" US but not with "bank_country_code" <Bank_country_code>
+2021-55-23 10:55:45.320 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:45.779 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:45.780 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:46.177 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:46.179 [main] INFO  utilities.Log - >> Response status code is 201
+2021-55-23 10:55:46.179 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created
+2021-55-23 10:55:46.187 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:46.187 [main] INFO  utilities.Log - >> Validate correct message is returned when "swift_code" CTBAAU2S matches with "country_code" AU but not with "bank_country_code" <Bank_country_code>
+2021-55-23 10:55:46.187 [main] INFO  utilities.Log - -----------------------------------------------------------------------------------------
+2021-55-23 10:55:46.657 [main] INFO  utilities.Log - >> Token Created
+2021-55-23 10:55:46.657 [main] INFO  utilities.Log - >> Request PayLoad Created
+2021-55-23 10:55:47.099 [main] INFO  utilities.Log - >> Request PayLoad is posted
+2021-55-23 10:55:47.101 [main] INFO  utilities.Log - >> Response status code is 201
+2021-55-23 10:55:47.102 [main] INFO  utilities.Log - >> Response status line is HTTP/1.1 201 Created

@@ -1,0 +1,6501 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Tag: @PositiveScenarios</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>AirWallex API Testing Project</td>
+        <td>1</td>
+      <td>23 Aug 2021, 10:55</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@PositiveScenarios</td>
+          <td      class="passed"    >76</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">76</td>
+
+          <td  class="passed"    >19</td>
+          <td >0</td>
+          <td class="total">19</td>
+
+          <td class="duration" data-value="10157684800">10.157</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_279936984.html">Validates Account_Name in Bank_details</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3310384265.html">@PositiveScenarios</a>
+       <a href="report-tag_962302616.html">@AcctName_allSpecialCharAllowed</a>
+</div>
+
+
+  <span class="lead-duration duration">1.220</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate correct response is returned for &quot;bank_country_code&quot; US when &quot;account_name&quot; UA has valid no. of characters 2</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-2" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;US&quot;</span> <span class="argument">&quot;account_name&quot;</span> is <span class="argument">&quot;UA&quot;</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-4">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-4" class="collapse collapsable-details " >
+          
+          <pre><p>Request Payload : {
+    &quot;payment_methods&quot;: [&quot;SWIFT&quot;],
+    &quot;beneficiary&quot;: {
+        &quot;address&quot;: {
+            &quot;country_code&quot;: &quot;US&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;,
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;
+        },
+        &quot;entity_type&quot;: &quot;COMPANY&quot;,
+        &quot;additional_info&quot;: {&quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;},
+        &quot;bank_details&quot;: {
+            &quot;account_number&quot;: &quot;502231121&quot;,
+            &quot;account_currency&quot;: &quot;USD&quot;,
+            &quot;bank_country_code&quot;: &quot;US&quot;,
+            &quot;swift_code&quot;: &quot;CHASUS33&quot;,
+            &quot;account_name&quot;: &quot;UA&quot;,
+            &quot;bank_name&quot;: &quot;JP Morgan Chase Bank&quot;,
+            &quot;account_routing_value1&quot;: &quot;907765701&quot;,
+            &quot;account_routing_type1&quot;: &quot;aba&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;
+    },
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I perform post on CreateBeneficiary endpoint</span>
+
+  <span class="lead-duration duration">1.215</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-5">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-5" class="collapse collapsable-details " >
+          
+          <pre><p>Response : {
+    &quot;beneficiary&quot;: {
+        &quot;additional_info&quot;: {
+            &quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;
+        },
+        &quot;address&quot;: {
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;country_code&quot;: &quot;US&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;
+        },
+        &quot;bank_details&quot;: {
+            &quot;account_currency&quot;: &quot;USD&quot;,
+            &quot;account_name&quot;: &quot;UA&quot;,
+            &quot;account_number&quot;: &quot;502231121&quot;,
+            &quot;account_routing_type1&quot;: &quot;aba&quot;,
+            &quot;account_routing_value1&quot;: &quot;907765701&quot;,
+            &quot;bank_country_code&quot;: &quot;US&quot;,
+            &quot;bank_name&quot;: &quot;JP Morgan Chase Bank&quot;,
+            &quot;swift_code&quot;: &quot;CHASUS33&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;,
+        &quot;entity_type&quot;: &quot;COMPANY&quot;
+    },
+    &quot;beneficiary_id&quot;: &quot;535b004a-dd37-4092-a5cd-f517c359aa20&quot;,
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;,
+    &quot;payment_methods&quot;: [
+        &quot;SWIFT&quot;
+    ]
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Response status code is <span class="argument">201</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Response status line is <span class="argument">&quot;Created&quot;</span></span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-6" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_279936984.html">Validates Account_Name in Bank_details</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3310384265.html">@PositiveScenarios</a>
+       <a href="report-tag_962302616.html">@AcctName_allSpecialCharAllowed</a>
+</div>
+
+
+  <span class="lead-duration duration">1.127</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate correct response is returned for &quot;bank_country_code&quot; AU when &quot;account_name&quot; @@ has valid no. of characters 1</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-8" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-9" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;AU&quot;</span> <span class="argument">&quot;account_name&quot;</span> is <span class="argument">&quot;@@&quot;</span></span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-10">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-10" class="collapse collapsable-details " >
+          
+          <pre><p>Request Payload : {
+    &quot;payment_methods&quot;: [&quot;SWIFT&quot;],
+    &quot;beneficiary&quot;: {
+        &quot;address&quot;: {
+            &quot;country_code&quot;: &quot;AU&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;,
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;
+        },
+        &quot;entity_type&quot;: &quot;COMPANY&quot;,
+        &quot;additional_info&quot;: {&quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;},
+        &quot;bank_details&quot;: {
+            &quot;account_number&quot;: &quot;12750852&quot;,
+            &quot;account_currency&quot;: &quot;AUD&quot;,
+            &quot;bank_country_code&quot;: &quot;AU&quot;,
+            &quot;swift_code&quot;: &quot;CTBAAU2S&quot;,
+            &quot;account_name&quot;: &quot;@@&quot;,
+            &quot;iban&quot;: &quot;ES8023100001180000012345&quot;,
+            &quot;bank_name&quot;: &quot;National Australia Bank&quot;,
+            &quot;account_routing_value1&quot;: &quot;083064&quot;,
+            &quot;transaction_reference&quot;: &quot;4140110135&quot;,
+            &quot;local_clearing_system&quot;: &quot;ACH&quot;,
+            &quot;account_routing_type1&quot;: &quot;bsb&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;
+    },
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I perform post on CreateBeneficiary endpoint</span>
+
+  <span class="lead-duration duration">1.123</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-11">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-11" class="collapse collapsable-details " >
+          
+          <pre><p>Response : {
+    &quot;beneficiary&quot;: {
+        &quot;additional_info&quot;: {
+            &quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;
+        },
+        &quot;address&quot;: {
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;country_code&quot;: &quot;AU&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;
+        },
+        &quot;bank_details&quot;: {
+            &quot;account_currency&quot;: &quot;AUD&quot;,
+            &quot;account_name&quot;: &quot;@@&quot;,
+            &quot;account_number&quot;: &quot;12750852&quot;,
+            &quot;account_routing_type1&quot;: &quot;bsb&quot;,
+            &quot;account_routing_value1&quot;: &quot;083064&quot;,
+            &quot;bank_country_code&quot;: &quot;AU&quot;,
+            &quot;bank_name&quot;: &quot;National Australia Bank&quot;,
+            &quot;iban&quot;: &quot;ES8023100001180000012345&quot;,
+            &quot;swift_code&quot;: &quot;CTBAAU2S&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;,
+        &quot;entity_type&quot;: &quot;COMPANY&quot;
+    },
+    &quot;beneficiary_id&quot;: &quot;cdf6f7be-d4fd-483f-a2b4-e06e94dc7a92&quot;,
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;,
+    &quot;payment_methods&quot;: [
+        &quot;SWIFT&quot;
+    ]
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Response status code is <span class="argument">201</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Response status line is <span class="argument">&quot;Created&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-12" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_279936984.html">Validates Account_Name in Bank_details</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3310384265.html">@PositiveScenarios</a>
+       <a href="report-tag_962302616.html">@AcctName_allSpecialCharAllowed</a>
+</div>
+
+
+  <span class="lead-duration duration">0.477</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate correct response is returned for &quot;bank_country_code&quot; AU when &quot;account_name&quot; ()[aE1&lt;:! has valid no. of characters 1</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-14" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-15">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-15" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;AU&quot;</span> <span class="argument">&quot;account_name&quot;</span> is <span class="argument">&quot;()[aE1&lt;:!&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-16">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-16" class="collapse collapsable-details " >
+          
+          <pre><p>Request Payload : {
+    &quot;payment_methods&quot;: [&quot;SWIFT&quot;],
+    &quot;beneficiary&quot;: {
+        &quot;address&quot;: {
+            &quot;country_code&quot;: &quot;AU&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;,
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;
+        },
+        &quot;entity_type&quot;: &quot;COMPANY&quot;,
+        &quot;additional_info&quot;: {&quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;},
+        &quot;bank_details&quot;: {
+            &quot;account_number&quot;: &quot;12750852&quot;,
+            &quot;account_currency&quot;: &quot;AUD&quot;,
+            &quot;bank_country_code&quot;: &quot;AU&quot;,
+            &quot;swift_code&quot;: &quot;CTBAAU2S&quot;,
+            &quot;account_name&quot;: &quot;()[aE1&lt;:!&quot;,
+            &quot;iban&quot;: &quot;ES8023100001180000012345&quot;,
+            &quot;bank_name&quot;: &quot;National Australia Bank&quot;,
+            &quot;account_routing_value1&quot;: &quot;083064&quot;,
+            &quot;transaction_reference&quot;: &quot;4140110135&quot;,
+            &quot;local_clearing_system&quot;: &quot;ACH&quot;,
+            &quot;account_routing_type1&quot;: &quot;bsb&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;
+    },
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I perform post on CreateBeneficiary endpoint</span>
+
+  <span class="lead-duration duration">0.475</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-17">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-17" class="collapse collapsable-details " >
+          
+          <pre><p>Response : {
+    &quot;beneficiary&quot;: {
+        &quot;additional_info&quot;: {
+            &quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;
+        },
+        &quot;address&quot;: {
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;country_code&quot;: &quot;AU&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;
+        },
+        &quot;bank_details&quot;: {
+            &quot;account_currency&quot;: &quot;AUD&quot;,
+            &quot;account_name&quot;: &quot;()[aE1&lt;:!&quot;,
+            &quot;account_number&quot;: &quot;12750852&quot;,
+            &quot;account_routing_type1&quot;: &quot;bsb&quot;,
+            &quot;account_routing_value1&quot;: &quot;083064&quot;,
+            &quot;bank_country_code&quot;: &quot;AU&quot;,
+            &quot;bank_name&quot;: &quot;National Australia Bank&quot;,
+            &quot;iban&quot;: &quot;ES8023100001180000012345&quot;,
+            &quot;swift_code&quot;: &quot;CTBAAU2S&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;,
+        &quot;entity_type&quot;: &quot;COMPANY&quot;
+    },
+    &quot;beneficiary_id&quot;: &quot;058c5f17-25f8-4101-af7e-d92c7042580a&quot;,
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;,
+    &quot;payment_methods&quot;: [
+        &quot;SWIFT&quot;
+    ]
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Response status code is <span class="argument">201</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Response status line is <span class="argument">&quot;Created&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-18">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-18" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_279936984.html">Validates Account_Name in Bank_details</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3310384265.html">@PositiveScenarios</a>
+       <a href="report-tag_962302616.html">@AcctName_allSpecialCharAllowed</a>
+</div>
+
+
+  <span class="lead-duration duration">1.093</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate correct response is returned for &quot;bank_country_code&quot; US when &quot;account_name&quot; asfsf4567w has valid no. of characters 10</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-20">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-20" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-21">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-21" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;US&quot;</span> <span class="argument">&quot;account_name&quot;</span> is <span class="argument">&quot;asfsf4567w&quot;</span></span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-22">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-22" class="collapse collapsable-details " >
+          
+          <pre><p>Request Payload : {
+    &quot;payment_methods&quot;: [&quot;SWIFT&quot;],
+    &quot;beneficiary&quot;: {
+        &quot;address&quot;: {
+            &quot;country_code&quot;: &quot;US&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;,
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;
+        },
+        &quot;entity_type&quot;: &quot;COMPANY&quot;,
+        &quot;additional_info&quot;: {&quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;},
+        &quot;bank_details&quot;: {
+            &quot;account_number&quot;: &quot;502231121&quot;,
+            &quot;account_currency&quot;: &quot;USD&quot;,
+            &quot;bank_country_code&quot;: &quot;US&quot;,
+            &quot;swift_code&quot;: &quot;CHASUS33&quot;,
+            &quot;account_name&quot;: &quot;asfsf4567w&quot;,
+            &quot;bank_name&quot;: &quot;JP Morgan Chase Bank&quot;,
+            &quot;account_routing_value1&quot;: &quot;907765701&quot;,
+            &quot;account_routing_type1&quot;: &quot;aba&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;
+    },
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I perform post on CreateBeneficiary endpoint</span>
+
+  <span class="lead-duration duration">1.089</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-23">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-23" class="collapse collapsable-details " >
+          
+          <pre><p>Response : {
+    &quot;beneficiary&quot;: {
+        &quot;additional_info&quot;: {
+            &quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;
+        },
+        &quot;address&quot;: {
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;country_code&quot;: &quot;US&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;
+        },
+        &quot;bank_details&quot;: {
+            &quot;account_currency&quot;: &quot;USD&quot;,
+            &quot;account_name&quot;: &quot;asfsf4567w&quot;,
+            &quot;account_number&quot;: &quot;502231121&quot;,
+            &quot;account_routing_type1&quot;: &quot;aba&quot;,
+            &quot;account_routing_value1&quot;: &quot;907765701&quot;,
+            &quot;bank_country_code&quot;: &quot;US&quot;,
+            &quot;bank_name&quot;: &quot;JP Morgan Chase Bank&quot;,
+            &quot;swift_code&quot;: &quot;CHASUS33&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;,
+        &quot;entity_type&quot;: &quot;COMPANY&quot;
+    },
+    &quot;beneficiary_id&quot;: &quot;6f86b441-d418-456e-8b5b-70b3c5567903&quot;,
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;,
+    &quot;payment_methods&quot;: [
+        &quot;SWIFT&quot;
+    ]
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Response status code is <span class="argument">201</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Response status line is <span class="argument">&quot;Created&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-24">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-24" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_2445740310.html">Validates Account_Number in Bank_details</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3310384265.html">@PositiveScenarios</a>
+</div>
+
+
+  <span class="lead-duration duration">0.597</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate beneficiary is sucessfully added when for &quot;bank_country_code&quot; &lt;Bank_country_code&gt; when &quot;account_number&quot; A has valid 1 characters</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-25" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-26">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-26" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-27">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-27" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;US&quot;</span> <span class="argument">&quot;account_number&quot;</span> is <span class="argument">&quot;A&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-28">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-28" class="collapse collapsable-details " >
+          
+          <pre><p>Request Payload : {
+    &quot;payment_methods&quot;: [&quot;SWIFT&quot;],
+    &quot;beneficiary&quot;: {
+        &quot;address&quot;: {
+            &quot;country_code&quot;: &quot;US&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;,
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;
+        },
+        &quot;entity_type&quot;: &quot;COMPANY&quot;,
+        &quot;additional_info&quot;: {&quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;},
+        &quot;bank_details&quot;: {
+            &quot;account_number&quot;: &quot;A&quot;,
+            &quot;account_currency&quot;: &quot;USD&quot;,
+            &quot;bank_country_code&quot;: &quot;US&quot;,
+            &quot;swift_code&quot;: &quot;CHASUS33&quot;,
+            &quot;account_name&quot;: &quot;John Walker&quot;,
+            &quot;bank_name&quot;: &quot;JP Morgan Chase Bank&quot;,
+            &quot;account_routing_value1&quot;: &quot;907765701&quot;,
+            &quot;account_routing_type1&quot;: &quot;aba&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;
+    },
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I perform post on CreateBeneficiary endpoint</span>
+
+  <span class="lead-duration duration">0.595</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-29">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-29" class="collapse collapsable-details " >
+          
+          <pre><p>Response : {
+    &quot;beneficiary&quot;: {
+        &quot;additional_info&quot;: {
+            &quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;
+        },
+        &quot;address&quot;: {
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;country_code&quot;: &quot;US&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;
+        },
+        &quot;bank_details&quot;: {
+            &quot;account_currency&quot;: &quot;USD&quot;,
+            &quot;account_name&quot;: &quot;John Walker&quot;,
+            &quot;account_number&quot;: &quot;A&quot;,
+            &quot;account_routing_type1&quot;: &quot;aba&quot;,
+            &quot;account_routing_value1&quot;: &quot;907765701&quot;,
+            &quot;bank_country_code&quot;: &quot;US&quot;,
+            &quot;bank_name&quot;: &quot;JP Morgan Chase Bank&quot;,
+            &quot;swift_code&quot;: &quot;CHASUS33&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;,
+        &quot;entity_type&quot;: &quot;COMPANY&quot;
+    },
+    &quot;beneficiary_id&quot;: &quot;bfbdb7b0-37b9-4b65-8319-4b0b4b9b0632&quot;,
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;,
+    &quot;payment_methods&quot;: [
+        &quot;SWIFT&quot;
+    ]
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Response status code is <span class="argument">201</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Response status line is <span class="argument">&quot;Created&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-30">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-30" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_2445740310.html">Validates Account_Number in Bank_details</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3310384265.html">@PositiveScenarios</a>
+</div>
+
+
+  <span class="lead-duration duration">0.407</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-31">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate beneficiary is sucessfully added when for &quot;bank_country_code&quot; &lt;Bank_country_code&gt; when &quot;account_number&quot; 0 has valid 1 characters</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-31" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-32">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-32" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-33">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-33" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;US&quot;</span> <span class="argument">&quot;account_number&quot;</span> is <span class="argument">&quot;0&quot;</span></span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-34">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-34" class="collapse collapsable-details " >
+          
+          <pre><p>Request Payload : {
+    &quot;payment_methods&quot;: [&quot;SWIFT&quot;],
+    &quot;beneficiary&quot;: {
+        &quot;address&quot;: {
+            &quot;country_code&quot;: &quot;US&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;,
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;
+        },
+        &quot;entity_type&quot;: &quot;COMPANY&quot;,
+        &quot;additional_info&quot;: {&quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;},
+        &quot;bank_details&quot;: {
+            &quot;account_number&quot;: &quot;0&quot;,
+            &quot;account_currency&quot;: &quot;USD&quot;,
+            &quot;bank_country_code&quot;: &quot;US&quot;,
+            &quot;swift_code&quot;: &quot;CHASUS33&quot;,
+            &quot;account_name&quot;: &quot;John Walker&quot;,
+            &quot;bank_name&quot;: &quot;JP Morgan Chase Bank&quot;,
+            &quot;account_routing_value1&quot;: &quot;907765701&quot;,
+            &quot;account_routing_type1&quot;: &quot;aba&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;
+    },
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I perform post on CreateBeneficiary endpoint</span>
+
+  <span class="lead-duration duration">0.402</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-35">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-35" class="collapse collapsable-details " >
+          
+          <pre><p>Response : {
+    &quot;beneficiary&quot;: {
+        &quot;additional_info&quot;: {
+            &quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;
+        },
+        &quot;address&quot;: {
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;country_code&quot;: &quot;US&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;
+        },
+        &quot;bank_details&quot;: {
+            &quot;account_currency&quot;: &quot;USD&quot;,
+            &quot;account_name&quot;: &quot;John Walker&quot;,
+            &quot;account_number&quot;: &quot;0&quot;,
+            &quot;account_routing_type1&quot;: &quot;aba&quot;,
+            &quot;account_routing_value1&quot;: &quot;907765701&quot;,
+            &quot;bank_country_code&quot;: &quot;US&quot;,
+            &quot;bank_name&quot;: &quot;JP Morgan Chase Bank&quot;,
+            &quot;swift_code&quot;: &quot;CHASUS33&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;,
+        &quot;entity_type&quot;: &quot;COMPANY&quot;
+    },
+    &quot;beneficiary_id&quot;: &quot;8e05e136-fb7e-41cd-b983-84e24459f95a&quot;,
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;,
+    &quot;payment_methods&quot;: [
+        &quot;SWIFT&quot;
+    ]
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Response status code is <span class="argument">201</span></span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Response status line is <span class="argument">&quot;Created&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-36">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-36" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_2445740310.html">Validates Account_Number in Bank_details</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3310384265.html">@PositiveScenarios</a>
+</div>
+
+
+  <span class="lead-duration duration">0.360</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-37">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate beneficiary is sucessfully added when for &quot;bank_country_code&quot; &lt;Bank_country_code&gt; when &quot;account_number&quot; 123456789 has valid 9 characters</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-37" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-38">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-38" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-39">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-39" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;US&quot;</span> <span class="argument">&quot;account_number&quot;</span> is <span class="argument">&quot;123456789&quot;</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-40">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-40" class="collapse collapsable-details " >
+          
+          <pre><p>Request Payload : {
+    &quot;payment_methods&quot;: [&quot;SWIFT&quot;],
+    &quot;beneficiary&quot;: {
+        &quot;address&quot;: {
+            &quot;country_code&quot;: &quot;US&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;,
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;
+        },
+        &quot;entity_type&quot;: &quot;COMPANY&quot;,
+        &quot;additional_info&quot;: {&quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;},
+        &quot;bank_details&quot;: {
+            &quot;account_number&quot;: &quot;123456789&quot;,
+            &quot;account_currency&quot;: &quot;USD&quot;,
+            &quot;bank_country_code&quot;: &quot;US&quot;,
+            &quot;swift_code&quot;: &quot;CHASUS33&quot;,
+            &quot;account_name&quot;: &quot;John Walker&quot;,
+            &quot;bank_name&quot;: &quot;JP Morgan Chase Bank&quot;,
+            &quot;account_routing_value1&quot;: &quot;907765701&quot;,
+            &quot;account_routing_type1&quot;: &quot;aba&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;
+    },
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I perform post on CreateBeneficiary endpoint</span>
+
+  <span class="lead-duration duration">0.358</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-41">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-41" class="collapse collapsable-details " >
+          
+          <pre><p>Response : {
+    &quot;beneficiary&quot;: {
+        &quot;additional_info&quot;: {
+            &quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;
+        },
+        &quot;address&quot;: {
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;country_code&quot;: &quot;US&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;
+        },
+        &quot;bank_details&quot;: {
+            &quot;account_currency&quot;: &quot;USD&quot;,
+            &quot;account_name&quot;: &quot;John Walker&quot;,
+            &quot;account_number&quot;: &quot;123456789&quot;,
+            &quot;account_routing_type1&quot;: &quot;aba&quot;,
+            &quot;account_routing_value1&quot;: &quot;907765701&quot;,
+            &quot;bank_country_code&quot;: &quot;US&quot;,
+            &quot;bank_name&quot;: &quot;JP Morgan Chase Bank&quot;,
+            &quot;swift_code&quot;: &quot;CHASUS33&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;,
+        &quot;entity_type&quot;: &quot;COMPANY&quot;
+    },
+    &quot;beneficiary_id&quot;: &quot;5a9af680-b8bf-4714-97bf-ddcc079ccc23&quot;,
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;,
+    &quot;payment_methods&quot;: [
+        &quot;SWIFT&quot;
+    ]
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Response status code is <span class="argument">201</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Response status line is <span class="argument">&quot;Created&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-42">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-42" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_2445740310.html">Validates Account_Number in Bank_details</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3310384265.html">@PositiveScenarios</a>
+</div>
+
+
+  <span class="lead-duration duration">0.355</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-43">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate beneficiary is sucessfully added when for &quot;bank_country_code&quot; &lt;Bank_country_code&gt; when &quot;account_number&quot; MJIKHI has valid 6 characters</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-43" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-44">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-44" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-45">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-45" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;AU&quot;</span> <span class="argument">&quot;account_number&quot;</span> is <span class="argument">&quot;MJIKHI&quot;</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-46">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-46" class="collapse collapsable-details " >
+          
+          <pre><p>Request Payload : {
+    &quot;payment_methods&quot;: [&quot;SWIFT&quot;],
+    &quot;beneficiary&quot;: {
+        &quot;address&quot;: {
+            &quot;country_code&quot;: &quot;AU&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;,
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;
+        },
+        &quot;entity_type&quot;: &quot;COMPANY&quot;,
+        &quot;additional_info&quot;: {&quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;},
+        &quot;bank_details&quot;: {
+            &quot;account_number&quot;: &quot;MJIKHI&quot;,
+            &quot;account_currency&quot;: &quot;AUD&quot;,
+            &quot;bank_country_code&quot;: &quot;AU&quot;,
+            &quot;swift_code&quot;: &quot;CTBAAU2S&quot;,
+            &quot;account_name&quot;: &quot;Lee Da Ming&quot;,
+            &quot;iban&quot;: &quot;ES8023100001180000012345&quot;,
+            &quot;bank_name&quot;: &quot;National Australia Bank&quot;,
+            &quot;account_routing_value1&quot;: &quot;083064&quot;,
+            &quot;transaction_reference&quot;: &quot;4140110135&quot;,
+            &quot;local_clearing_system&quot;: &quot;ACH&quot;,
+            &quot;account_routing_type1&quot;: &quot;bsb&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;
+    },
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I perform post on CreateBeneficiary endpoint</span>
+
+  <span class="lead-duration duration">0.353</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-47">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-47" class="collapse collapsable-details " >
+          
+          <pre><p>Response : {
+    &quot;beneficiary&quot;: {
+        &quot;additional_info&quot;: {
+            &quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;
+        },
+        &quot;address&quot;: {
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;country_code&quot;: &quot;AU&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;
+        },
+        &quot;bank_details&quot;: {
+            &quot;account_currency&quot;: &quot;AUD&quot;,
+            &quot;account_name&quot;: &quot;Lee Da Ming&quot;,
+            &quot;account_number&quot;: &quot;MJIKHI&quot;,
+            &quot;account_routing_type1&quot;: &quot;bsb&quot;,
+            &quot;account_routing_value1&quot;: &quot;083064&quot;,
+            &quot;bank_country_code&quot;: &quot;AU&quot;,
+            &quot;bank_name&quot;: &quot;National Australia Bank&quot;,
+            &quot;iban&quot;: &quot;ES8023100001180000012345&quot;,
+            &quot;swift_code&quot;: &quot;CTBAAU2S&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;,
+        &quot;entity_type&quot;: &quot;COMPANY&quot;
+    },
+    &quot;beneficiary_id&quot;: &quot;7f0b94f8-58d5-427f-8dbf-41c082aa8897&quot;,
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;,
+    &quot;payment_methods&quot;: [
+        &quot;SWIFT&quot;
+    ]
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Response status code is <span class="argument">201</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Response status line is <span class="argument">&quot;Created&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-48">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-48" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_2445740310.html">Validates Account_Number in Bank_details</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3310384265.html">@PositiveScenarios</a>
+</div>
+
+
+  <span class="lead-duration duration">0.362</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-49">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate beneficiary is sucessfully added when for &quot;bank_country_code&quot; &lt;Bank_country_code&gt; when &quot;account_number&quot; 987654321 has valid 9 characters</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-49" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-50">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-50" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-51">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-51" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;AU&quot;</span> <span class="argument">&quot;account_number&quot;</span> is <span class="argument">&quot;987654321&quot;</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-52">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-52" class="collapse collapsable-details " >
+          
+          <pre><p>Request Payload : {
+    &quot;payment_methods&quot;: [&quot;SWIFT&quot;],
+    &quot;beneficiary&quot;: {
+        &quot;address&quot;: {
+            &quot;country_code&quot;: &quot;AU&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;,
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;
+        },
+        &quot;entity_type&quot;: &quot;COMPANY&quot;,
+        &quot;additional_info&quot;: {&quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;},
+        &quot;bank_details&quot;: {
+            &quot;account_number&quot;: &quot;987654321&quot;,
+            &quot;account_currency&quot;: &quot;AUD&quot;,
+            &quot;bank_country_code&quot;: &quot;AU&quot;,
+            &quot;swift_code&quot;: &quot;CTBAAU2S&quot;,
+            &quot;account_name&quot;: &quot;Lee Da Ming&quot;,
+            &quot;iban&quot;: &quot;ES8023100001180000012345&quot;,
+            &quot;bank_name&quot;: &quot;National Australia Bank&quot;,
+            &quot;account_routing_value1&quot;: &quot;083064&quot;,
+            &quot;transaction_reference&quot;: &quot;4140110135&quot;,
+            &quot;local_clearing_system&quot;: &quot;ACH&quot;,
+            &quot;account_routing_type1&quot;: &quot;bsb&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;
+    },
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I perform post on CreateBeneficiary endpoint</span>
+
+  <span class="lead-duration duration">0.358</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-53">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-53" class="collapse collapsable-details " >
+          
+          <pre><p>Response : {
+    &quot;beneficiary&quot;: {
+        &quot;additional_info&quot;: {
+            &quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;
+        },
+        &quot;address&quot;: {
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;country_code&quot;: &quot;AU&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;
+        },
+        &quot;bank_details&quot;: {
+            &quot;account_currency&quot;: &quot;AUD&quot;,
+            &quot;account_name&quot;: &quot;Lee Da Ming&quot;,
+            &quot;account_number&quot;: &quot;987654321&quot;,
+            &quot;account_routing_type1&quot;: &quot;bsb&quot;,
+            &quot;account_routing_value1&quot;: &quot;083064&quot;,
+            &quot;bank_country_code&quot;: &quot;AU&quot;,
+            &quot;bank_name&quot;: &quot;National Australia Bank&quot;,
+            &quot;iban&quot;: &quot;ES8023100001180000012345&quot;,
+            &quot;swift_code&quot;: &quot;CTBAAU2S&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;,
+        &quot;entity_type&quot;: &quot;COMPANY&quot;
+    },
+    &quot;beneficiary_id&quot;: &quot;a93fad6a-65c9-4247-b1c5-fabe8ac07507&quot;,
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;,
+    &quot;payment_methods&quot;: [
+        &quot;SWIFT&quot;
+    ]
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Response status code is <span class="argument">201</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Response status line is <span class="argument">&quot;Created&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-54">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-54" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_2445740310.html">Validates Account_Number in Bank_details</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3310384265.html">@PositiveScenarios</a>
+</div>
+
+
+  <span class="lead-duration duration">0.491</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-55">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate beneficiary is sucessfully added when for &quot;bank_country_code&quot; &lt;Bank_country_code&gt; when &quot;account_number&quot; GFhyi345 has valid 8 characters</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-55" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-56">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-56" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-57">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-57" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;AU&quot;</span> <span class="argument">&quot;account_number&quot;</span> is <span class="argument">&quot;GFhyi345&quot;</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-58">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-58" class="collapse collapsable-details " >
+          
+          <pre><p>Request Payload : {
+    &quot;payment_methods&quot;: [&quot;SWIFT&quot;],
+    &quot;beneficiary&quot;: {
+        &quot;address&quot;: {
+            &quot;country_code&quot;: &quot;AU&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;,
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;
+        },
+        &quot;entity_type&quot;: &quot;COMPANY&quot;,
+        &quot;additional_info&quot;: {&quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;},
+        &quot;bank_details&quot;: {
+            &quot;account_number&quot;: &quot;GFhyi345&quot;,
+            &quot;account_currency&quot;: &quot;AUD&quot;,
+            &quot;bank_country_code&quot;: &quot;AU&quot;,
+            &quot;swift_code&quot;: &quot;CTBAAU2S&quot;,
+            &quot;account_name&quot;: &quot;Lee Da Ming&quot;,
+            &quot;iban&quot;: &quot;ES8023100001180000012345&quot;,
+            &quot;bank_name&quot;: &quot;National Australia Bank&quot;,
+            &quot;account_routing_value1&quot;: &quot;083064&quot;,
+            &quot;transaction_reference&quot;: &quot;4140110135&quot;,
+            &quot;local_clearing_system&quot;: &quot;ACH&quot;,
+            &quot;account_routing_type1&quot;: &quot;bsb&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;
+    },
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I perform post on CreateBeneficiary endpoint</span>
+
+  <span class="lead-duration duration">0.487</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-59">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-59" class="collapse collapsable-details " >
+          
+          <pre><p>Response : {
+    &quot;beneficiary&quot;: {
+        &quot;additional_info&quot;: {
+            &quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;
+        },
+        &quot;address&quot;: {
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;country_code&quot;: &quot;AU&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;
+        },
+        &quot;bank_details&quot;: {
+            &quot;account_currency&quot;: &quot;AUD&quot;,
+            &quot;account_name&quot;: &quot;Lee Da Ming&quot;,
+            &quot;account_number&quot;: &quot;GFhyi345&quot;,
+            &quot;account_routing_type1&quot;: &quot;bsb&quot;,
+            &quot;account_routing_value1&quot;: &quot;083064&quot;,
+            &quot;bank_country_code&quot;: &quot;AU&quot;,
+            &quot;bank_name&quot;: &quot;National Australia Bank&quot;,
+            &quot;iban&quot;: &quot;ES8023100001180000012345&quot;,
+            &quot;swift_code&quot;: &quot;CTBAAU2S&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;,
+        &quot;entity_type&quot;: &quot;COMPANY&quot;
+    },
+    &quot;beneficiary_id&quot;: &quot;ba7e10e4-2fe1-4568-b67a-9d98c2bc7fff&quot;,
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;,
+    &quot;payment_methods&quot;: [
+        &quot;SWIFT&quot;
+    ]
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Response status code is <span class="argument">201</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Response status line is <span class="argument">&quot;Created&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-60">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-60" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_2445740310.html">Validates Account_Number in Bank_details</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3310384265.html">@PositiveScenarios</a>
+</div>
+
+
+  <span class="lead-duration duration">0.356</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-61">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate beneficiary is sucessfully added when for &quot;bank_country_code&quot; &lt;Bank_country_code&gt; when &quot;account_number&quot; GFh44445 has valid 8 characters</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-61" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-62">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-62" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-63">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-63" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;CN&quot;</span> <span class="argument">&quot;account_number&quot;</span> is <span class="argument">&quot;GFh44445&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-64">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-64" class="collapse collapsable-details " >
+          
+          <pre><p>Request Payload : {
+    &quot;payment_methods&quot;: [&quot;SWIFT&quot;],
+    &quot;beneficiary&quot;: {
+        &quot;address&quot;: {
+            &quot;country_code&quot;: &quot;CN&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;,
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;
+        },
+        &quot;entity_type&quot;: &quot;COMPANY&quot;,
+        &quot;additional_info&quot;: {&quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;},
+        &quot;bank_details&quot;: {
+            &quot;account_number&quot;: &quot;GFh44445&quot;,
+            &quot;account_currency&quot;: &quot;CAD&quot;,
+            &quot;bank_country_code&quot;: &quot;CN&quot;,
+            &quot;swift_code&quot;: &quot;ICBKCNBJ&quot;,
+            &quot;account_name&quot;: &quot;Lee Da Ming&quot;,
+            &quot;iban&quot;: &quot;ES8023100001180000012345&quot;,
+            &quot;bank_name&quot;: &quot;National Canadian Bank&quot;,
+            &quot;account_routing_value1&quot;: &quot;083064&quot;,
+            &quot;transaction_reference&quot;: &quot;4140110135&quot;,
+            &quot;local_clearing_system&quot;: &quot;ACH&quot;,
+            &quot;account_routing_type1&quot;: &quot;aba&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;
+    },
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I perform post on CreateBeneficiary endpoint</span>
+
+  <span class="lead-duration duration">0.355</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-65">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-65" class="collapse collapsable-details " >
+          
+          <pre><p>Response : {
+    &quot;beneficiary&quot;: {
+        &quot;additional_info&quot;: {
+            &quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;
+        },
+        &quot;address&quot;: {
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;country_code&quot;: &quot;CN&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;
+        },
+        &quot;bank_details&quot;: {
+            &quot;account_currency&quot;: &quot;CAD&quot;,
+            &quot;account_name&quot;: &quot;Lee Da Ming&quot;,
+            &quot;account_number&quot;: &quot;GFh44445&quot;,
+            &quot;account_routing_type1&quot;: &quot;aba&quot;,
+            &quot;account_routing_value1&quot;: &quot;083064&quot;,
+            &quot;bank_country_code&quot;: &quot;CN&quot;,
+            &quot;bank_name&quot;: &quot;National Canadian Bank&quot;,
+            &quot;iban&quot;: &quot;ES8023100001180000012345&quot;,
+            &quot;swift_code&quot;: &quot;ICBKCNBJ&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;,
+        &quot;entity_type&quot;: &quot;COMPANY&quot;
+    },
+    &quot;beneficiary_id&quot;: &quot;67a7937e-a3d9-443e-b8b9-25b9b594ad16&quot;,
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;,
+    &quot;payment_methods&quot;: [
+        &quot;SWIFT&quot;
+    ]
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Response status code is <span class="argument">201</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Response status line is <span class="argument">&quot;Created&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-66">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-66" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_2445740310.html">Validates Account_Number in Bank_details</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3310384265.html">@PositiveScenarios</a>
+</div>
+
+
+  <span class="lead-duration duration">0.375</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-67">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate beneficiary is sucessfully added when for &quot;bank_country_code&quot; &lt;Bank_country_code&gt; when &quot;account_number&quot; 123456789DERftguhijo has valid 20 characters</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-67" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-68">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-68" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-69">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-69" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;CN&quot;</span> <span class="argument">&quot;account_number&quot;</span> is <span class="argument">&quot;123456789DERftguhijo&quot;</span></span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-70">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-70" class="collapse collapsable-details " >
+          
+          <pre><p>Request Payload : {
+    &quot;payment_methods&quot;: [&quot;SWIFT&quot;],
+    &quot;beneficiary&quot;: {
+        &quot;address&quot;: {
+            &quot;country_code&quot;: &quot;CN&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;,
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;
+        },
+        &quot;entity_type&quot;: &quot;COMPANY&quot;,
+        &quot;additional_info&quot;: {&quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;},
+        &quot;bank_details&quot;: {
+            &quot;account_number&quot;: &quot;123456789DERftguhijo&quot;,
+            &quot;account_currency&quot;: &quot;CAD&quot;,
+            &quot;bank_country_code&quot;: &quot;CN&quot;,
+            &quot;swift_code&quot;: &quot;ICBKCNBJ&quot;,
+            &quot;account_name&quot;: &quot;Lee Da Ming&quot;,
+            &quot;iban&quot;: &quot;ES8023100001180000012345&quot;,
+            &quot;bank_name&quot;: &quot;National Canadian Bank&quot;,
+            &quot;account_routing_value1&quot;: &quot;083064&quot;,
+            &quot;transaction_reference&quot;: &quot;4140110135&quot;,
+            &quot;local_clearing_system&quot;: &quot;ACH&quot;,
+            &quot;account_routing_type1&quot;: &quot;aba&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;
+    },
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I perform post on CreateBeneficiary endpoint</span>
+
+  <span class="lead-duration duration">0.371</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-71">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-71" class="collapse collapsable-details " >
+          
+          <pre><p>Response : {
+    &quot;beneficiary&quot;: {
+        &quot;additional_info&quot;: {
+            &quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;
+        },
+        &quot;address&quot;: {
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;country_code&quot;: &quot;CN&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;
+        },
+        &quot;bank_details&quot;: {
+            &quot;account_currency&quot;: &quot;CAD&quot;,
+            &quot;account_name&quot;: &quot;Lee Da Ming&quot;,
+            &quot;account_number&quot;: &quot;123456789DERftguhijo&quot;,
+            &quot;account_routing_type1&quot;: &quot;aba&quot;,
+            &quot;account_routing_value1&quot;: &quot;083064&quot;,
+            &quot;bank_country_code&quot;: &quot;CN&quot;,
+            &quot;bank_name&quot;: &quot;National Canadian Bank&quot;,
+            &quot;iban&quot;: &quot;ES8023100001180000012345&quot;,
+            &quot;swift_code&quot;: &quot;ICBKCNBJ&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;,
+        &quot;entity_type&quot;: &quot;COMPANY&quot;
+    },
+    &quot;beneficiary_id&quot;: &quot;1bb2a5ac-d937-4c37-9ec4-7fc9d53b3a64&quot;,
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;,
+    &quot;payment_methods&quot;: [
+        &quot;SWIFT&quot;
+    ]
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Response status code is <span class="argument">201</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Response status line is <span class="argument">&quot;Created&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-72">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-72" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_1479991899.html">Validates bank_country_code in BankDetails</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3310384265.html">@PositiveScenarios</a>
+</div>
+
+
+  <span class="lead-duration duration">0.424</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-73">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validates beneficiary is added when Bank_Country_Code is valid but in small case US</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-73" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-74">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-74" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-75">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-75" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;country code&quot;</span> is <span class="argument">&quot;US&quot;</span> <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;US&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-76">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-76" class="collapse collapsable-details " >
+          
+          <pre><p>Request Payload : {
+    &quot;payment_methods&quot;: [&quot;SWIFT&quot;],
+    &quot;beneficiary&quot;: {
+        &quot;address&quot;: {
+            &quot;country_code&quot;: &quot;US&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;,
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;
+        },
+        &quot;entity_type&quot;: &quot;COMPANY&quot;,
+        &quot;additional_info&quot;: {&quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;},
+        &quot;bank_details&quot;: {
+            &quot;account_number&quot;: &quot;502231121&quot;,
+            &quot;account_currency&quot;: &quot;USD&quot;,
+            &quot;bank_country_code&quot;: &quot;US&quot;,
+            &quot;swift_code&quot;: &quot;CHASUS33&quot;,
+            &quot;account_name&quot;: &quot;John Walker&quot;,
+            &quot;bank_name&quot;: &quot;JP Morgan Chase Bank&quot;,
+            &quot;account_routing_value1&quot;: &quot;907765701&quot;,
+            &quot;account_routing_type1&quot;: &quot;aba&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;
+    },
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I perform post on CreateBeneficiary endpoint</span>
+
+  <span class="lead-duration duration">0.422</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-77">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-77" class="collapse collapsable-details " >
+          
+          <pre><p>Response : {
+    &quot;beneficiary&quot;: {
+        &quot;additional_info&quot;: {
+            &quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;
+        },
+        &quot;address&quot;: {
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;country_code&quot;: &quot;US&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;
+        },
+        &quot;bank_details&quot;: {
+            &quot;account_currency&quot;: &quot;USD&quot;,
+            &quot;account_name&quot;: &quot;John Walker&quot;,
+            &quot;account_number&quot;: &quot;502231121&quot;,
+            &quot;account_routing_type1&quot;: &quot;aba&quot;,
+            &quot;account_routing_value1&quot;: &quot;907765701&quot;,
+            &quot;bank_country_code&quot;: &quot;US&quot;,
+            &quot;bank_name&quot;: &quot;JP Morgan Chase Bank&quot;,
+            &quot;swift_code&quot;: &quot;CHASUS33&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;,
+        &quot;entity_type&quot;: &quot;COMPANY&quot;
+    },
+    &quot;beneficiary_id&quot;: &quot;3654ccf1-4030-43e8-a8b7-b90ee7d7bce6&quot;,
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;,
+    &quot;payment_methods&quot;: [
+        &quot;SWIFT&quot;
+    ]
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Response status code is <span class="argument">201</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Response status line is <span class="argument">&quot;Created&quot;</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-78">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-78" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_1479991899.html">Validates bank_country_code in BankDetails</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3310384265.html">@PositiveScenarios</a>
+</div>
+
+
+  <span class="lead-duration duration">0.406</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-79">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validates beneficiary is added when Bank_Country_Code is valid but in small case AU</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-79" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-80">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-80" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-81">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-81" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;country code&quot;</span> is <span class="argument">&quot;AU&quot;</span> <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;AU&quot;</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-82">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-82" class="collapse collapsable-details " >
+          
+          <pre><p>Request Payload : {
+    &quot;payment_methods&quot;: [&quot;SWIFT&quot;],
+    &quot;beneficiary&quot;: {
+        &quot;address&quot;: {
+            &quot;country_code&quot;: &quot;AU&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;,
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;
+        },
+        &quot;entity_type&quot;: &quot;COMPANY&quot;,
+        &quot;additional_info&quot;: {&quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;},
+        &quot;bank_details&quot;: {
+            &quot;account_number&quot;: &quot;12750852&quot;,
+            &quot;account_currency&quot;: &quot;AUD&quot;,
+            &quot;bank_country_code&quot;: &quot;AU&quot;,
+            &quot;swift_code&quot;: &quot;CTBAAU2S&quot;,
+            &quot;account_name&quot;: &quot;Lee Da Ming&quot;,
+            &quot;iban&quot;: &quot;ES8023100001180000012345&quot;,
+            &quot;bank_name&quot;: &quot;National Australia Bank&quot;,
+            &quot;account_routing_value1&quot;: &quot;083064&quot;,
+            &quot;transaction_reference&quot;: &quot;4140110135&quot;,
+            &quot;local_clearing_system&quot;: &quot;ACH&quot;,
+            &quot;account_routing_type1&quot;: &quot;bsb&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;
+    },
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I perform post on CreateBeneficiary endpoint</span>
+
+  <span class="lead-duration duration">0.403</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-83">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-83" class="collapse collapsable-details " >
+          
+          <pre><p>Response : {
+    &quot;beneficiary&quot;: {
+        &quot;additional_info&quot;: {
+            &quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;
+        },
+        &quot;address&quot;: {
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;country_code&quot;: &quot;AU&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;
+        },
+        &quot;bank_details&quot;: {
+            &quot;account_currency&quot;: &quot;AUD&quot;,
+            &quot;account_name&quot;: &quot;Lee Da Ming&quot;,
+            &quot;account_number&quot;: &quot;12750852&quot;,
+            &quot;account_routing_type1&quot;: &quot;bsb&quot;,
+            &quot;account_routing_value1&quot;: &quot;083064&quot;,
+            &quot;bank_country_code&quot;: &quot;AU&quot;,
+            &quot;bank_name&quot;: &quot;National Australia Bank&quot;,
+            &quot;iban&quot;: &quot;ES8023100001180000012345&quot;,
+            &quot;swift_code&quot;: &quot;CTBAAU2S&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;,
+        &quot;entity_type&quot;: &quot;COMPANY&quot;
+    },
+    &quot;beneficiary_id&quot;: &quot;b83cec33-6a65-4b96-8c58-e2a7eeff7010&quot;,
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;,
+    &quot;payment_methods&quot;: [
+        &quot;SWIFT&quot;
+    ]
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Response status code is <span class="argument">201</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Response status line is <span class="argument">&quot;Created&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-84">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-84" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_3_4058228117.html">Validates Payment_Method in BankDetails</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3310384265.html">@PositiveScenarios</a>
+</div>
+
+
+  <span class="lead-duration duration">0.401</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-85">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Validates correct response is received when Payload field payment_method value is valid SWIFT</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-85" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-86">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-86" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-87">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-87" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;payment_methods&quot;</span> is <span class="argument">&quot;SWIFT&quot;</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-88">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-88" class="collapse collapsable-details " >
+          
+          <pre><p>Request Payload : {
+    &quot;payment_methods&quot;: [&quot;SWIFT&quot;],
+    &quot;beneficiary&quot;: {
+        &quot;address&quot;: {
+            &quot;country_code&quot;: &quot;US&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;,
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;
+        },
+        &quot;entity_type&quot;: &quot;COMPANY&quot;,
+        &quot;additional_info&quot;: {&quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;},
+        &quot;bank_details&quot;: {
+            &quot;account_number&quot;: &quot;502231121&quot;,
+            &quot;account_currency&quot;: &quot;USD&quot;,
+            &quot;bank_country_code&quot;: &quot;US&quot;,
+            &quot;swift_code&quot;: &quot;CHASUS33&quot;,
+            &quot;account_name&quot;: &quot;John Walker&quot;,
+            &quot;bank_name&quot;: &quot;JP Morgan Chase Bank&quot;,
+            &quot;account_routing_value1&quot;: &quot;907765701&quot;,
+            &quot;account_routing_type1&quot;: &quot;aba&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;
+    },
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I perform post on CreateBeneficiary endpoint</span>
+
+  <span class="lead-duration duration">0.397</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-89">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-89" class="collapse collapsable-details " >
+          
+          <pre><p>Response : {
+    &quot;beneficiary&quot;: {
+        &quot;additional_info&quot;: {
+            &quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;
+        },
+        &quot;address&quot;: {
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;country_code&quot;: &quot;US&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;
+        },
+        &quot;bank_details&quot;: {
+            &quot;account_currency&quot;: &quot;USD&quot;,
+            &quot;account_name&quot;: &quot;John Walker&quot;,
+            &quot;account_number&quot;: &quot;502231121&quot;,
+            &quot;account_routing_type1&quot;: &quot;aba&quot;,
+            &quot;account_routing_value1&quot;: &quot;907765701&quot;,
+            &quot;bank_country_code&quot;: &quot;US&quot;,
+            &quot;bank_name&quot;: &quot;JP Morgan Chase Bank&quot;,
+            &quot;swift_code&quot;: &quot;CHASUS33&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;,
+        &quot;entity_type&quot;: &quot;COMPANY&quot;
+    },
+    &quot;beneficiary_id&quot;: &quot;ed0922cd-be00-465f-ad90-c024b80427f2&quot;,
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;,
+    &quot;payment_methods&quot;: [
+        &quot;SWIFT&quot;
+    ]
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Response status code is <span class="argument">201</span></span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Response status line is <span class="argument">&quot;Created&quot;</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-90">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-90" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_4_1901846414.html">Validates Routing_type and Routing_value in BankDetails</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3310384265.html">@PositiveScenarios</a>
+</div>
+
+
+  <span class="lead-duration duration">0.404</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-91">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate error response is returned for &quot;bank_country_code&quot; US, &quot;account_routing_type1&quot; aba when &quot;account_routing_value1&quot; 123456789 contains invalid no. of charaters</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-91" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-92">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-92" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-93">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-93" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;Bank_Country_Code&quot;</span> is <span class="argument">&quot;US&quot;</span> <span class="argument">&quot;account_routing_type1&quot;</span> is <span class="argument">&quot;aba&quot;</span> <span class="argument">&quot;account_routing_value1&quot;</span> is <span class="argument">&quot;123456789&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-94">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-94" class="collapse collapsable-details " >
+          
+          <pre><p>Request Payload : {
+    &quot;payment_methods&quot;: [&quot;SWIFT&quot;],
+    &quot;beneficiary&quot;: {
+        &quot;address&quot;: {
+            &quot;country_code&quot;: &quot;US&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;,
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;
+        },
+        &quot;entity_type&quot;: &quot;COMPANY&quot;,
+        &quot;additional_info&quot;: {&quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;},
+        &quot;bank_details&quot;: {
+            &quot;account_number&quot;: &quot;502231121&quot;,
+            &quot;account_currency&quot;: &quot;USD&quot;,
+            &quot;bank_country_code&quot;: &quot;US&quot;,
+            &quot;swift_code&quot;: &quot;CHASUS33&quot;,
+            &quot;account_name&quot;: &quot;John Walker&quot;,
+            &quot;bank_name&quot;: &quot;JP Morgan Chase Bank&quot;,
+            &quot;account_routing_value1&quot;: &quot;123456789&quot;,
+            &quot;account_routing_type1&quot;: &quot;aba&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;
+    },
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I perform post on CreateBeneficiary endpoint</span>
+
+  <span class="lead-duration duration">0.403</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-95">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-95" class="collapse collapsable-details " >
+          
+          <pre><p>Response : {
+    &quot;beneficiary&quot;: {
+        &quot;additional_info&quot;: {
+            &quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;
+        },
+        &quot;address&quot;: {
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;country_code&quot;: &quot;US&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;
+        },
+        &quot;bank_details&quot;: {
+            &quot;account_currency&quot;: &quot;USD&quot;,
+            &quot;account_name&quot;: &quot;John Walker&quot;,
+            &quot;account_number&quot;: &quot;502231121&quot;,
+            &quot;account_routing_type1&quot;: &quot;aba&quot;,
+            &quot;account_routing_value1&quot;: &quot;123456789&quot;,
+            &quot;bank_country_code&quot;: &quot;US&quot;,
+            &quot;bank_name&quot;: &quot;JP Morgan Chase Bank&quot;,
+            &quot;swift_code&quot;: &quot;CHASUS33&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;,
+        &quot;entity_type&quot;: &quot;COMPANY&quot;
+    },
+    &quot;beneficiary_id&quot;: &quot;73ff6c2a-4742-4d47-9c32-f765afa096bf&quot;,
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;,
+    &quot;payment_methods&quot;: [
+        &quot;SWIFT&quot;
+    ]
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Response status code is <span class="argument">201</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Response status line is <span class="argument">&quot;Created&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-96">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-96" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_4_1901846414.html">Validates Routing_type and Routing_value in BankDetails</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3310384265.html">@PositiveScenarios</a>
+</div>
+
+
+  <span class="lead-duration duration">0.449</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-97">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate error response is returned for &quot;bank_country_code&quot; AU, &quot;account_routing_type1&quot; bsb when &quot;account_routing_value1&quot; 123456 contains invalid no. of charaters</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-97" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-98">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-98" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-99">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-99" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;Bank_Country_Code&quot;</span> is <span class="argument">&quot;AU&quot;</span> <span class="argument">&quot;account_routing_type1&quot;</span> is <span class="argument">&quot;bsb&quot;</span> <span class="argument">&quot;account_routing_value1&quot;</span> is <span class="argument">&quot;123456&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-100">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-100" class="collapse collapsable-details " >
+          
+          <pre><p>Request Payload : {
+    &quot;payment_methods&quot;: [&quot;SWIFT&quot;],
+    &quot;beneficiary&quot;: {
+        &quot;address&quot;: {
+            &quot;country_code&quot;: &quot;AU&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;,
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;
+        },
+        &quot;entity_type&quot;: &quot;COMPANY&quot;,
+        &quot;additional_info&quot;: {&quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;},
+        &quot;bank_details&quot;: {
+            &quot;account_number&quot;: &quot;12750852&quot;,
+            &quot;account_currency&quot;: &quot;AUD&quot;,
+            &quot;bank_country_code&quot;: &quot;AU&quot;,
+            &quot;swift_code&quot;: &quot;CTBAAU2S&quot;,
+            &quot;account_name&quot;: &quot;Lee Da Ming&quot;,
+            &quot;iban&quot;: &quot;ES8023100001180000012345&quot;,
+            &quot;bank_name&quot;: &quot;National Australia Bank&quot;,
+            &quot;account_routing_value1&quot;: &quot;123456&quot;,
+            &quot;transaction_reference&quot;: &quot;4140110135&quot;,
+            &quot;local_clearing_system&quot;: &quot;ACH&quot;,
+            &quot;account_routing_type1&quot;: &quot;bsb&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;
+    },
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I perform post on CreateBeneficiary endpoint</span>
+
+  <span class="lead-duration duration">0.448</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-101">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-101" class="collapse collapsable-details " >
+          
+          <pre><p>Response : {
+    &quot;beneficiary&quot;: {
+        &quot;additional_info&quot;: {
+            &quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;
+        },
+        &quot;address&quot;: {
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;country_code&quot;: &quot;AU&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;
+        },
+        &quot;bank_details&quot;: {
+            &quot;account_currency&quot;: &quot;AUD&quot;,
+            &quot;account_name&quot;: &quot;Lee Da Ming&quot;,
+            &quot;account_number&quot;: &quot;12750852&quot;,
+            &quot;account_routing_type1&quot;: &quot;bsb&quot;,
+            &quot;account_routing_value1&quot;: &quot;123456&quot;,
+            &quot;bank_country_code&quot;: &quot;AU&quot;,
+            &quot;bank_name&quot;: &quot;National Australia Bank&quot;,
+            &quot;iban&quot;: &quot;ES8023100001180000012345&quot;,
+            &quot;swift_code&quot;: &quot;CTBAAU2S&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;,
+        &quot;entity_type&quot;: &quot;COMPANY&quot;
+    },
+    &quot;beneficiary_id&quot;: &quot;2c110418-c4f8-4a32-aa56-d3af67e7371d&quot;,
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;,
+    &quot;payment_methods&quot;: [
+        &quot;SWIFT&quot;
+    ]
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Response status code is <span class="argument">201</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Response status line is <span class="argument">&quot;Created&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-102">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-102" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_5_2796827636.html">Validates swift_code in BankDetails</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3310384265.html">@PositiveScenarios</a>
+</div>
+
+
+  <span class="lead-duration duration">0.397</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-103">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate correct message is returned when &quot;swift_code&quot; CHASUS33 matches with &quot;country_code&quot; US but not with &quot;bank_country_code&quot; &lt;Bank_country_code&gt;</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-103" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-104">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-104" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-105">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-105" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;country_code&quot;</span> is <span class="argument">&quot;US&quot;</span> <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;US&quot;</span> <span class="argument">&quot;swift_code&quot;</span> is <span class="argument">&quot;CHASUS33&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-106">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-106" class="collapse collapsable-details " >
+          
+          <pre><p>Request Payload : {
+    &quot;payment_methods&quot;: [&quot;SWIFT&quot;],
+    &quot;beneficiary&quot;: {
+        &quot;address&quot;: {
+            &quot;country_code&quot;: &quot;US&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;,
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;
+        },
+        &quot;entity_type&quot;: &quot;COMPANY&quot;,
+        &quot;additional_info&quot;: {&quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;},
+        &quot;bank_details&quot;: {
+            &quot;account_number&quot;: &quot;502231121&quot;,
+            &quot;account_currency&quot;: &quot;USD&quot;,
+            &quot;bank_country_code&quot;: &quot;US&quot;,
+            &quot;swift_code&quot;: &quot;CHASUS33&quot;,
+            &quot;account_name&quot;: &quot;John Walker&quot;,
+            &quot;bank_name&quot;: &quot;JP Morgan Chase Bank&quot;,
+            &quot;account_routing_value1&quot;: &quot;907765701&quot;,
+            &quot;account_routing_type1&quot;: &quot;aba&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;
+    },
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I perform post on CreateBeneficiary endpoint</span>
+
+  <span class="lead-duration duration">0.397</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-107">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-107" class="collapse collapsable-details " >
+          
+          <pre><p>Response : {
+    &quot;beneficiary&quot;: {
+        &quot;additional_info&quot;: {
+            &quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;
+        },
+        &quot;address&quot;: {
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;country_code&quot;: &quot;US&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;
+        },
+        &quot;bank_details&quot;: {
+            &quot;account_currency&quot;: &quot;USD&quot;,
+            &quot;account_name&quot;: &quot;John Walker&quot;,
+            &quot;account_number&quot;: &quot;502231121&quot;,
+            &quot;account_routing_type1&quot;: &quot;aba&quot;,
+            &quot;account_routing_value1&quot;: &quot;907765701&quot;,
+            &quot;bank_country_code&quot;: &quot;US&quot;,
+            &quot;bank_name&quot;: &quot;JP Morgan Chase Bank&quot;,
+            &quot;swift_code&quot;: &quot;CHASUS33&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;,
+        &quot;entity_type&quot;: &quot;COMPANY&quot;
+    },
+    &quot;beneficiary_id&quot;: &quot;48578782-8c61-4b63-b6c2-0e0563746f1d&quot;,
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;,
+    &quot;payment_methods&quot;: [
+        &quot;SWIFT&quot;
+    ]
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Response status code is <span class="argument">201</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Response status line is <span class="argument">&quot;Created&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-108">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-108" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_5_2796827636.html">Validates swift_code in BankDetails</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3310384265.html">@PositiveScenarios</a>
+</div>
+
+
+  <span class="lead-duration duration">0.444</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-109">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate correct message is returned when &quot;swift_code&quot; CTBAAU2S matches with &quot;country_code&quot; AU but not with &quot;bank_country_code&quot; &lt;Bank_country_code&gt;</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-109" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-110">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-110" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-111">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-111" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;country_code&quot;</span> is <span class="argument">&quot;AU&quot;</span> <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;AU&quot;</span> <span class="argument">&quot;swift_code&quot;</span> is <span class="argument">&quot;CTBAAU2S&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-112">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-112" class="collapse collapsable-details " >
+          
+          <pre><p>Request Payload : {
+    &quot;payment_methods&quot;: [&quot;SWIFT&quot;],
+    &quot;beneficiary&quot;: {
+        &quot;address&quot;: {
+            &quot;country_code&quot;: &quot;AU&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;,
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;
+        },
+        &quot;entity_type&quot;: &quot;COMPANY&quot;,
+        &quot;additional_info&quot;: {&quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;},
+        &quot;bank_details&quot;: {
+            &quot;account_number&quot;: &quot;12750852&quot;,
+            &quot;account_currency&quot;: &quot;AUD&quot;,
+            &quot;bank_country_code&quot;: &quot;AU&quot;,
+            &quot;swift_code&quot;: &quot;CTBAAU2S&quot;,
+            &quot;account_name&quot;: &quot;Lee Da Ming&quot;,
+            &quot;iban&quot;: &quot;ES8023100001180000012345&quot;,
+            &quot;bank_name&quot;: &quot;National Australia Bank&quot;,
+            &quot;account_routing_value1&quot;: &quot;083064&quot;,
+            &quot;transaction_reference&quot;: &quot;4140110135&quot;,
+            &quot;local_clearing_system&quot;: &quot;ACH&quot;,
+            &quot;account_routing_type1&quot;: &quot;bsb&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;
+    },
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I perform post on CreateBeneficiary endpoint</span>
+
+  <span class="lead-duration duration">0.442</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-113">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-113" class="collapse collapsable-details " >
+          
+          <pre><p>Response : {
+    &quot;beneficiary&quot;: {
+        &quot;additional_info&quot;: {
+            &quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;
+        },
+        &quot;address&quot;: {
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;country_code&quot;: &quot;AU&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;
+        },
+        &quot;bank_details&quot;: {
+            &quot;account_currency&quot;: &quot;AUD&quot;,
+            &quot;account_name&quot;: &quot;Lee Da Ming&quot;,
+            &quot;account_number&quot;: &quot;12750852&quot;,
+            &quot;account_routing_type1&quot;: &quot;bsb&quot;,
+            &quot;account_routing_value1&quot;: &quot;083064&quot;,
+            &quot;bank_country_code&quot;: &quot;AU&quot;,
+            &quot;bank_name&quot;: &quot;National Australia Bank&quot;,
+            &quot;iban&quot;: &quot;ES8023100001180000012345&quot;,
+            &quot;swift_code&quot;: &quot;CTBAAU2S&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;,
+        &quot;entity_type&quot;: &quot;COMPANY&quot;
+    },
+    &quot;beneficiary_id&quot;: &quot;a1a509fd-3a20-4504-84cc-87484cb44182&quot;,
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;,
+    &quot;payment_methods&quot;: [
+        &quot;SWIFT&quot;
+    ]
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Response status code is <span class="argument">201</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Response status line is <span class="argument">&quot;Created&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-114">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-114" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,764 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>43/32/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Aug 23 10:54:16 CEST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>91 seconds (91495 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error response is returned for "bank_country_code" US when "account_name" U has invalid no. of characters 1", "Optional[Validates Account_Name in Bank_details]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 2 and 10 when bank_country_code is US] but found [Should contain 2 to 200 characters],
+	expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1256493959", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1256493959'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 2 and 10 when bank_country_code is US] but found [Should contain 2 to 200 characters],
+	expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+</pre></div></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error response is returned for "bank_country_code" AU when "account_name" a has invalid no. of characters 1", "Optional[Validates Account_Name in Bank_details]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 2 and 10 when bank_country_code is AU] but found [Should contain 2 to 200 characters],
+	expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1084793455", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1084793455'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 2 and 10 when bank_country_code is AU] but found [Should contain 2 to 200 characters],
+	expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+</pre></div></td>
+<td>2</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error response is returned for "bank_country_code" CN when "account_name" G has invalid no. of characters 1", "Optional[Validates Account_Name in Bank_details]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 2 and 10 when bank_country_code is CN] but found [Should contain 2 to 200 characters],
+	expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2098356355", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2098356355'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 2 and 10 when bank_country_code is CN] but found [Should contain 2 to 200 characters],
+	expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+</pre></div></td>
+<td>2</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error response is returned for "bank_country_code" CN when "account_name" asfsf4567w3 has invalid no. of characters 11", "Optional[Validates Account_Name in Bank_details]"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ?.Response &quot;code&quot; has value &quot;payment_schema_validation_failed&quot;(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Name.feature:32)
+</pre></div><a href='#' onClick='toggleBox("stack-trace173402154", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace173402154'><pre>java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ?.Response &quot;code&quot; has value &quot;payment_schema_validation_failed&quot;(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Name.feature:32)
+</pre></div></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate beneficiary is sucessfully added for "bank_country_code" <bank_country_code> when "account_number" AGT-789IJY-T2345 contains special characters", "Optional[Validates Account_Number in Bank_details]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [201] but found [400],
+	expected [true] but found [false]
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace409848581", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace409848581'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [201] but found [400],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+</pre></div></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate beneficiary is sucessfully added for "bank_country_code" <bank_country_code> when "account_number" AGT:789 contains special characters", "Optional[Validates Account_Number in Bank_details]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [201] but found [400],
+	expected [true] but found [false]
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1895373539", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1895373539'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [201] but found [400],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+</pre></div></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate beneficiary is sucessfully added for "bank_country_code" <bank_country_code> when "account_number" AGT 789IJY T2345 contains special characters", "Optional[Validates Account_Number in Bank_details]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [201] but found [400],
+	expected [true] but found [false]
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace836498875", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace836498875'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [201] but found [400],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+</pre></div></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error response is returned for "bank_country_code" US when "account_number" asedr5432GHUYJIO2345 has invalid no. of characters 20", "Optional[Validates Account_Number in Bank_details]"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ?.Response &quot;code&quot; has value &quot;payment_schema_validation_failed&quot;(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
+</pre></div><a href='#' onClick='toggleBox("stack-trace479788655", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace479788655'><pre>java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ?.Response &quot;code&quot; has value &quot;payment_schema_validation_failed&quot;(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
+</pre></div></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error response is returned for "bank_country_code" US when "account_number" asedr5432GHUYJIO23451321432 has invalid no. of characters 26", "Optional[Validates Account_Number in Bank_details]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 1 and 17 when bank_country_code is US] but found [Should contain 1 to 26 characters]
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace479668966", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace479668966'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 1 and 17 when bank_country_code is US] but found [Should contain 1 to 26 characters]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+</pre></div></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error response is returned for "bank_country_code" AU when "account_number" MJIKH has invalid no. of characters 5", "Optional[Validates Account_Number in Bank_details]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 6 and 9 when bank_country_code is AU] but found [Should contain 6 to 20 characters]
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace149985794", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace149985794'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 6 and 9 when bank_country_code is AU] but found [Should contain 6 to 20 characters]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+</pre></div></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error response is returned for "bank_country_code" AU when "account_number" er456tbg has invalid no. of characters 8", "Optional[Validates Account_Number in Bank_details]"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ?.Response &quot;code&quot; has value &quot;payment_schema_validation_failed&quot;(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
+</pre></div><a href='#' onClick='toggleBox("stack-trace342735014", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace342735014'><pre>java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ?.Response &quot;code&quot; has value &quot;payment_schema_validation_failed&quot;(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
+</pre></div></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error response is returned for "bank_country_code" AU when "account_number" de444556677833224 has invalid no. of characters 17", "Optional[Validates Account_Number in Bank_details]"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ?.Response &quot;code&quot; has value &quot;payment_schema_validation_failed&quot;(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
+</pre></div><a href='#' onClick='toggleBox("stack-trace654232823", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace654232823'><pre>java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ?.Response &quot;code&quot; has value &quot;payment_schema_validation_failed&quot;(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
+</pre></div></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error response is returned for "bank_country_code" AU when "account_number" de44455667783322412345 has invalid no. of characters 22", "Optional[Validates Account_Number in Bank_details]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 6 and 9 when bank_country_code is AU] but found [Should contain 6 to 20 characters]
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1920939741", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1920939741'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 6 and 9 when bank_country_code is AU] but found [Should contain 6 to 20 characters]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+</pre></div></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error response is returned for "bank_country_code" CN when "account_number" G has invalid no. of characters 1", "Optional[Validates Account_Number in Bank_details]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2079042829", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2079042829'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+</pre></div></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error response is returned for "bank_country_code" CN when "account_number" 123456 has invalid no. of characters 6", "Optional[Validates Account_Number in Bank_details]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace86938358", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace86938358'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+</pre></div></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error response is returned for "bank_country_code" CN when "account_number" 123456789qwertyui has invalid no. of characters 17", "Optional[Validates Account_Number in Bank_details]"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ?.Response &quot;code&quot; has value &quot;payment_schema_validation_failed&quot;(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1030126425", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1030126425'><pre>java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ?.Response &quot;code&quot; has value &quot;payment_schema_validation_failed&quot;(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
+</pre></div></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error response is returned for "bank_country_code" CN when "account_number" ASEDRFTGYHUJIKOL1234123456789012345 has invalid no. of characters 35", "Optional[Validates Account_Number in Bank_details]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1548063124", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1548063124'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+</pre></div></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validates error response is received when Payload field account_routing_type1 is missing", "Optional[Validates Routing_type and Routing_value in BankDetails]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [400] but found [201],
+	expected [true] but found [false]
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace996955574", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace996955574'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [400] but found [201],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+</pre></div></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error response is returned for "bank_country_code" AU, "account_routing_type1" bsb when "account_routing_value1" 12345 contains invalid no. of charaters", "Optional[Validates Routing_type and Routing_value in BankDetails]"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ?.Response &quot;code&quot; has value &quot;payment_schema_validation_failed&quot;(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Routing_Type.feature:44)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1814597744", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1814597744'><pre>java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ?.Response &quot;code&quot; has value &quot;payment_schema_validation_failed&quot;(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Routing_Type.feature:44)
+</pre></div></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error response is returned for "bank_country_code" AU, "account_routing_type1" bsb when "account_routing_value1" 1234567890 contains invalid no. of charaters", "Optional[Validates Routing_type and Routing_value in BankDetails]"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ?.Response &quot;code&quot; has value &quot;payment_schema_validation_failed&quot;(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Routing_Type.feature:44)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1716257894", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1716257894'><pre>java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ?.Response &quot;code&quot; has value &quot;payment_schema_validation_failed&quot;(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Routing_Type.feature:44)
+</pre></div></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error response is returned for "bank_country_code" US, "account_routing_type1" aba when "account_routing_value1"  contains invalid no. of charaters", "Optional[Validates Routing_type and Routing_value in BankDetails]"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ?.Response &quot;code&quot; has value &quot;payment_schema_validation_failed&quot;(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Routing_Type.feature:44)
+</pre></div><a href='#' onClick='toggleBox("stack-trace292545106", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace292545106'><pre>java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ?.Response &quot;code&quot; has value &quot;payment_schema_validation_failed&quot;(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Routing_Type.feature:44)
+</pre></div></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error response is returned for "bank_country_code" AU, "account_routing_type1" bsb when "account_routing_value1"  contains invalid no. of charaters", "Optional[Validates Routing_type and Routing_value in BankDetails]"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ?.Response &quot;code&quot; has value &quot;payment_schema_validation_failed&quot;(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Routing_Type.feature:44)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2086269717", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2086269717'><pre>java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null
+	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
+	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at ?.Response &quot;code&quot; has value &quot;payment_schema_validation_failed&quot;(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Routing_Type.feature:44)
+</pre></div></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error message is returned for "bank_country_code" <Bank_country_code> when "swift_code" ICBKUS lessthan 8 or greaterthan 11 charcters", "Optional[Validates swift_code in BankDetails]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Length of &apos;swift_code&apos; should be either 8 or 11] but found [Should be a valid and supported SWIFT code / BIC]
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace295560847", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace295560847'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Length of &apos;swift_code&apos; should be either 8 or 11] but found [Should be a valid and supported SWIFT code / BIC]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+</pre></div></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error message is returned for "bank_country_code" <Bank_country_code> when "swift_code" ICBKAUBJ123w lessthan 8 or greaterthan 11 charcters", "Optional[Validates swift_code in BankDetails]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Length of &apos;swift_code&apos; should be either 8 or 11] but found [Should be a valid and supported SWIFT code / BIC]
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace281091638", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace281091638'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Length of &apos;swift_code&apos; should be either 8 or 11] but found [Should be a valid and supported SWIFT code / BIC]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+</pre></div></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error message is returned when "swift_code" CHAS33US do not contain passed <Bank_country_code> at 5th and 6th character", "Optional[Validates swift_code in BankDetails]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [Should be a valid and supported SWIFT code / BIC]
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1492286519", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1492286519'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [Should be a valid and supported SWIFT code / BIC]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+</pre></div></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error message is returned when "swift_code" USAS33US do not contain passed <Bank_country_code> at 5th and 6th character", "Optional[Validates swift_code in BankDetails]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [Should be a valid and supported SWIFT code / BIC]
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace907698574", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace907698574'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [Should be a valid and supported SWIFT code / BIC]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+</pre></div></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error message is returned when "swift_code" CNAS33US do not contain passed <Bank_country_code> at 5th and 6th character", "Optional[Validates swift_code in BankDetails]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [Should be a valid and supported SWIFT code / BIC]
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace104794426", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace104794426'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [Should be a valid and supported SWIFT code / BIC]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+</pre></div></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error message is returned when "swift_code" CHASAU33 do not match with "Bank_Country_Code" <Bank_country_code> at 5th and 6th character", "Optional[Validates swift_code in BankDetails]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [Should be a valid and supported SWIFT code / BIC]
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace331849229", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace331849229'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [Should be a valid and supported SWIFT code / BIC]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+</pre></div></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error message is returned when "swift_code" CHASUS33 do not match with "Bank_Country_Code" <Bank_country_code> at 5th and 6th character", "Optional[Validates swift_code in BankDetails]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [The SWIFT code / BIC should match the bank location selected ]
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace855715439", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace855715439'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [The SWIFT code / BIC should match the bank location selected ]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+</pre></div></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error message is returned when "swift_code" CHASAU33 do not match with "Bank_Country_Code" <Bank_country_code> at 5th and 6th character", "Optional[Validates swift_code in BankDetails]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [Should be a valid and supported SWIFT code / BIC]
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace614850007", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace614850007'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [Should be a valid and supported SWIFT code / BIC]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+</pre></div></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error message is returned when "swift_code" CHASUS33 matches with "country_code" US but not with "bank_country_code" <Bank_country_code>", "Optional[Validates swift_code in BankDetails]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [The SWIFT code / BIC should match the bank location selected ]
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1282745381", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1282745381'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [The SWIFT code / BIC should match the bank location selected ]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+</pre></div></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error message is returned when "swift_code" CTBAAU2S matches with "country_code" AU but not with "bank_country_code" <Bank_country_code>", "Optional[Validates swift_code in BankDetails]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [The SWIFT code / BIC should match the bank location selected ]
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace77930872", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace77930872'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [The SWIFT code / BIC should match the bank location selected ]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+</pre></div></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validates beneficiary is not added when account_name key is missing from bankdetails jsonobject", "Optional[Validates Account_Name in Bank_details]"</td>
+<td></td>
+<td>5</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validates beneficiary is not added when account_name value is Empty", "Optional[Validates Account_Name in Bank_details]"</td>
+<td></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate correct response is returned for "bank_country_code" US when "account_name" UA has valid no. of characters 2", "Optional[Validates Account_Name in Bank_details]"</td>
+<td></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate correct response is returned for "bank_country_code" AU when "account_name" @@ has valid no. of characters 1", "Optional[Validates Account_Name in Bank_details]"</td>
+<td></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate correct response is returned for "bank_country_code" AU when "account_name" ()[aE1<:! has valid no. of characters 1", "Optional[Validates Account_Name in Bank_details]"</td>
+<td></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate correct response is returned for "bank_country_code" US when "account_name" asfsf4567w has valid no. of characters 10", "Optional[Validates Account_Name in Bank_details]"</td>
+<td></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validates beneficiary is not added when account_number key is missing from bankdetails jsonobject", "Optional[Validates Account_Number in Bank_details]"</td>
+<td></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validates beneficiary is not added when account_number value is Empty", "Optional[Validates Account_Number in Bank_details]"</td>
+<td></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate beneficiary is sucessfully added when for "bank_country_code" <Bank_country_code> when "account_number" A has valid 1 characters", "Optional[Validates Account_Number in Bank_details]"</td>
+<td></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate beneficiary is sucessfully added when for "bank_country_code" <Bank_country_code> when "account_number" 0 has valid 1 characters", "Optional[Validates Account_Number in Bank_details]"</td>
+<td></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate beneficiary is sucessfully added when for "bank_country_code" <Bank_country_code> when "account_number" 123456789 has valid 9 characters", "Optional[Validates Account_Number in Bank_details]"</td>
+<td></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate beneficiary is sucessfully added when for "bank_country_code" <Bank_country_code> when "account_number" MJIKHI has valid 6 characters", "Optional[Validates Account_Number in Bank_details]"</td>
+<td></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate beneficiary is sucessfully added when for "bank_country_code" <Bank_country_code> when "account_number" 987654321 has valid 9 characters", "Optional[Validates Account_Number in Bank_details]"</td>
+<td></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate beneficiary is sucessfully added when for "bank_country_code" <Bank_country_code> when "account_number" GFhyi345 has valid 8 characters", "Optional[Validates Account_Number in Bank_details]"</td>
+<td></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate beneficiary is sucessfully added when for "bank_country_code" <Bank_country_code> when "account_number" GFh44445 has valid 8 characters", "Optional[Validates Account_Number in Bank_details]"</td>
+<td></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate beneficiary is sucessfully added when for "bank_country_code" <Bank_country_code> when "account_number" 123456789DERftguhijo has valid 20 characters", "Optional[Validates Account_Number in Bank_details]"</td>
+<td></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validates beneficiary is not added when Bank_Country_Code key is missing", "Optional[Validates bank_country_code in BankDetails]"</td>
+<td></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validates beneficiary is not added when Bank_Country_Code value is Empty", "Optional[Validates bank_country_code in BankDetails]"</td>
+<td></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validates beneficiary is added when Bank_Country_Code is valid but in small case us", "Optional[Validates bank_country_code in BankDetails]"</td>
+<td></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validates beneficiary is added when Bank_Country_Code is valid but in small case cn", "Optional[Validates bank_country_code in BankDetails]"</td>
+<td></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validates beneficiary is not added when Bank_Country_Code does not follow 'ISO 3166-2' standard", "Optional[Validates bank_country_code in BankDetails]"</td>
+<td></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validates beneficiary is not added when Bank_Country_Code does not follow 'ISO 3166-2' standard", "Optional[Validates bank_country_code in BankDetails]"</td>
+<td></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validates beneficiary is not added when Bank_Country_Code as per 'ISO 3166-2' standard but invalid for Airwallex", "Optional[Validates bank_country_code in BankDetails]"</td>
+<td></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validates beneficiary is not added when Bank_Country_Code as per 'ISO 3166-2' standard but invalid for Airwallex", "Optional[Validates bank_country_code in BankDetails]"</td>
+<td></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validates beneficiary is added when Bank_Country_Code is valid but in small case US", "Optional[Validates bank_country_code in BankDetails]"</td>
+<td></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validates beneficiary is added when Bank_Country_Code is valid but in small case AU", "Optional[Validates bank_country_code in BankDetails]"</td>
+<td></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validates error response is received when Payload field payment_method is missing", "Optional[Validates Payment_Method in BankDetails]"</td>
+<td></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validates error response is received when Payload field payment_method value is Empty", "Optional[Validates Payment_Method in BankDetails]"</td>
+<td></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validates error response is received when Payload field payment_method value is not valid TARGET", "Optional[Validates Payment_Method in BankDetails]"</td>
+<td></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validates error response is received when Payload field payment_method value is not valid SEPA", "Optional[Validates Payment_Method in BankDetails]"</td>
+<td></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validates correct response is received when Payload field payment_method value is valid SWIFT", "Optional[Validates Payment_Method in BankDetails]"</td>
+<td></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validates error response is received when Payload feild payment_method value is Empty", "Optional[Validates Routing_type and Routing_value in BankDetails]"</td>
+<td></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error response is returned for "bank_country_code" US when "account_routing_type1" aab has invalid characters <number_of_characters>", "Optional[Validates Routing_type and Routing_value in BankDetails]"</td>
+<td></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error response is returned for "bank_country_code" AU when "account_routing_type1" baa has invalid characters <number_of_characters>", "Optional[Validates Routing_type and Routing_value in BankDetails]"</td>
+<td></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error response is returned for "bank_country_code" CN when "account_routing_type1" caa has invalid characters <number_of_characters>", "Optional[Validates Routing_type and Routing_value in BankDetails]"</td>
+<td></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error response is returned for "bank_country_code" US, "account_routing_type1" aba when "account_routing_value1" 12345678 contains invalid no. of charaters", "Optional[Validates Routing_type and Routing_value in BankDetails]"</td>
+<td></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error response is returned for "bank_country_code" US, "account_routing_type1" aba when "account_routing_value1" 1234567890 contains invalid no. of charaters", "Optional[Validates Routing_type and Routing_value in BankDetails]"</td>
+<td></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error response is returned for "bank_country_code" US, "account_routing_type1" aba when "account_routing_value1" 123456789 contains invalid no. of charaters", "Optional[Validates Routing_type and Routing_value in BankDetails]"</td>
+<td></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error response is returned for "bank_country_code" AU, "account_routing_type1" bsb when "account_routing_value1" 123456 contains invalid no. of charaters", "Optional[Validates Routing_type and Routing_value in BankDetails]"</td>
+<td></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validates error response is received when payment_methods=SWIFT and Payload field swift_code is missing", "Optional[Validates swift_code in BankDetails]"</td>
+<td></td>
+<td>1</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validates error response is received when payment_methods=SWIFT and Payload feild swift_code is Empty", "Optional[Validates swift_code in BankDetails]"</td>
+<td></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate correct message is returned when "swift_code" CHASUS33 matches with "country_code" US but not with "bank_country_code" <Bank_country_code>", "Optional[Validates swift_code in BankDetails]"</td>
+<td></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+<tr>
+<td title='cucumber.Options.RunCucumberTests.runScenario()'><b>runScenario</b><br>Test class: cucumber.Options.RunCucumberTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate correct message is returned when "swift_code" CTBAAU2S matches with "country_code" AU but not with "bank_country_code" <Bank_country_code>", "Optional[Validates swift_code in BankDetails]"</td>
+<td></td>
+<td>0</td>
+<td>cucumber.Options.RunCucumberTests@491666ad</td></tr>
+</table><p>
+</body>
+</html>

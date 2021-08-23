@@ -1,0 +1,102 @@
+{
+       "US":{
+            "beneficiary":{
+               "additional_info":{
+                  "personal_email":"john.walker@gmail.com"
+               },
+               "address":{
+                  "city":"Seattle",
+                  "country_code":"US",
+                  "postcode":"98104",
+                  "state":"Washington",
+                  "street_address":"412 5th Avenue"
+               },
+               "bank_details":{
+                  "account_currency":"USD",
+                  "account_name":"John Walker",
+                  "account_number":"502231121",
+                  "account_routing_type1":"aba",
+                  "account_routing_value1":"907765701",
+                  "bank_country_code":"US",
+                  "bank_name":"JP Morgan Chase Bank",
+                  "swift_code":"CHASUS33"
+               },
+               "company_name":"ABC University",
+               "entity_type":"COMPANY"
+            },
+            "nickname":"ABC University",
+            "payer_entity_type":"PERSONAL",
+            "payment_methods":[
+               "SWIFT"
+            ]
+         },
+         "AU":{
+            "beneficiary":{
+               "additional_info":{
+                  "personal_email":"john.walker@gmail.com"
+               },
+               "address":{
+                  "city":"Seattle",
+                  "country_code":"AU",
+                  "postcode":"98104",
+                  "state":"Washington",
+                  "street_address":"412 5th Avenue"
+               },
+               "bank_details":{
+                  "account_currency":"AUD",
+                  "account_name":"Lee Da Ming",
+                  "account_number":"12750852",
+                  "account_routing_type1":"bsb",
+                  "account_routing_value1":"083064",
+                  "bank_country_code":"AU",
+                  "bank_name":"National Australia Bank",
+                  "iban":"ES8023100001180000012345",
+                  "local_clearing_system":"ACH",
+                  "swift_code":"CTBAAU2S",
+                  "transaction_reference":"4140110135"
+               },
+               "company_name":"ABC University",
+               "entity_type":"COMPANY"
+            },
+            "nickname":"ABC University",
+            "payer_entity_type":"PERSONAL",
+            "payment_methods":[
+               "SWIFT"
+            ]
+         },
+         "CN":{
+            "beneficiary":{
+               "additional_info":{
+                  "personal_email":"john.walker@gmail.com"
+               },
+               "address":{
+                  "city":"Seattle",
+                  "country_code":"CN",
+                  "postcode":"98104",
+                  "state":"Washington",
+                  "street_address":"412 5th Avenue"
+               },
+               "bank_details":{
+                  "account_currency":"CAD",
+                  "account_name":"Lee Da Ming",
+                  "account_number":"12750852",
+                  "account_routing_type1":"aba",
+                  "account_routing_value1":"083064",
+                  "bank_country_code":"CN",
+                  "bank_name":"National Canadian Bank",
+                  "iban":"ES8023100001180000012345",
+                  "local_clearing_system":"ACH",
+                  "swift_code":"ICBKCNBJ",
+                  "transaction_reference":"4140110135"
+               },
+               "company_name":"ABC University",
+               "entity_type":"COMPANY"
+            },
+            "nickname":"ABC University",
+            "payer_entity_type":"PERSONAL",
+            "payment_methods":[
+               "SWIFT"
+            ]
+         }
+
+}
