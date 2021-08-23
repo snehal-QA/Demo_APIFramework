@@ -13,9 +13,8 @@ public class Hooks {
 	public static String x_client_id;
 	public static String x_api_key;
 	
-	//Think of logic to create a baseurl based upon the environment.
-	//As per me best way is to keep it under config.json and have baseurl's and x-api &x-client-id keys as that
-	//can be different per env
+	//Environment is taken from /src/test/resources/EnvConfig.json 
+	//The required environment can be updated in this json file 
 	@Before
 	public static void envConfig() throws IOException {
 		String path="/src/test/resources/EnvConfig.json";

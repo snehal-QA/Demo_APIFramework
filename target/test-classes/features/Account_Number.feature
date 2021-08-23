@@ -77,4 +77,3 @@ Feature: Validates Account_Number in Bank_details
       | AU                | GFhyi345             |                    8 |
       | CN                | GFh44445             |                    8 |
       | CN                | 123456789DERftguhijo |                   20 |
-      #| CN                | werf567892ft56hlp    |                    8 |

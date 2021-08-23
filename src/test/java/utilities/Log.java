@@ -3,7 +3,9 @@ package utilities;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-	public class Log {
+
+//It is for handling Log configuration and setup. Logs will be available at /target
+public class Log {
 
 
 	    // Initialize Log4j logs

@@ -1,9 +1,11 @@
+stepDefinitions\Given_Steps.class
 utilities\Log.class
-Generic\ScenarioContext.class
 stepDefinitions\Hooks.class
+stepDefinitions\ScenarioContext.class
 Generic\APIResources.class
 cucumber\Options\RunCucumberTests.class
 Generic\APIEndpoints.class
-stepDefinitions\Generic_Steps.class
+stepDefinitions\When_Steps.class
+stepDefinitions\Then_Steps.class
 utilities\Json_handler.class
 utilities\Getconfigdata.class

@@ -2,7 +2,7 @@ package Generic;
 
 public enum APIResources {
 	
-	//Resources
+	//Resources Enum
 	AuthEndpoint("/api/v1/authentication/login"),
 	CreateBeneficiaryEndpoint("/api/v1/beneficiaries/create");
 	

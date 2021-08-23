@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>AirWallex API Testing Project</td>
         <td>1</td>
-      <td>23 Aug 2021, 10:55</td>
+      <td>23 Aug 2021, 21:36</td>
     </tr>
   </tbody>
 </table>
@@ -129,18 +129,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@RequirementMismatch-ImproperResponseMessage</td>
-          <td      class="passed"    >156</td>
+          <td      class="passed"    >153</td>
           <td      class="failed"    >5</td>
-          <td     class="skipped"   >11</td>
+          <td     class="skipped"   >10</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">172</td>
+          <td class="total">168</td>
 
           <td >0</td>
           <td  class="failed"    >24</td>
           <td class="total">24</td>
 
-          <td class="duration" data-value="17586687300">17.586</td>
+          <td class="duration" data-value="17046076700">17.046</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -184,7 +184,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.319</span>
+  <span class="lead-duration duration">1.247</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -220,9 +220,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Given_Steps.before(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.002</span>
 
           </div>
 
@@ -237,6 +237,38 @@ $(document).ready(function() {
           <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Then_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.When_Steps.before(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -275,7 +307,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;US&quot;</span> <span class="argument">&quot;account_name&quot;</span> is <span class="argument">&quot;U&quot;</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -340,7 +372,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I perform post on CreateBeneficiary endpoint</span>
 
-  <span class="lead-duration duration">1.175</span>
+  <span class="lead-duration duration">1.101</span>
 
 </div>
 
@@ -410,7 +442,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response status line is <span class="argument">&quot;Bad Request&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -462,36 +494,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;Length of account_number should be between 2 and 10 when bank_country_code is US&quot;</span></span>
+  <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;Length of account_name should be between {Min} and {Max} when bank_country_code is US&quot;</span></span>
 
-  <span class="lead-duration duration">0.032</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;Should contain 2 to 10 characters&quot;</span></span>
-
-  <span class="lead-duration duration">0.030</span>
+  <span class="lead-duration duration">0.040</span>
 
 </div>
 
@@ -518,7 +523,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;source&quot;</span> has value <span class="argument">&quot;beneficiary.bank_details.account_name&quot;</span></span>
 
-  <span class="lead-duration duration">0.028</span>
+  <span class="lead-duration duration">0.050</span>
 
 </div>
 
@@ -559,9 +564,25 @@ $(document).ready(function() {
 
     <div id="after-6" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.When_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
-              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Then_Steps.after(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.002</span>
 
@@ -576,15 +597,30 @@ $(document).ready(function() {
       </div>
       <div id="msg-7" class="collapse collapsable-details  in ">
         <pre>java.lang.AssertionError: The following asserts failed:
-	expected [Length of account_number should be between 2 and 10 when bank_country_code is US] but found [Should contain 2 to 200 characters],
-	expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]
+	expected [Length of account_name should be between {Min} and {Max} when bank_country_code is US] but found [Should contain 2 to 200 characters]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+	at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Given_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
 
 
 
@@ -612,7 +648,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.279</span>
+  <span class="lead-duration duration">1.190</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-8">
@@ -648,7 +684,39 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Given_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Then_Steps.before(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.002</span>
 
@@ -664,7 +732,7 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+              <span class="location name">stepDefinitions.When_Steps.before(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -703,7 +771,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;AU&quot;</span> <span class="argument">&quot;account_name&quot;</span> is <span class="argument">&quot;a&quot;</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -771,7 +839,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I perform post on CreateBeneficiary endpoint</span>
 
-  <span class="lead-duration duration">1.146</span>
+  <span class="lead-duration duration">1.104</span>
 
 </div>
 
@@ -814,7 +882,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Response status code is <span class="argument">400</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -868,7 +936,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;code&quot;</span> has value <span class="argument">&quot;payment_schema_validation_failed&quot;</span></span>
 
-  <span class="lead-duration duration">0.037</span>
+  <span class="lead-duration duration">0.030</span>
 
 </div>
 
@@ -893,36 +961,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;Length of account_number should be between 2 and 10 when bank_country_code is AU&quot;</span></span>
+  <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;Length of account_name should be between {Min} and {Max} when bank_country_code is AU&quot;</span></span>
 
-  <span class="lead-duration duration">0.031</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;Should contain 2 to 10 characters&quot;</span></span>
-
-  <span class="lead-duration duration">0.035</span>
+  <span class="lead-duration duration">0.024</span>
 
 </div>
 
@@ -990,9 +1031,25 @@ $(document).ready(function() {
 
     <div id="after-13" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.When_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
-              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Then_Steps.after(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -1007,15 +1064,30 @@ $(document).ready(function() {
       </div>
       <div id="msg-14" class="collapse collapsable-details  in ">
         <pre>java.lang.AssertionError: The following asserts failed:
-	expected [Length of account_number should be between 2 and 10 when bank_country_code is AU] but found [Should contain 2 to 200 characters],
-	expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]
+	expected [Length of account_name should be between {Min} and {Max} when bank_country_code is AU] but found [Should contain 2 to 200 characters]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+	at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Given_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
 
 
 
@@ -1043,7 +1115,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.321</span>
+  <span class="lead-duration duration">1.193</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-15">
@@ -1079,7 +1151,7 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Given_Steps.before(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.002</span>
 
@@ -1096,6 +1168,38 @@ $(document).ready(function() {
           <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Then_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.When_Steps.before(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -1134,7 +1238,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;CN&quot;</span> <span class="argument">&quot;account_name&quot;</span> is <span class="argument">&quot;G&quot;</span></span>
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1202,7 +1306,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I perform post on CreateBeneficiary endpoint</span>
 
-  <span class="lead-duration duration">1.187</span>
+  <span class="lead-duration duration">1.063</span>
 
 </div>
 
@@ -1245,7 +1349,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Response status code is <span class="argument">400</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1299,7 +1403,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;code&quot;</span> has value <span class="argument">&quot;payment_schema_validation_failed&quot;</span></span>
 
-  <span class="lead-duration duration">0.048</span>
+  <span class="lead-duration duration">0.057</span>
 
 </div>
 
@@ -1324,36 +1428,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;Length of account_number should be between 2 and 10 when bank_country_code is CN&quot;</span></span>
+  <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;Length of account_name should be between {Min} and {Max} when bank_country_code is CN&quot;</span></span>
 
-  <span class="lead-duration duration">0.026</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;Should contain 2 to 10 characters&quot;</span></span>
-
-  <span class="lead-duration duration">0.025</span>
+  <span class="lead-duration duration">0.036</span>
 
 </div>
 
@@ -1380,7 +1457,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;source&quot;</span> has value <span class="argument">&quot;beneficiary.bank_details.account_name&quot;</span></span>
 
-  <span class="lead-duration duration">0.022</span>
+  <span class="lead-duration duration">0.033</span>
 
 </div>
 
@@ -1421,9 +1498,25 @@ $(document).ready(function() {
 
     <div id="after-20" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.When_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
-              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Then_Steps.after(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -1438,15 +1531,30 @@ $(document).ready(function() {
       </div>
       <div id="msg-21" class="collapse collapsable-details  in ">
         <pre>java.lang.AssertionError: The following asserts failed:
-	expected [Length of account_number should be between 2 and 10 when bank_country_code is CN] but found [Should contain 2 to 200 characters],
-	expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]
+	expected [Length of account_name should be between {Min} and {Max} when bank_country_code is CN] but found [Should contain 2 to 200 characters]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+	at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Given_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
 
 
 
@@ -1474,7 +1582,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.247</span>
+  <span class="lead-duration duration">1.210</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-22">
@@ -1510,9 +1618,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Given_Steps.before(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.003</span>
 
           </div>
 
@@ -1528,7 +1636,39 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">stepDefinitions.Hooks.envConfig()</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Then_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.When_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -1565,7 +1705,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;CN&quot;</span> <span class="argument">&quot;account_name&quot;</span> is <span class="argument">&quot;asfsf4567w3&quot;</span></span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.016</span>
 
 </div>
 
@@ -1633,7 +1773,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I perform post on CreateBeneficiary endpoint</span>
 
-  <span class="lead-duration duration">1.213</span>
+  <span class="lead-duration duration">1.165</span>
 
 </div>
 
@@ -1681,7 +1821,7 @@ $(document).ready(function() {
         &quot;company_name&quot;: &quot;ABC University&quot;,
         &quot;entity_type&quot;: &quot;COMPANY&quot;
     },
-    &quot;beneficiary_id&quot;: &quot;bfc7be79-e06e-41ba-a773-fdf7298f803f&quot;,
+    &quot;beneficiary_id&quot;: &quot;6f4496b5-0d2c-46d9-8d9d-5381bf7bb727&quot;,
     &quot;nickname&quot;: &quot;ABC University&quot;,
     &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;,
     &quot;payment_methods&quot;: [
@@ -1731,7 +1871,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response status line is <span class="argument">&quot;Bad Request&quot;</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -1758,7 +1898,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;code&quot;</span> has value <span class="argument">&quot;payment_schema_validation_failed&quot;</span></span>
 
-  <span class="lead-duration duration">0.029</span>
+  <span class="lead-duration duration">0.023</span>
 
 </div>
 
@@ -1775,7 +1915,7 @@ $(document).ready(function() {
       <div id="msg-27" class="collapse collapsable-details  in ">
         <pre>java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null
 	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
-	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at stepDefinitions.Then_Steps.response_contains_value(Then_Steps.java:57)
 	at &#10045;.Response &quot;code&quot; has value &quot;payment_schema_validation_failed&quot;(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Name.feature:32)
 </pre>
       </div>
@@ -1798,36 +1938,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
-  <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;Length of account_number should be between 2 and 10 when bank_country_code is CN&quot;</span></span>
+  <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;Length of account_name should be between {Min} and {Max} when bank_country_code is CN&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;Should contain 2 to 10 characters&quot;</span></span>
-
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1895,11 +2008,27 @@ $(document).ready(function() {
 
     <div id="after-28" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.When_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
-              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Then_Steps.after(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -1916,11 +2045,27 @@ $(document).ready(function() {
 	expected [true] but found [false]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+	at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Given_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
 
 
 
@@ -1948,7 +2093,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.243</span>
+  <span class="lead-duration duration">1.175</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-30">
@@ -1984,7 +2129,7 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Given_Steps.before(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.005</span>
 
@@ -2003,6 +2148,38 @@ $(document).ready(function() {
               <span class="location name">stepDefinitions.Hooks.envConfig()</span>
 
   <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Then_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.When_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -2039,7 +2216,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;US&quot;</span> <span class="argument">&quot;account_number&quot;</span> is <span class="argument">&quot;asedr5432GHUYJIO2345&quot;</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -2104,7 +2281,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I perform post on CreateBeneficiary endpoint</span>
 
-  <span class="lead-duration duration">1.222</span>
+  <span class="lead-duration duration">1.150</span>
 
 </div>
 
@@ -2151,7 +2328,7 @@ $(document).ready(function() {
         &quot;company_name&quot;: &quot;ABC University&quot;,
         &quot;entity_type&quot;: &quot;COMPANY&quot;
     },
-    &quot;beneficiary_id&quot;: &quot;f5bc99d2-006c-4b9a-ad43-37d4f340c94c&quot;,
+    &quot;beneficiary_id&quot;: &quot;59ae01f8-b444-4196-ab3b-615c4404d7dc&quot;,
     &quot;nickname&quot;: &quot;ABC University&quot;,
     &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;,
     &quot;payment_methods&quot;: [
@@ -2174,7 +2351,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Response status code is <span class="argument">400</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -2201,7 +2378,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response status line is <span class="argument">&quot;Bad Request&quot;</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -2228,7 +2405,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;code&quot;</span> has value <span class="argument">&quot;payment_schema_validation_failed&quot;</span></span>
 
-  <span class="lead-duration duration">0.016</span>
+  <span class="lead-duration duration">0.019</span>
 
 </div>
 
@@ -2245,7 +2422,7 @@ $(document).ready(function() {
       <div id="msg-35" class="collapse collapsable-details  in ">
         <pre>java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null
 	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
-	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at stepDefinitions.Then_Steps.response_contains_value(Then_Steps.java:57)
 	at &#10045;.Response &quot;code&quot; has value &quot;payment_schema_validation_failed&quot;(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
 </pre>
       </div>
@@ -2338,11 +2515,27 @@ $(document).ready(function() {
 
     <div id="after-36" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief failed">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.When_Steps.after(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief failed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Then_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -2359,11 +2552,27 @@ $(document).ready(function() {
 	expected [true] but found [false]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+	at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Given_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
 
 
 
@@ -2391,7 +2600,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.224</span>
+  <span class="lead-duration duration">0.562</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-38">
@@ -2427,9 +2636,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Given_Steps.before(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.003</span>
 
           </div>
 
@@ -2444,6 +2653,38 @@ $(document).ready(function() {
           <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Then_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.When_Steps.before(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -2547,7 +2788,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I perform post on CreateBeneficiary endpoint</span>
 
-  <span class="lead-duration duration">1.102</span>
+  <span class="lead-duration duration">0.373</span>
 
 </div>
 
@@ -2590,7 +2831,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Response status code is <span class="argument">400</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -2617,7 +2858,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response status line is <span class="argument">&quot;Bad Request&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -2644,7 +2885,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;code&quot;</span> has value <span class="argument">&quot;payment_schema_validation_failed&quot;</span></span>
 
-  <span class="lead-duration duration">0.049</span>
+  <span class="lead-duration duration">0.034</span>
 
 </div>
 
@@ -2671,7 +2912,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;Length of account_number should be between 1 and 17 when bank_country_code is US&quot;</span></span>
 
-  <span class="lead-duration duration">0.032</span>
+  <span class="lead-duration duration">0.125</span>
 
 </div>
 
@@ -2698,7 +2939,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;source&quot;</span> has value <span class="argument">&quot;beneficiary.bank_details.account_number&quot;</span></span>
 
-  <span class="lead-duration duration">0.037</span>
+  <span class="lead-duration duration">0.024</span>
 
 </div>
 
@@ -2739,9 +2980,25 @@ $(document).ready(function() {
 
     <div id="after-43" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.When_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
-              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Then_Steps.after(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -2759,11 +3016,27 @@ $(document).ready(function() {
 	expected [Length of account_number should be between 1 and 17 when bank_country_code is US] but found [Should contain 1 to 26 characters]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+	at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Given_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
 
 
 
@@ -2791,7 +3064,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.507</span>
+  <span class="lead-duration duration">1.158</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-45">
@@ -2827,9 +3100,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Given_Steps.before(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -2845,7 +3118,39 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">stepDefinitions.Hooks.envConfig()</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Then_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.When_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -2950,7 +3255,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I perform post on CreateBeneficiary endpoint</span>
 
-  <span class="lead-duration duration">0.407</span>
+  <span class="lead-duration duration">1.071</span>
 
 </div>
 
@@ -3047,7 +3352,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;code&quot;</span> has value <span class="argument">&quot;payment_schema_validation_failed&quot;</span></span>
 
-  <span class="lead-duration duration">0.031</span>
+  <span class="lead-duration duration">0.030</span>
 
 </div>
 
@@ -3074,7 +3379,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;Length of account_number should be between 6 and 9 when bank_country_code is AU&quot;</span></span>
 
-  <span class="lead-duration duration">0.033</span>
+  <span class="lead-duration duration">0.029</span>
 
 </div>
 
@@ -3101,7 +3406,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;source&quot;</span> has value <span class="argument">&quot;beneficiary.bank_details.account_number&quot;</span></span>
 
-  <span class="lead-duration duration">0.033</span>
+  <span class="lead-duration duration">0.023</span>
 
 </div>
 
@@ -3142,9 +3447,25 @@ $(document).ready(function() {
 
     <div id="after-50" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.When_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
-              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Then_Steps.after(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -3162,11 +3483,27 @@ $(document).ready(function() {
 	expected [Length of account_number should be between 6 and 9 when bank_country_code is AU] but found [Should contain 6 to 20 characters]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+	at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Given_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
 
 
 
@@ -3194,7 +3531,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.073</span>
+  <span class="lead-duration duration">1.083</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-52">
@@ -3230,9 +3567,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Given_Steps.before(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.006</span>
 
           </div>
 
@@ -3248,7 +3585,39 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">stepDefinitions.Hooks.envConfig()</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.003</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Then_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.When_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -3285,7 +3654,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;AU&quot;</span> <span class="argument">&quot;account_number&quot;</span> is <span class="argument">&quot;er456tbg&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -3353,7 +3722,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I perform post on CreateBeneficiary endpoint</span>
 
-  <span class="lead-duration duration">1.052</span>
+  <span class="lead-duration duration">1.063</span>
 
 </div>
 
@@ -3401,7 +3770,7 @@ $(document).ready(function() {
         &quot;company_name&quot;: &quot;ABC University&quot;,
         &quot;entity_type&quot;: &quot;COMPANY&quot;
     },
-    &quot;beneficiary_id&quot;: &quot;d18d8721-13e2-4b6d-9d40-7d94dec69f62&quot;,
+    &quot;beneficiary_id&quot;: &quot;e5a5ef56-0a9e-4c83-befc-f54d0fac8561&quot;,
     &quot;nickname&quot;: &quot;ABC University&quot;,
     &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;,
     &quot;payment_methods&quot;: [
@@ -3424,7 +3793,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Response status code is <span class="argument">400</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -3478,7 +3847,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;code&quot;</span> has value <span class="argument">&quot;payment_schema_validation_failed&quot;</span></span>
 
-  <span class="lead-duration duration">0.017</span>
+  <span class="lead-duration duration">0.016</span>
 
 </div>
 
@@ -3495,7 +3864,7 @@ $(document).ready(function() {
       <div id="msg-57" class="collapse collapsable-details  in ">
         <pre>java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null
 	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
-	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at stepDefinitions.Then_Steps.response_contains_value(Then_Steps.java:57)
 	at &#10045;.Response &quot;code&quot; has value &quot;payment_schema_validation_failed&quot;(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
 </pre>
       </div>
@@ -3588,9 +3957,25 @@ $(document).ready(function() {
 
     <div id="after-58" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.When_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
-              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Then_Steps.after(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -3609,11 +3994,27 @@ $(document).ready(function() {
 	expected [true] but found [false]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+	at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Given_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
 
 
 
@@ -3641,7 +4042,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.467</span>
+  <span class="lead-duration duration">0.438</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-60">
@@ -3677,7 +4078,7 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Given_Steps.before(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.002</span>
 
@@ -3694,6 +4095,38 @@ $(document).ready(function() {
           <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Then_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.When_Steps.before(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -3800,7 +4233,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I perform post on CreateBeneficiary endpoint</span>
 
-  <span class="lead-duration duration">0.439</span>
+  <span class="lead-duration duration">0.390</span>
 
 </div>
 
@@ -3848,7 +4281,7 @@ $(document).ready(function() {
         &quot;company_name&quot;: &quot;ABC University&quot;,
         &quot;entity_type&quot;: &quot;COMPANY&quot;
     },
-    &quot;beneficiary_id&quot;: &quot;88b2436b-6081-46e1-aba7-6a8567f2047c&quot;,
+    &quot;beneficiary_id&quot;: &quot;4ee8a4cc-ab88-4276-9258-c1754cd606ac&quot;,
     &quot;nickname&quot;: &quot;ABC University&quot;,
     &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;,
     &quot;payment_methods&quot;: [
@@ -3898,7 +4331,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response status line is <span class="argument">&quot;Bad Request&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -3925,7 +4358,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;code&quot;</span> has value <span class="argument">&quot;payment_schema_validation_failed&quot;</span></span>
 
-  <span class="lead-duration duration">0.024</span>
+  <span class="lead-duration duration">0.042</span>
 
 </div>
 
@@ -3942,7 +4375,7 @@ $(document).ready(function() {
       <div id="msg-65" class="collapse collapsable-details  in ">
         <pre>java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null
 	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
-	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at stepDefinitions.Then_Steps.response_contains_value(Then_Steps.java:57)
 	at &#10045;.Response &quot;code&quot; has value &quot;payment_schema_validation_failed&quot;(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
 </pre>
       </div>
@@ -4035,9 +4468,25 @@ $(document).ready(function() {
 
     <div id="after-66" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.When_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
-              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Then_Steps.after(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -4056,11 +4505,27 @@ $(document).ready(function() {
 	expected [true] but found [false]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+	at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Given_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
 
 
 
@@ -4088,7 +4553,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.585</span>
+  <span class="lead-duration duration">0.461</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-68">
@@ -4124,7 +4589,7 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Given_Steps.before(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.001</span>
 
@@ -4142,7 +4607,39 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">stepDefinitions.Hooks.envConfig()</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.008</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Then_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.When_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -4179,7 +4676,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;AU&quot;</span> <span class="argument">&quot;account_number&quot;</span> is <span class="argument">&quot;de44455667783322412345&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -4247,7 +4744,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I perform post on CreateBeneficiary endpoint</span>
 
-  <span class="lead-duration duration">0.487</span>
+  <span class="lead-duration duration">0.355</span>
 
 </div>
 
@@ -4317,7 +4814,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response status line is <span class="argument">&quot;Bad Request&quot;</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -4344,7 +4841,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;code&quot;</span> has value <span class="argument">&quot;payment_schema_validation_failed&quot;</span></span>
 
-  <span class="lead-duration duration">0.051</span>
+  <span class="lead-duration duration">0.027</span>
 
 </div>
 
@@ -4371,7 +4868,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;Length of account_number should be between 6 and 9 when bank_country_code is AU&quot;</span></span>
 
-  <span class="lead-duration duration">0.021</span>
+  <span class="lead-duration duration">0.032</span>
 
 </div>
 
@@ -4398,7 +4895,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;source&quot;</span> has value <span class="argument">&quot;beneficiary.bank_details.account_number&quot;</span></span>
 
-  <span class="lead-duration duration">0.021</span>
+  <span class="lead-duration duration">0.043</span>
 
 </div>
 
@@ -4439,9 +4936,25 @@ $(document).ready(function() {
 
     <div id="after-73" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.When_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
-              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Then_Steps.after(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -4459,11 +4972,27 @@ $(document).ready(function() {
 	expected [Length of account_number should be between 6 and 9 when bank_country_code is AU] but found [Should contain 6 to 20 characters]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+	at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Given_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
 
 
 
@@ -4491,7 +5020,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.491</span>
+  <span class="lead-duration duration">0.452</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-75">
@@ -4527,7 +5056,23 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Given_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
 
   <span class="lead-duration duration">0.001</span>
 
@@ -4543,7 +5088,23 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+              <span class="location name">stepDefinitions.Then_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.When_Steps.before(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -4582,7 +5143,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;CN&quot;</span> <span class="argument">&quot;account_number&quot;</span> is <span class="argument">&quot;G&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -4650,7 +5211,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I perform post on CreateBeneficiary endpoint</span>
 
-  <span class="lead-duration duration">0.394</span>
+  <span class="lead-duration duration">0.366</span>
 
 </div>
 
@@ -4693,7 +5254,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Response status code is <span class="argument">400</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -4720,7 +5281,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response status line is <span class="argument">&quot;Bad Request&quot;</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -4747,7 +5308,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;code&quot;</span> has value <span class="argument">&quot;payment_schema_validation_failed&quot;</span></span>
 
-  <span class="lead-duration duration">0.035</span>
+  <span class="lead-duration duration">0.028</span>
 
 </div>
 
@@ -4774,7 +5335,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;Length of account_number should be between 8 and 20 when bank_country_code is CN&quot;</span></span>
 
-  <span class="lead-duration duration">0.030</span>
+  <span class="lead-duration duration">0.025</span>
 
 </div>
 
@@ -4842,9 +5403,25 @@ $(document).ready(function() {
 
     <div id="after-80" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.When_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
-              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Then_Steps.after(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -4862,11 +5439,27 @@ $(document).ready(function() {
 	expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+	at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Given_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
 
 
 
@@ -4894,7 +5487,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.471</span>
+  <span class="lead-duration duration">0.464</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-82">
@@ -4930,9 +5523,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Given_Steps.before(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
           </div>
 
@@ -4949,6 +5542,38 @@ $(document).ready(function() {
               <span class="location name">stepDefinitions.Hooks.envConfig()</span>
 
   <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Then_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.When_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -4985,7 +5610,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;CN&quot;</span> <span class="argument">&quot;account_number&quot;</span> is <span class="argument">&quot;123456&quot;</span></span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -5053,7 +5678,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I perform post on CreateBeneficiary endpoint</span>
 
-  <span class="lead-duration duration">0.385</span>
+  <span class="lead-duration duration">0.378</span>
 
 </div>
 
@@ -5096,7 +5721,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Response status code is <span class="argument">400</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -5150,7 +5775,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;code&quot;</span> has value <span class="argument">&quot;payment_schema_validation_failed&quot;</span></span>
 
-  <span class="lead-duration duration">0.027</span>
+  <span class="lead-duration duration">0.034</span>
 
 </div>
 
@@ -5204,7 +5829,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;source&quot;</span> has value <span class="argument">&quot;beneficiary.bank_details.account_number&quot;</span></span>
 
-  <span class="lead-duration duration">0.028</span>
+  <span class="lead-duration duration">0.021</span>
 
 </div>
 
@@ -5245,9 +5870,25 @@ $(document).ready(function() {
 
     <div id="after-87" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.When_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
-              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Then_Steps.after(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -5265,11 +5906,27 @@ $(document).ready(function() {
 	expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+	at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Given_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
 
 
 
@@ -5297,7 +5954,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.535</span>
+  <span class="lead-duration duration">1.201</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-89">
@@ -5333,7 +5990,7 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Given_Steps.before(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.002</span>
 
@@ -5350,6 +6007,38 @@ $(document).ready(function() {
           <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Then_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.When_Steps.before(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.001</span>
 
@@ -5388,7 +6077,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;CN&quot;</span> <span class="argument">&quot;account_number&quot;</span> is <span class="argument">&quot;123456789qwertyui&quot;</span></span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -5456,7 +6145,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I perform post on CreateBeneficiary endpoint</span>
 
-  <span class="lead-duration duration">0.500</span>
+  <span class="lead-duration duration">1.187</span>
 
 </div>
 
@@ -5504,7 +6193,7 @@ $(document).ready(function() {
         &quot;company_name&quot;: &quot;ABC University&quot;,
         &quot;entity_type&quot;: &quot;COMPANY&quot;
     },
-    &quot;beneficiary_id&quot;: &quot;635efdfd-ca4c-439d-9307-7010a568d638&quot;,
+    &quot;beneficiary_id&quot;: &quot;53a725c9-6dc0-4692-99db-4817c9a9f18a&quot;,
     &quot;nickname&quot;: &quot;ABC University&quot;,
     &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;,
     &quot;payment_methods&quot;: [
@@ -5527,7 +6216,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Response status code is <span class="argument">400</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -5554,7 +6243,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response status line is <span class="argument">&quot;Bad Request&quot;</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -5581,7 +6270,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;code&quot;</span> has value <span class="argument">&quot;payment_schema_validation_failed&quot;</span></span>
 
-  <span class="lead-duration duration">0.030</span>
+  <span class="lead-duration duration">0.012</span>
 
 </div>
 
@@ -5598,7 +6287,7 @@ $(document).ready(function() {
       <div id="msg-94" class="collapse collapsable-details  in ">
         <pre>java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.path.json.JsonPath.get(String)&quot; is null
 	at utilities.Json_handler.getJsonPath(Json_handler.java:21)
-	at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
+	at stepDefinitions.Then_Steps.response_contains_value(Then_Steps.java:57)
 	at &#10045;.Response &quot;code&quot; has value &quot;payment_schema_validation_failed&quot;(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
 </pre>
       </div>
@@ -5691,11 +6380,27 @@ $(document).ready(function() {
 
     <div id="after-95" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.When_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
-              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Then_Steps.after(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -5712,11 +6417,27 @@ $(document).ready(function() {
 	expected [true] but found [false]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+	at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Given_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
 
 
 
@@ -5744,7 +6465,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.463</span>
+  <span class="lead-duration duration">0.508</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-97">
@@ -5780,9 +6501,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Given_Steps.before(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -5798,7 +6519,39 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">stepDefinitions.Hooks.envConfig()</span>
 
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Then_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.When_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -5835,7 +6588,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;CN&quot;</span> <span class="argument">&quot;account_number&quot;</span> is <span class="argument">&quot;ASEDRFTGYHUJIKOL1234123456789012345&quot;</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -5903,7 +6656,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I perform post on CreateBeneficiary endpoint</span>
 
-  <span class="lead-duration duration">0.363</span>
+  <span class="lead-duration duration">0.419</span>
 
 </div>
 
@@ -5973,7 +6726,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response status line is <span class="argument">&quot;Bad Request&quot;</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -6027,7 +6780,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;Length of account_number should be between 8 and 20 when bank_country_code is CN&quot;</span></span>
 
-  <span class="lead-duration duration">0.030</span>
+  <span class="lead-duration duration">0.023</span>
 
 </div>
 
@@ -6054,7 +6807,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;source&quot;</span> has value <span class="argument">&quot;beneficiary.bank_details.account_number&quot;</span></span>
 
-  <span class="lead-duration duration">0.026</span>
+  <span class="lead-duration duration">0.023</span>
 
 </div>
 
@@ -6095,9 +6848,25 @@ $(document).ready(function() {
 
     <div id="after-102" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.When_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
-              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Then_Steps.after(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -6115,11 +6884,27 @@ $(document).ready(function() {
 	expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+	at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Given_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
 
 
 
@@ -6146,7 +6931,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.458</span>
+  <span class="lead-duration duration">0.442</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-104">
@@ -6182,9 +6967,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Given_Steps.before(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.004</span>
 
           </div>
 
@@ -6199,6 +6984,38 @@ $(document).ready(function() {
           <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Then_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.When_Steps.before(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -6237,7 +7054,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;US&quot;</span> <span class="argument">&quot;swift_code&quot;</span> is <span class="argument">&quot;ICBKUS&quot;</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -6302,7 +7119,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I perform post on CreateBeneficiary endpoint</span>
 
-  <span class="lead-duration duration">0.394</span>
+  <span class="lead-duration duration">0.359</span>
 
 </div>
 
@@ -6345,7 +7162,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Response status code is <span class="argument">400</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.005</span>
 
 </div>
 
@@ -6372,7 +7189,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response status line is <span class="argument">&quot;Bad Request&quot;</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -6399,7 +7216,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;code&quot;</span> has value <span class="argument">&quot;payment_schema_validation_failed&quot;</span></span>
 
-  <span class="lead-duration duration">0.027</span>
+  <span class="lead-duration duration">0.022</span>
 
 </div>
 
@@ -6426,7 +7243,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;Length of 'swift_code' should be either 8 or 11&quot;</span></span>
 
-  <span class="lead-duration duration">0.015</span>
+  <span class="lead-duration duration">0.027</span>
 
 </div>
 
@@ -6453,7 +7270,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;source&quot;</span> has value <span class="argument">&quot;beneficiary.bank_details.swift_code&quot;</span></span>
 
-  <span class="lead-duration duration">0.019</span>
+  <span class="lead-duration duration">0.027</span>
 
 </div>
 
@@ -6494,9 +7311,25 @@ $(document).ready(function() {
 
     <div id="after-109" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.When_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
-              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Then_Steps.after(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -6514,11 +7347,27 @@ $(document).ready(function() {
 	expected [Length of 'swift_code' should be either 8 or 11] but found [Should be a valid and supported SWIFT code / BIC]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+	at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Given_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
 
 
 
@@ -6545,7 +7394,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.142</span>
+  <span class="lead-duration duration">0.444</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-111">
@@ -6581,7 +7430,7 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Given_Steps.before(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.001</span>
 
@@ -6599,7 +7448,39 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">stepDefinitions.Hooks.envConfig()</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Then_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.When_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -6636,7 +7517,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;AU&quot;</span> <span class="argument">&quot;swift_code&quot;</span> is <span class="argument">&quot;ICBKAUBJ123w&quot;</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -6704,7 +7585,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I perform post on CreateBeneficiary endpoint</span>
 
-  <span class="lead-duration duration">1.073</span>
+  <span class="lead-duration duration">0.347</span>
 
 </div>
 
@@ -6747,7 +7628,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Response status code is <span class="argument">400</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -6774,7 +7655,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response status line is <span class="argument">&quot;Bad Request&quot;</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -6801,7 +7682,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;code&quot;</span> has value <span class="argument">&quot;payment_schema_validation_failed&quot;</span></span>
 
-  <span class="lead-duration duration">0.021</span>
+  <span class="lead-duration duration">0.026</span>
 
 </div>
 
@@ -6828,7 +7709,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;Length of 'swift_code' should be either 8 or 11&quot;</span></span>
 
-  <span class="lead-duration duration">0.023</span>
+  <span class="lead-duration duration">0.030</span>
 
 </div>
 
@@ -6855,7 +7736,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;source&quot;</span> has value <span class="argument">&quot;beneficiary.bank_details.swift_code&quot;</span></span>
 
-  <span class="lead-duration duration">0.021</span>
+  <span class="lead-duration duration">0.037</span>
 
 </div>
 
@@ -6896,11 +7777,27 @@ $(document).ready(function() {
 
     <div id="after-116" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.When_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
-              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Then_Steps.after(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -6916,11 +7813,27 @@ $(document).ready(function() {
 	expected [Length of 'swift_code' should be either 8 or 11] but found [Should be a valid and supported SWIFT code / BIC]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+	at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Given_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
 
 
 
@@ -6947,7 +7860,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.520</span>
+  <span class="lead-duration duration">0.463</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-118">
@@ -6983,9 +7896,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Given_Steps.before(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
           </div>
 
@@ -7002,6 +7915,38 @@ $(document).ready(function() {
               <span class="location name">stepDefinitions.Hooks.envConfig()</span>
 
   <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Then_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.When_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -7103,7 +8048,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I perform post on CreateBeneficiary endpoint</span>
 
-  <span class="lead-duration duration">0.390</span>
+  <span class="lead-duration duration">0.379</span>
 
 </div>
 
@@ -7200,7 +8145,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;code&quot;</span> has value <span class="argument">&quot;payment_schema_validation_failed&quot;</span></span>
 
-  <span class="lead-duration duration">0.054</span>
+  <span class="lead-duration duration">0.028</span>
 
 </div>
 
@@ -7227,7 +8172,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;&quot;</span></span>
 
-  <span class="lead-duration duration">0.032</span>
+  <span class="lead-duration duration">0.027</span>
 
 </div>
 
@@ -7254,7 +8199,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;source&quot;</span> has value <span class="argument">&quot;beneficiary.bank_details.swift_code&quot;</span></span>
 
-  <span class="lead-duration duration">0.042</span>
+  <span class="lead-duration duration">0.025</span>
 
 </div>
 
@@ -7295,9 +8240,25 @@ $(document).ready(function() {
 
     <div id="after-123" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.When_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
-              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Then_Steps.after(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -7315,11 +8276,27 @@ $(document).ready(function() {
 	expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [Should be a valid and supported SWIFT code / BIC]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+	at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Given_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
 
 
 
@@ -7346,7 +8323,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.451</span>
+  <span class="lead-duration duration">0.476</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-125">
@@ -7382,9 +8359,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Given_Steps.before(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.002</span>
 
           </div>
 
@@ -7401,6 +8378,38 @@ $(document).ready(function() {
               <span class="location name">stepDefinitions.Hooks.envConfig()</span>
 
   <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Then_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.When_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.004</span>
 
           </div>
 
@@ -7437,7 +8446,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;US&quot;</span> <span class="argument">&quot;swift_code&quot;</span> is <span class="argument">&quot;USAS33US&quot;</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -7502,7 +8511,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I perform post on CreateBeneficiary endpoint</span>
 
-  <span class="lead-duration duration">0.380</span>
+  <span class="lead-duration duration">0.396</span>
 
 </div>
 
@@ -7572,7 +8581,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response status line is <span class="argument">&quot;Bad Request&quot;</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -7599,7 +8608,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;code&quot;</span> has value <span class="argument">&quot;payment_schema_validation_failed&quot;</span></span>
 
-  <span class="lead-duration duration">0.028</span>
+  <span class="lead-duration duration">0.027</span>
 
 </div>
 
@@ -7626,7 +8635,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;&quot;</span></span>
 
-  <span class="lead-duration duration">0.020</span>
+  <span class="lead-duration duration">0.026</span>
 
 </div>
 
@@ -7653,7 +8662,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;source&quot;</span> has value <span class="argument">&quot;beneficiary.bank_details.swift_code&quot;</span></span>
 
-  <span class="lead-duration duration">0.019</span>
+  <span class="lead-duration duration">0.024</span>
 
 </div>
 
@@ -7694,11 +8703,27 @@ $(document).ready(function() {
 
     <div id="after-130" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.When_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
-              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Then_Steps.after(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -7714,11 +8739,27 @@ $(document).ready(function() {
 	expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [Should be a valid and supported SWIFT code / BIC]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+	at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Given_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
 
 
 
@@ -7745,7 +8786,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.527</span>
+  <span class="lead-duration duration">0.500</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-132">
@@ -7781,7 +8822,23 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Given_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
 
   <span class="lead-duration duration">0.001</span>
 
@@ -7797,7 +8854,23 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+              <span class="location name">stepDefinitions.Then_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.When_Steps.before(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -7836,7 +8909,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;CN&quot;</span> <span class="argument">&quot;swift_code&quot;</span> is <span class="argument">&quot;CNAS33US&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -7904,7 +8977,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I perform post on CreateBeneficiary endpoint</span>
 
-  <span class="lead-duration duration">0.453</span>
+  <span class="lead-duration duration">0.416</span>
 
 </div>
 
@@ -8001,7 +9074,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;code&quot;</span> has value <span class="argument">&quot;payment_schema_validation_failed&quot;</span></span>
 
-  <span class="lead-duration duration">0.028</span>
+  <span class="lead-duration duration">0.029</span>
 
 </div>
 
@@ -8028,7 +9101,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;&quot;</span></span>
 
-  <span class="lead-duration duration">0.022</span>
+  <span class="lead-duration duration">0.026</span>
 
 </div>
 
@@ -8055,7 +9128,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;source&quot;</span> has value <span class="argument">&quot;beneficiary.bank_details.swift_code&quot;</span></span>
 
-  <span class="lead-duration duration">0.022</span>
+  <span class="lead-duration duration">0.025</span>
 
 </div>
 
@@ -8096,11 +9169,27 @@ $(document).ready(function() {
 
     <div id="after-137" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.When_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
-              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Then_Steps.after(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -8116,11 +9205,27 @@ $(document).ready(function() {
 	expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [Should be a valid and supported SWIFT code / BIC]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+	at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Given_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
 
 
 
@@ -8147,7 +9252,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.461</span>
+  <span class="lead-duration duration">0.480</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-139">
@@ -8183,7 +9288,23 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Given_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
 
   <span class="lead-duration duration">0.001</span>
 
@@ -8199,7 +9320,23 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+              <span class="location name">stepDefinitions.Then_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.When_Steps.before(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -8303,7 +9440,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I perform post on CreateBeneficiary endpoint</span>
 
-  <span class="lead-duration duration">0.399</span>
+  <span class="lead-duration duration">0.397</span>
 
 </div>
 
@@ -8346,7 +9483,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Response status code is <span class="argument">400</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -8400,7 +9537,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;code&quot;</span> has value <span class="argument">&quot;payment_schema_validation_failed&quot;</span></span>
 
-  <span class="lead-duration duration">0.023</span>
+  <span class="lead-duration duration">0.026</span>
 
 </div>
 
@@ -8427,7 +9564,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;&quot;</span></span>
 
-  <span class="lead-duration duration">0.017</span>
+  <span class="lead-duration duration">0.026</span>
 
 </div>
 
@@ -8454,7 +9591,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;source&quot;</span> has value <span class="argument">&quot;beneficiary.bank_details.swift_code&quot;</span></span>
 
-  <span class="lead-duration duration">0.020</span>
+  <span class="lead-duration duration">0.028</span>
 
 </div>
 
@@ -8495,9 +9632,25 @@ $(document).ready(function() {
 
     <div id="after-144" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.When_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
-              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Then_Steps.after(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -8515,11 +9668,27 @@ $(document).ready(function() {
 	expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [Should be a valid and supported SWIFT code / BIC]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+	at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Given_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
 
 
 
@@ -8546,7 +9715,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.450</span>
+  <span class="lead-duration duration">0.482</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-146">
@@ -8582,7 +9751,7 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Given_Steps.before(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.001</span>
 
@@ -8599,6 +9768,38 @@ $(document).ready(function() {
           <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Then_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.When_Steps.before(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -8705,7 +9906,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I perform post on CreateBeneficiary endpoint</span>
 
-  <span class="lead-duration duration">0.370</span>
+  <span class="lead-duration duration">0.394</span>
 
 </div>
 
@@ -8748,7 +9949,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Response status code is <span class="argument">400</span></span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -8802,7 +10003,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;code&quot;</span> has value <span class="argument">&quot;payment_schema_validation_failed&quot;</span></span>
 
-  <span class="lead-duration duration">0.030</span>
+  <span class="lead-duration duration">0.034</span>
 
 </div>
 
@@ -8829,7 +10030,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;&quot;</span></span>
 
-  <span class="lead-duration duration">0.024</span>
+  <span class="lead-duration duration">0.035</span>
 
 </div>
 
@@ -8856,7 +10057,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;source&quot;</span> has value <span class="argument">&quot;beneficiary.bank_details.swift_code&quot;</span></span>
 
-  <span class="lead-duration duration">0.021</span>
+  <span class="lead-duration duration">0.016</span>
 
 </div>
 
@@ -8897,9 +10098,25 @@ $(document).ready(function() {
 
     <div id="after-151" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.When_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
-              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Then_Steps.after(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -8917,11 +10134,27 @@ $(document).ready(function() {
 	expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [The SWIFT code / BIC should match the bank location selected ]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+	at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Given_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
 
 
 
@@ -8948,7 +10181,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.424</span>
+  <span class="lead-duration duration">0.450</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-153">
@@ -8984,7 +10217,7 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Given_Steps.before(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -9001,6 +10234,38 @@ $(document).ready(function() {
           <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Then_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.When_Steps.before(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.001</span>
 
@@ -9107,7 +10372,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I perform post on CreateBeneficiary endpoint</span>
 
-  <span class="lead-duration duration">0.358</span>
+  <span class="lead-duration duration">0.362</span>
 
 </div>
 
@@ -9132,6 +10397,469 @@ $(document).ready(function() {
           <pre><p>Response : {
     &quot;code&quot;: &quot;payment_schema_validation_failed&quot;,
     &quot;message&quot;: &quot;Should be a valid and supported SWIFT code / BIC&quot;,
+    &quot;source&quot;: &quot;beneficiary.bank_details.swift_code&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Response status code is <span class="argument">400</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Response status line is <span class="argument">&quot;Bad Request&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Response <span class="argument">&quot;code&quot;</span> has value <span class="argument">&quot;payment_schema_validation_failed&quot;</span></span>
+
+  <span class="lead-duration duration">0.026</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;&quot;</span></span>
+
+  <span class="lead-duration duration">0.023</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Response <span class="argument">&quot;source&quot;</span> has value <span class="argument">&quot;beneficiary.bank_details.swift_code&quot;</span></span>
+
+  <span class="lead-duration duration">0.035</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-158">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-158" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.When_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief failed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Then_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-159">
+          <a>Error message</a>
+      </div>
+      <div id="msg-159" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: The following asserts failed:
+	expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [Should be a valid and supported SWIFT code / BIC]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Given_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_5_2796827636.html">Validates swift_code in BankDetails</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1721374037.html">@RequirementMismatch-ImproperResponseMessage</a>
+</div>
+
+
+  <span class="lead-duration duration">0.483</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-160">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate error message is returned when &quot;swift_code&quot; CHASUS33 matches with &quot;country_code&quot; US but not with &quot;bank_country_code&quot; &lt;Bank_country_code&gt;</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-160" class="collapse collapsable-details  in ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-161">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-161" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Given_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Then_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.When_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-162">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-162" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;country_code&quot;</span> is <span class="argument">&quot;US&quot;</span> <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;AU&quot;</span> <span class="argument">&quot;swift_code&quot;</span> is <span class="argument">&quot;CHASUS33&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-163">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-163" class="collapse collapsable-details " >
+          
+          <pre><p>Request Payload : {
+    &quot;payment_methods&quot;: [&quot;SWIFT&quot;],
+    &quot;beneficiary&quot;: {
+        &quot;address&quot;: {
+            &quot;country_code&quot;: &quot;US&quot;,
+            &quot;street_address&quot;: &quot;412 5th Avenue&quot;,
+            &quot;city&quot;: &quot;Seattle&quot;,
+            &quot;postcode&quot;: &quot;98104&quot;,
+            &quot;state&quot;: &quot;Washington&quot;
+        },
+        &quot;entity_type&quot;: &quot;COMPANY&quot;,
+        &quot;additional_info&quot;: {&quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;},
+        &quot;bank_details&quot;: {
+            &quot;account_number&quot;: &quot;502231121&quot;,
+            &quot;account_currency&quot;: &quot;USD&quot;,
+            &quot;bank_country_code&quot;: &quot;AU&quot;,
+            &quot;swift_code&quot;: &quot;CHASUS33&quot;,
+            &quot;account_name&quot;: &quot;John Walker&quot;,
+            &quot;bank_name&quot;: &quot;JP Morgan Chase Bank&quot;,
+            &quot;account_routing_value1&quot;: &quot;907765701&quot;,
+            &quot;account_routing_type1&quot;: &quot;aba&quot;
+        },
+        &quot;company_name&quot;: &quot;ABC University&quot;
+    },
+    &quot;nickname&quot;: &quot;ABC University&quot;,
+    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I perform post on CreateBeneficiary endpoint</span>
+
+  <span class="lead-duration duration">0.396</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-164">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-164" class="collapse collapsable-details " >
+          
+          <pre><p>Response : {
+    &quot;code&quot;: &quot;payment_schema_validation_failed&quot;,
+    &quot;message&quot;: &quot;The SWIFT code / BIC should match the bank location selected &quot;,
     &quot;source&quot;: &quot;beneficiary.bank_details.swift_code&quot;
 }</p></pre>
         </div>
@@ -9231,7 +10959,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;&quot;</span></span>
 
-  <span class="lead-duration duration">0.022</span>
+  <span class="lead-duration duration">0.038</span>
 
 </div>
 
@@ -9258,406 +10986,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;source&quot;</span> has value <span class="argument">&quot;beneficiary.bank_details.swift_code&quot;</span></span>
 
-  <span class="lead-duration duration">0.020</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-  <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-158">
-
-<div class="brief failed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-158" class="inner-level collapse collapsable-details  in ">
-        <div class="hook">
-          <div class="brief failed">
-            <span class="keyword indention">After</span>
-              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-159">
-          <a>Error message</a>
-      </div>
-      <div id="msg-159" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError: The following asserts failed:
-	expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [Should be a valid and supported SWIFT code / BIC]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-  </div>
-</div>
-
-
-<div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_5_2796827636.html">Validates swift_code in BankDetails</a>
-    </div>
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_1721374037.html">@RequirementMismatch-ImproperResponseMessage</a>
-</div>
-
-
-  <span class="lead-duration duration">0.468</span>
-
-
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-160">
-
-<div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Validate error message is returned when &quot;swift_code&quot; CHASUS33 matches with &quot;country_code&quot; US but not with &quot;bank_country_code&quot; &lt;Bank_country_code&gt;</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-160" class="collapse collapsable-details  in ">
-
-
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-161">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-161" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Hooks.envConfig()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-162">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-162" class="inner-level collapse collapsable-details  in ">
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I create request payload with valid data for all keys with <span class="argument">&quot;country_code&quot;</span> is <span class="argument">&quot;US&quot;</span> <span class="argument">&quot;bank_country_code&quot;</span> is <span class="argument">&quot;AU&quot;</span> <span class="argument">&quot;swift_code&quot;</span> is <span class="argument">&quot;CHASUS33&quot;</span></span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-  <div class="outputs inner-level">
-      <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-163">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-163" class="collapse collapsable-details " >
-          
-          <pre><p>Request Payload : {
-    &quot;payment_methods&quot;: [&quot;SWIFT&quot;],
-    &quot;beneficiary&quot;: {
-        &quot;address&quot;: {
-            &quot;country_code&quot;: &quot;US&quot;,
-            &quot;street_address&quot;: &quot;412 5th Avenue&quot;,
-            &quot;city&quot;: &quot;Seattle&quot;,
-            &quot;postcode&quot;: &quot;98104&quot;,
-            &quot;state&quot;: &quot;Washington&quot;
-        },
-        &quot;entity_type&quot;: &quot;COMPANY&quot;,
-        &quot;additional_info&quot;: {&quot;personal_email&quot;: &quot;john.walker@gmail.com&quot;},
-        &quot;bank_details&quot;: {
-            &quot;account_number&quot;: &quot;502231121&quot;,
-            &quot;account_currency&quot;: &quot;USD&quot;,
-            &quot;bank_country_code&quot;: &quot;AU&quot;,
-            &quot;swift_code&quot;: &quot;CHASUS33&quot;,
-            &quot;account_name&quot;: &quot;John Walker&quot;,
-            &quot;bank_name&quot;: &quot;JP Morgan Chase Bank&quot;,
-            &quot;account_routing_value1&quot;: &quot;907765701&quot;,
-            &quot;account_routing_type1&quot;: &quot;aba&quot;
-        },
-        &quot;company_name&quot;: &quot;ABC University&quot;
-    },
-    &quot;nickname&quot;: &quot;ABC University&quot;,
-    &quot;payer_entity_type&quot;: &quot;PERSONAL&quot;
-}</p></pre>
-        </div>
-      </div>
-  </div>
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">I perform post on CreateBeneficiary endpoint</span>
-
-  <span class="lead-duration duration">0.392</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-  <div class="outputs inner-level">
-      <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-164">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-164" class="collapse collapsable-details " >
-          
-          <pre><p>Response : {
-    &quot;code&quot;: &quot;payment_schema_validation_failed&quot;,
-    &quot;message&quot;: &quot;The SWIFT code / BIC should match the bank location selected &quot;,
-    &quot;source&quot;: &quot;beneficiary.bank_details.swift_code&quot;
-}</p></pre>
-        </div>
-      </div>
-  </div>
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Response status code is <span class="argument">400</span></span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Response status line is <span class="argument">&quot;Bad Request&quot;</span></span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Response <span class="argument">&quot;code&quot;</span> has value <span class="argument">&quot;payment_schema_validation_failed&quot;</span></span>
-
-  <span class="lead-duration duration">0.021</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;&quot;</span></span>
-
-  <span class="lead-duration duration">0.022</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Response <span class="argument">&quot;source&quot;</span> has value <span class="argument">&quot;beneficiary.bank_details.swift_code&quot;</span></span>
-
-  <span class="lead-duration duration">0.028</span>
+  <span class="lead-duration duration">0.024</span>
 
 </div>
 
@@ -9698,9 +11027,25 @@ $(document).ready(function() {
 
     <div id="after-165" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.When_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
-              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Then_Steps.after(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -9718,11 +11063,27 @@ $(document).ready(function() {
 	expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [The SWIFT code / BIC should match the bank location selected ]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+	at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Given_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
 
 
 
@@ -9749,7 +11110,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.447</span>
+  <span class="lead-duration duration">0.473</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-167">
@@ -9785,7 +11146,7 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Generic_Steps.before(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Given_Steps.before(io.cucumber.java.Scenario)</span>
 
   <span class="lead-duration duration">0.002</span>
 
@@ -9803,7 +11164,39 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">stepDefinitions.Hooks.envConfig()</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.Then_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.When_Steps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -9908,7 +11301,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I perform post on CreateBeneficiary endpoint</span>
 
-  <span class="lead-duration duration">0.376</span>
+  <span class="lead-duration duration">0.397</span>
 
 </div>
 
@@ -9951,7 +11344,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Response status code is <span class="argument">400</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -10005,7 +11398,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;code&quot;</span> has value <span class="argument">&quot;payment_schema_validation_failed&quot;</span></span>
 
-  <span class="lead-duration duration">0.026</span>
+  <span class="lead-duration duration">0.024</span>
 
 </div>
 
@@ -10032,7 +11425,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;message&quot;</span> has value <span class="argument">&quot;The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;&quot;</span></span>
 
-  <span class="lead-duration duration">0.024</span>
+  <span class="lead-duration duration">0.023</span>
 
 </div>
 
@@ -10059,7 +11452,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Response <span class="argument">&quot;source&quot;</span> has value <span class="argument">&quot;beneficiary.bank_details.swift_code&quot;</span></span>
 
-  <span class="lead-duration duration">0.020</span>
+  <span class="lead-duration duration">0.025</span>
 
 </div>
 
@@ -10100,11 +11493,27 @@ $(document).ready(function() {
 
     <div id="after-172" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.When_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
-              <span class="location name">stepDefinitions.Generic_Steps.after(io.cucumber.java.Scenario)</span>
+              <span class="location name">stepDefinitions.Then_Steps.after(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -10120,11 +11529,27 @@ $(document).ready(function() {
 	expected [The swift code is not valid for the given bank country code: &lt;Bank_country_code&gt;] but found [The SWIFT code / BIC should match the bank location selected ]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+	at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.Given_Steps.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
 
 
 

@@ -2,19 +2,19 @@
 <testng-results ignored="0" total="75" passed="43" failed="32" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-23T10:54:16 CEST" name="Surefire suite" finished-at="2021-08-23T10:55:47 CEST" duration-ms="91495">
+  <suite started-at="2021-08-23T21:35:16 CEST" name="Surefire suite" finished-at="2021-08-23T21:36:46 CEST" duration-ms="89754">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-08-23T10:54:16 CEST" name="Surefire test" finished-at="2021-08-23T10:55:47 CEST" duration-ms="91495">
+    <test started-at="2021-08-23T21:35:16 CEST" name="Surefire test" finished-at="2021-08-23T21:36:46 CEST" duration-ms="89754">
       <class name="cucumber.Options.RunCucumberTests">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:16 CEST" name="setUpClass" finished-at="2021-08-23T10:54:16 CEST" duration-ms="830" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:16 CEST" name="setUpClass" finished-at="2021-08-23T21:35:17 CEST" duration-ms="548" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:16 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:22 CEST" duration-ms="5708" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:17 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:35:22 CEST" duration-ms="5416" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:22 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:24 CEST" duration-ms="1860" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:22 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:35:25 CEST" duration-ms="2523" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -46,7 +46,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:24 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:26 CEST" duration-ms="1895" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:25 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:35:27 CEST" duration-ms="1823" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -62,23 +62,21 @@
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
-expected [Length of account_number should be between 2 and 10 when bank_country_code is US] but found [Should contain 2 to 200 characters],
-expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]]]>
+expected [Length of account_name should be between {Min} and {Max} when bank_country_code is US] but found [Should contain 2 to 200 characters]]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [Length of account_number should be between 2 and 10 when bank_country_code is US] but found [Should contain 2 to 200 characters],
-expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]
+expected [Length of account_name should be between {Min} and {Max} when bank_country_code is US] but found [Should contain 2 to 200 characters]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:26 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:28 CEST" duration-ms="2462" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:27 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:35:29 CEST" duration-ms="2439" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -94,23 +92,21 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
-expected [Length of account_number should be between 2 and 10 when bank_country_code is AU] but found [Should contain 2 to 200 characters],
-expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]]]>
+expected [Length of account_name should be between {Min} and {Max} when bank_country_code is AU] but found [Should contain 2 to 200 characters]]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [Length of account_number should be between 2 and 10 when bank_country_code is AU] but found [Should contain 2 to 200 characters],
-expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]
+expected [Length of account_name should be between {Min} and {Max} when bank_country_code is AU] but found [Should contain 2 to 200 characters]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:28 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:31 CEST" duration-ms="2548" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:29 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:35:31 CEST" duration-ms="1672" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -126,23 +122,21 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
-expected [Length of account_number should be between 2 and 10 when bank_country_code is CN] but found [Should contain 2 to 200 characters],
-expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]]]>
+expected [Length of account_name should be between {Min} and {Max} when bank_country_code is CN] but found [Should contain 2 to 200 characters]]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [Length of account_number should be between 2 and 10 when bank_country_code is CN] but found [Should contain 2 to 200 characters],
-expected [Should contain 2 to 10 characters] but found [Should contain 2 to 200 characters]
+expected [Length of account_name should be between {Min} and {Max} when bank_country_code is CN] but found [Should contain 2 to 200 characters]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:31 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:33 CEST" duration-ms="1758" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:31 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:35:33 CEST" duration-ms="2382" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -162,15 +156,15 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
 at utilities.Json_handler.getJsonPath(Json_handler.java:21)
-at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
-at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Name.feature:32)
+at stepDefinitions.Then_Steps.response_contains_value(Then_Steps.java:57)
+at ✽.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Name.feature:32)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:33 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:34 CEST" duration-ms="1713" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:33 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:35:35 CEST" duration-ms="1618" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -186,7 +180,7 @@ at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/Sne
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:34 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:36 CEST" duration-ms="1643" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:35 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:35:36 CEST" duration-ms="1625" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -202,7 +196,7 @@ at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/Sne
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:36 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:38 CEST" duration-ms="1643" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:36 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:35:39 CEST" duration-ms="2260" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -218,7 +212,7 @@ at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/Sne
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:38 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:40 CEST" duration-ms="1804" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:39 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:35:40 CEST" duration-ms="1615" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -234,7 +228,7 @@ at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/Sne
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:40 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:40 CEST" duration-ms="924" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:40 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:35:41 CEST" duration-ms="940" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -250,7 +244,7 @@ at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/Sne
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:40 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:41 CEST" duration-ms="1019" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:41 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:35:42 CEST" duration-ms="1032" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -266,7 +260,7 @@ at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/Sne
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:41 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:43 CEST" duration-ms="1577" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:42 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:35:43 CEST" duration-ms="934" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -291,14 +285,14 @@ expected [201] but found [400],
 expected [true] but found [false]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:43 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:44 CEST" duration-ms="920" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:43 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:35:44 CEST" duration-ms="923" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -323,14 +317,14 @@ expected [201] but found [400],
 expected [true] but found [false]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:44 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:45 CEST" duration-ms="1112" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:44 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:35:46 CEST" duration-ms="1638" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -355,14 +349,14 @@ expected [201] but found [400],
 expected [true] but found [false]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:45 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:47 CEST" duration-ms="1745" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:46 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:35:47 CEST" duration-ms="1664" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -382,15 +376,15 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
 at utilities.Json_handler.getJsonPath(Json_handler.java:21)
-at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
-at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
+at stepDefinitions.Then_Steps.response_contains_value(Then_Steps.java:57)
+at ✽.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:47 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:49 CEST" duration-ms="1747" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:47 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:35:49 CEST" duration-ms="1077" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -413,14 +407,14 @@ expected [Length of account_number should be between 1 and 17 when bank_country_
 expected [Length of account_number should be between 1 and 17 when bank_country_code is US] but found [Should contain 1 to 26 characters]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:49 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:50 CEST" duration-ms="985" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:49 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:35:50 CEST" duration-ms="1705" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -443,14 +437,14 @@ expected [Length of account_number should be between 6 and 9 when bank_country_c
 expected [Length of account_number should be between 6 and 9 when bank_country_code is AU] but found [Should contain 6 to 20 characters]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:50 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:51 CEST" duration-ms="1603" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:50 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:35:52 CEST" duration-ms="1567" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -470,15 +464,15 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
 at utilities.Json_handler.getJsonPath(Json_handler.java:21)
-at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
-at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
+at stepDefinitions.Then_Steps.response_contains_value(Then_Steps.java:57)
+at ✽.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:51 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:53 CEST" duration-ms="1635" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:52 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:35:53 CEST" duration-ms="936" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -498,15 +492,15 @@ at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/Sne
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
 at utilities.Json_handler.getJsonPath(Json_handler.java:21)
-at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
-at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
+at stepDefinitions.Then_Steps.response_contains_value(Then_Steps.java:57)
+at ✽.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:53 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:54 CEST" duration-ms="1052" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:53 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:35:54 CEST" duration-ms="952" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -529,14 +523,14 @@ expected [Length of account_number should be between 6 and 9 when bank_country_c
 expected [Length of account_number should be between 6 and 9 when bank_country_code is AU] but found [Should contain 6 to 20 characters]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:54 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:55 CEST" duration-ms="1226" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:54 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:35:55 CEST" duration-ms="919" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -559,14 +553,14 @@ expected [Length of account_number should be between 8 and 20 when bank_country_
 expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:55 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:56 CEST" duration-ms="1012" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:55 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:35:56 CEST" duration-ms="966" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -589,14 +583,14 @@ expected [Length of account_number should be between 8 and 20 when bank_country_
 expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:56 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:57 CEST" duration-ms="1083" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:56 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:35:57 CEST" duration-ms="1661" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -616,15 +610,15 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
 at utilities.Json_handler.getJsonPath(Json_handler.java:21)
-at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
-at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
+at stepDefinitions.Then_Steps.response_contains_value(Then_Steps.java:57)
+at ✽.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Account_Number.feature:45)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:57 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:58 CEST" duration-ms="1056" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:57 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:35:58 CEST" duration-ms="950" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -647,14 +641,14 @@ expected [Length of account_number should be between 8 and 20 when bank_country_
 expected [Length of account_number should be between 8 and 20 when bank_country_code is CN] but found [Should contain 8 to 34 characters]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:58 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:54:59 CEST" duration-ms="1049" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:58 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:35:59 CEST" duration-ms="919" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -670,7 +664,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:54:59 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:00 CEST" duration-ms="940" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:35:59 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:00 CEST" duration-ms="1032" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -686,7 +680,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:00 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:02 CEST" duration-ms="1532" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:00 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:02 CEST" duration-ms="1621" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -702,7 +696,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:02 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:03 CEST" duration-ms="791" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:02 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:03 CEST" duration-ms="889" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -718,7 +712,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:03 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:03 CEST" duration-ms="837" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:03 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:03 CEST" duration-ms="845" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -734,7 +728,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:03 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:04 CEST" duration-ms="926" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:03 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:04 CEST" duration-ms="930" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -750,7 +744,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:04 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:05 CEST" duration-ms="771" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:04 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:05 CEST" duration-ms="915" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -766,7 +760,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:05 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:06 CEST" duration-ms="836" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:05 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:06 CEST" duration-ms="916" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -782,7 +776,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:06 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:07 CEST" duration-ms="1045" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:06 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:08 CEST" duration-ms="1741" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -798,7 +792,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:07 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:08 CEST" duration-ms="1056" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:08 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:09 CEST" duration-ms="1038" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -814,7 +808,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:08 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:09 CEST" duration-ms="886" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:09 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:10 CEST" duration-ms="944" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -830,7 +824,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:09 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:10 CEST" duration-ms="986" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:10 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:11 CEST" duration-ms="881" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -846,7 +840,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:10 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:11 CEST" duration-ms="869" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:11 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:12 CEST" duration-ms="887" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -862,7 +856,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:11 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:12 CEST" duration-ms="899" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:12 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:13 CEST" duration-ms="857" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -878,7 +872,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:12 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:13 CEST" duration-ms="1017" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:13 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:14 CEST" duration-ms="1002" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -894,7 +888,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:13 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:14 CEST" duration-ms="994" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:14 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:15 CEST" duration-ms="1037" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -910,7 +904,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:14 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:15 CEST" duration-ms="864" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:15 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:16 CEST" duration-ms="923" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -926,7 +920,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:15 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:15 CEST" duration-ms="927" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:16 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:16 CEST" duration-ms="925" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -942,7 +936,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:15 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:16 CEST" duration-ms="911" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:16 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:17 CEST" duration-ms="817" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -958,7 +952,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:16 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:17 CEST" duration-ms="1015" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:17 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:18 CEST" duration-ms="893" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -974,7 +968,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:17 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:18 CEST" duration-ms="1045" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:18 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:19 CEST" duration-ms="836" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -990,7 +984,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:18 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:19 CEST" duration-ms="986" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:19 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:20 CEST" duration-ms="967" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1006,7 +1000,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:19 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:20 CEST" duration-ms="954" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:20 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:21 CEST" duration-ms="834" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1022,7 +1016,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:20 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:21 CEST" duration-ms="1031" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:21 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:22 CEST" duration-ms="784" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1047,14 +1041,14 @@ expected [400] but found [201],
 expected [true] but found [false]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:21 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:22 CEST" duration-ms="978" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:22 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:22 CEST" duration-ms="799" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1070,7 +1064,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:22 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:23 CEST" duration-ms="1010" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:22 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:24 CEST" duration-ms="1599" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1086,7 +1080,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:23 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:24 CEST" duration-ms="941" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:24 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:25 CEST" duration-ms="803" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1102,7 +1096,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:24 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:25 CEST" duration-ms="1018" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:25 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:26 CEST" duration-ms="878" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1118,7 +1112,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:25 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:26 CEST" duration-ms="1011" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:26 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:27 CEST" duration-ms="874" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1134,7 +1128,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:26 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:27 CEST" duration-ms="1034" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:27 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:27 CEST" duration-ms="915" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1150,7 +1144,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:27 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:28 CEST" duration-ms="960" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:27 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:28 CEST" duration-ms="889" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1170,15 +1164,15 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
 at utilities.Json_handler.getJsonPath(Json_handler.java:21)
-at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
-at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Routing_Type.feature:44)
+at stepDefinitions.Then_Steps.response_contains_value(Then_Steps.java:57)
+at ✽.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Routing_Type.feature:44)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:28 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:29 CEST" duration-ms="933" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:28 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:29 CEST" duration-ms="815" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1198,15 +1192,15 @@ at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/Sne
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
 at utilities.Json_handler.getJsonPath(Json_handler.java:21)
-at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
-at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Routing_Type.feature:44)
+at stepDefinitions.Then_Steps.response_contains_value(Then_Steps.java:57)
+at ✽.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Routing_Type.feature:44)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:29 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:30 CEST" duration-ms="884" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:29 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:30 CEST" duration-ms="835" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1226,15 +1220,15 @@ at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/Sne
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
 at utilities.Json_handler.getJsonPath(Json_handler.java:21)
-at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
-at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Routing_Type.feature:44)
+at stepDefinitions.Then_Steps.response_contains_value(Then_Steps.java:57)
+at ✽.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Routing_Type.feature:44)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:30 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:31 CEST" duration-ms="935" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:30 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:31 CEST" duration-ms="833" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1254,15 +1248,15 @@ at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/Sne
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
 at utilities.Json_handler.getJsonPath(Json_handler.java:21)
-at stepDefinitions.Generic_Steps.response_contains_value(Generic_Steps.java:139)
-at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Routing_Type.feature:44)
+at stepDefinitions.Then_Steps.response_contains_value(Then_Steps.java:57)
+at ✽.Response "code" has value "payment_schema_validation_failed"(file:///C:/SnehProjects/DemoProject/Demo_APIFramework/src/test/resources/features/Routing_Type.feature:44)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:31 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:32 CEST" duration-ms="923" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:31 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:32 CEST" duration-ms="820" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1278,7 +1272,7 @@ at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/Sne
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:32 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:33 CEST" duration-ms="918" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:32 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:33 CEST" duration-ms="869" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1294,7 +1288,7 @@ at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/Sne
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:33 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:34 CEST" duration-ms="1007" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:33 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:34 CEST" duration-ms="997" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1310,7 +1304,7 @@ at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/Sne
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:34 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:35 CEST" duration-ms="902" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:34 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:34 CEST" duration-ms="857" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1326,7 +1320,7 @@ at ?.Response "code" has value "payment_schema_validation_failed"(file:///C:/Sne
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:35 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:36 CEST" duration-ms="906" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:34 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:35 CEST" duration-ms="932" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1349,14 +1343,14 @@ expected [Length of 'swift_code' should be either 8 or 11] but found [Should be 
 expected [Length of 'swift_code' should be either 8 or 11] but found [Should be a valid and supported SWIFT code / BIC]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:36 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:37 CEST" duration-ms="1577" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:35 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:36 CEST" duration-ms="891" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1379,14 +1373,14 @@ expected [Length of 'swift_code' should be either 8 or 11] but found [Should be 
 expected [Length of 'swift_code' should be either 8 or 11] but found [Should be a valid and supported SWIFT code / BIC]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:37 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:38 CEST" duration-ms="959" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:36 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:37 CEST" duration-ms="911" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1409,14 +1403,14 @@ expected [The swift code is not valid for the given bank country code: <Bank_cou
 expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [Should be a valid and supported SWIFT code / BIC]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:38 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:39 CEST" duration-ms="907" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:37 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:38 CEST" duration-ms="1015" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1439,14 +1433,14 @@ expected [The swift code is not valid for the given bank country code: <Bank_cou
 expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [Should be a valid and supported SWIFT code / BIC]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:39 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:40 CEST" duration-ms="956" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:38 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:39 CEST" duration-ms="942" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1469,14 +1463,14 @@ expected [The swift code is not valid for the given bank country code: <Bank_cou
 expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [Should be a valid and supported SWIFT code / BIC]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:40 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:41 CEST" duration-ms="913" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:39 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:40 CEST" duration-ms="1007" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1499,14 +1493,14 @@ expected [The swift code is not valid for the given bank country code: <Bank_cou
 expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [Should be a valid and supported SWIFT code / BIC]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:41 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:42 CEST" duration-ms="935" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:40 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:41 CEST" duration-ms="924" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1529,14 +1523,14 @@ expected [The swift code is not valid for the given bank country code: <Bank_cou
 expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [The SWIFT code / BIC should match the bank location selected ]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:42 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:43 CEST" duration-ms="899" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:41 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:42 CEST" duration-ms="887" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1559,14 +1553,14 @@ expected [The swift code is not valid for the given bank country code: <Bank_cou
 expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [Should be a valid and supported SWIFT code / BIC]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:43 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:44 CEST" duration-ms="927" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:42 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:43 CEST" duration-ms="953" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1589,14 +1583,14 @@ expected [The swift code is not valid for the given bank country code: <Bank_cou
 expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [The SWIFT code / BIC should match the bank location selected ]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:44 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:45 CEST" duration-ms="909" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:43 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:44 CEST" duration-ms="1012" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1619,14 +1613,14 @@ expected [The swift code is not valid for the given bank country code: <Bank_cou
 expected [The swift code is not valid for the given bank country code: <Bank_country_code>] but found [The SWIFT code / BIC should match the bank location selected ]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
+at stepDefinitions.Then_Steps.after(Then_Steps.java:30)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:45 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:46 CEST" duration-ms="866" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:44 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:45 CEST" duration-ms="847" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1642,7 +1636,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:46 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T10:55:47 CEST" duration-ms="922" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:45 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-23T21:36:46 CEST" duration-ms="803" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1658,7 +1652,7 @@ at stepDefinitions.Generic_Steps.after(Generic_Steps.java:38)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.Options.RunCucumberTests@491666ad]" started-at="2021-08-23T10:55:47 CEST" name="tearDownClass" finished-at="2021-08-23T10:55:47 CEST" duration-ms="467" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.Options.RunCucumberTests@1dd92fe2]" started-at="2021-08-23T21:36:46 CEST" name="tearDownClass" finished-at="2021-08-23T21:36:46 CEST" duration-ms="524" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
